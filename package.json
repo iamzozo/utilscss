@@ -2,7 +2,8 @@
   "name": "@iamzozo/utilscss",
   "version": "0.0.1",
   "scripts": {
-    "build": "node-sass utils.scss -o ./utils.css"
+    "build": "node-sass utils.scss > ./build/utils.min.css --output-style=compressed",
+    "dev": "node-sass utils.scss > ./build/utils.css --output-style=expanded"
   },
   "repository": {
     "type": "git",

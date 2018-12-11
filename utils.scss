@@ -1,8 +1,11 @@
-$theme: (
+$themes: (
         black: black,
         white: white,
-        primary: blue,
-        secondary: green
+        primary: #10a7ff,
+        secondary: #ccdcec,
+        gray-light: #f2f2f2,
+        gray: #ededed,
+        gray-dark: #ddd,
 ) !default;
 
 $sizes: (
@@ -13,7 +16,61 @@ $sizes: (
         xlg: 1200px
 );
 
+$shadows: (
+        sm: 0 1px 1px rgba(0, 0, 0, .1),
+        md: 0 2px 4px rgba(0, 0, 0, .1),
+        lg: 0 3px 8px rgba(0, 0, 0, .1),
+) !default;
+
 $gutter: 10;
+$form-padding: .5rem 1rem;
+$form-radius: 0.125rem !default;
+$yiq-contrasted-threshold: 150 !default;
+
+@function color-yiq($color, $dark: #000, $light: #fff) {
+    $r: red($color);
+    $g: green($color);
+    $b: blue($color);
+
+    $yiq: (($r * 299) + ($g * 587) + ($b * 114)) / 1000;
+
+    @if ($yiq >= $yiq-contrasted-threshold) {
+        @return $dark;
+    } @else {
+        @return $light;
+    }
+}
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Helvetica, Arial, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol;
+    font-size: 100%;
+    line-height: 1.6;
+}
+
+.btn {
+    text-decoration: none;
+}
+
+.btn,
+.form-control {
+    border: 1px solid transparent;
+    font-family: inherit;
+    font-size: inherit;
+    line-height: inherit;
+    display: inline-block;
+    padding: $form-padding;
+    border-radius: $form-radius;
+
+    &:focus {
+        outline: none;
+    }
+}
 
 .pull-right {
     float: right;
@@ -35,6 +92,10 @@ $gutter: 10;
     flex-wrap: wrap;
 }
 
+.flex-fill {
+    flex: 1;
+}
+
 .flex-row {
     flex-direction: row;
 }
@@ -45,6 +106,10 @@ $gutter: 10;
 
 .justify-between {
     justify-content: space-between;
+}
+
+.justify-center {
+    justify-content: center;
 }
 
 .justify-start {
@@ -87,12 +152,88 @@ $gutter: 10;
     display: inline-block;
 }
 
-@each $name, $color in $theme {
+.position-a {
+    position: absolute;
+}
+
+.position-r {
+    position: relative;
+}
+
+.position-f {
+    position: fixed;
+}
+
+.fixed-top {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+
+.fixed-right {
+    position: fixed;
+    right: 0;
+    top: 0;
+    bottom: 0;
+}
+
+.fixed-bottom {
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+.fixed-left {
+    position: fixed;
+    left: 0;
+    top: 0;
+    bottom: 0;
+}
+
+@each $name, $shadow in $shadows {
+    .shadow-#{$name} {
+        box-shadow: $shadow;
+    }
+}
+
+@each $name, $color in $themes {
+    .btn-#{$name} {
+        background: $color;
+        color: color-yiq($color);
+    }
     .text-#{$name} {
         color: $color;
     }
+    .link-#{$name} a {
+        color: $color
+    }
     .bg-#{$name} {
         background-color: $color
+    }
+    .border-#{$name} {
+        border: 1px solid $color;
+    }
+    .border-#{$name}-t {
+        border-top: 1px solid $color;
+    }
+    .border-#{$name}-r {
+        border-right: 1px solid $color;
+    }
+    .border-#{$name}-b {
+        border-bottom: 1px solid $color;
+    }
+    .border-#{$name}-l {
+        border-left: 1px solid $color;
+    }
+    .border-#{$name}-y {
+        border-top: 1px solid $color;
+        border-bottom: 1px solid $color;
+    }
+    .border-#{$name}-x {
+        border-left: 1px solid $color;
+        border-right: 1px solid $color;
     }
 }
 
@@ -156,14 +297,14 @@ $gutter: 10;
 }
 
 [class*=":col-"] {
-    margin-left:#{$gutter}px;
-    margin-right:#{$gutter}px;
+    margin-left: #{$gutter}px;
+    margin-right: #{$gutter}px;
 }
 
 @for $i from 1 through 12 {
     .col-#{$i} {
-        flex: 0 1 calc(100% - #{$gutter * 2}px);
-        max-width: calc(100% - #{$gutter * 2}px);
+        flex: 0 1 calc(#{percentage($i/12)} - #{$gutter * 2}px);
+        max-width: calc(#{percentage($i/12)} - #{$gutter * 2}px);
         position: relative;
     }
 }
