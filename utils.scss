@@ -169,6 +169,7 @@ body {
     top: 0;
     left: 0;
     right: 0;
+    z-index: 30;
 }
 
 .fixed-right {
@@ -176,6 +177,7 @@ body {
     right: 0;
     top: 0;
     bottom: 0;
+    z-index: 30;
 }
 
 .fixed-bottom {
@@ -183,6 +185,7 @@ body {
     left: 0;
     right: 0;
     bottom: 0;
+    z-index: 30;
 }
 
 .fixed-left {
@@ -190,6 +193,7 @@ body {
     left: 0;
     top: 0;
     bottom: 0;
+    z-index: 30;
 }
 
 @each $name, $shadow in $shadows {
