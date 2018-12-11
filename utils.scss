@@ -1,0 +1,297 @@
+$theme: (
+        black: black,
+        white: white,
+        primary: blue,
+        secondary: green
+) !default;
+
+$sizes: (
+        xs: 0,
+        sm: 576px,
+        md: 768px,
+        lg: 992px,
+        xlg: 1200px
+);
+
+$gutter: 10;
+
+.pull-right {
+    float: right;
+}
+
+.pull-left {
+    float: left;
+}
+
+.d-flex {
+    display: flex;
+}
+
+.d-inline-flex {
+    display: inline-flex;
+}
+
+.flex-wrap {
+    flex-wrap: wrap;
+}
+
+.flex-row {
+    flex-direction: row;
+}
+
+.flex-column {
+    flex-direction: column;
+}
+
+.justify-between {
+    justify-content: space-between;
+}
+
+.justify-start {
+    justify-content: flex-start;
+}
+
+.justify-end {
+    justify-content: flex-end;
+}
+
+.items-start {
+    align-items: flex-start;
+}
+
+.items-center {
+    align-items: center;
+}
+
+.items-end {
+    align-items: flex-end;
+}
+
+.self-start {
+    align-self: flex-start;
+}
+
+.self-send {
+    align-self: flex-end;
+}
+
+.self-center {
+    align-self: center;
+}
+
+.d-block {
+    display: block;
+}
+
+.d-inline-block {
+    display: inline-block;
+}
+
+@each $name, $color in $theme {
+    .text-#{$name} {
+        color: $color;
+    }
+    .bg-#{$name} {
+        background-color: $color
+    }
+}
+
+.mx-auto {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+@each $prop, $abbrev in (margin: m, padding: p) {
+    @for $i from 0 through 10 {
+        .#{$abbrev}-#{$i} {
+            #{$prop}: #{$i * 0.25}rem;
+        }
+        .#{$abbrev}t-#{$i} {
+            #{$prop}-top: #{$i * 0.25}rem;
+        }
+        .#{$abbrev}r-#{$i} {
+            #{$prop}-right: #{$i * 0.25}rem;
+        }
+        .#{$abbrev}b-#{$i} {
+            #{$prop}-bottom: #{$i * 0.25}rem;
+        }
+        .#{$abbrev}l-#{$i} {
+            #{$prop}-left: #{$i * 0.25}rem;
+        }
+        .#{$abbrev}y-#{$i} {
+            #{$prop}-top: #{$i * 0.25}rem;
+            #{$prop}-bottom: #{$i * 0.25}rem;
+        }
+        .#{$abbrev}x-#{$i} {
+            #{$prop}-left: #{$i * 0.25}rem;
+            #{$prop}-right: #{$i * 0.25}rem;
+        }
+    }
+}
+
+.container {
+    max-width: 1240px;
+    margin: 0 auto;
+    padding: 0 20px;
+    position: relative;
+}
+
+.row {
+    margin: 0 -10px;
+    flex-wrap: wrap;
+    display: flex;
+}
+
+.row-center {
+    align-items: center;
+}
+
+.row-inline {
+    display: inline-flex;
+}
+
+.col {
+    flex: 1;
+    margin: 0 #{$gutter}px;
+}
+
+[class*=":col-"] {
+    margin-left:#{$gutter}px;
+    margin-right:#{$gutter}px;
+}
+
+@for $i from 1 through 12 {
+    .col-#{$i} {
+        flex: 0 1 calc(100% - #{$gutter * 2}px);
+        max-width: calc(100% - #{$gutter * 2}px);
+        position: relative;
+    }
+}
+
+@each $name, $size in $sizes {
+    @if $name == 'xs' {
+
+        @for $i from 1 through 20 {
+            .w-#{$i*5} {
+                width: $i * 5%;
+            }
+        }
+    }
+    @if $name != 'xs' {
+        @media (min-width: $size) {
+            .#{$name}\:pull-right {
+                float: right;
+            }
+
+            .#{$name}\:pull-left {
+                float: left;
+            }
+
+            .#{$name}\:d-flex {
+                display: flex;
+            }
+
+            .#{$name}\:d-inline-flex {
+                display: inline-flex;
+            }
+
+            .#{$name}\:flex-wrap {
+                flex-wrap: wrap;
+            }
+
+            .#{$name}\:flex-row {
+                flex-direction: row;
+            }
+
+            .#{$name}\:flex-column {
+                flex-direction: column;
+            }
+
+            .#{$name}\:justify-between {
+                justify-content: space-between;
+            }
+
+            .#{$name}\:justify-start {
+                justify-content: flex-start;
+            }
+
+            .#{$name}\:justify-end {
+                justify-content: flex-end;
+            }
+
+            .#{$name}\:d-block {
+                display: block;
+            }
+
+            .#{$name}\:d-inline-block {
+                display: inline-block;
+            }
+
+            .#{$name}\:items-start {
+                align-items: flex-start;
+            }
+
+            .#{$name}\:items-center {
+                align-items: center;
+            }
+
+            .#{$name}\:items-end {
+                align-items: flex-end;
+            }
+
+            .#{$name}\:self-start {
+                align-self: flex-start;
+            }
+
+            .#{$name}\:self-send {
+                align-self: flex-end;
+            }
+
+            .#{$name}\:self-center {
+                align-self: center;
+            }
+
+            @for $i from 1 through 12 {
+                .#{$name}\:col-#{$i} {
+                    flex: 0 1 calc(#{percentage($i/12)} - 20px);
+                    max-width: calc(#{percentage($i/12)} - 20px);
+                }
+
+                .#{$name}\:col-offset-#{$i} {
+                    margin-left: calc(#{percentage($i/12)} + 10px);
+                }
+            }
+
+            @each $prop, $abbrev in (margin: m, padding: p) {
+                @for $i from 0 through 5 {
+                    .#{$name}\:#{$abbrev}t-#{$i} {
+                        #{$prop}-top: #{$i * 5}px;
+                    }
+                    .#{$name}\:#{$abbrev}r-#{$i} {
+                        #{$prop}-right: #{$i * 5}px;
+                    }
+                    .#{$name}\:#{$abbrev}b-#{$i} {
+                        #{$prop}-bottom: #{$i * 5}px;
+                    }
+                    .#{$name}\:#{$abbrev}l-#{$i} {
+                        #{$prop}-left: #{$i * 5}px;
+                    }
+                    .#{$name}\:#{$abbrev}y-#{$i} {
+                        #{$prop}-top: #{$i * 5}px;
+                        #{$prop}-bottom: #{$i * 5}px;
+                    }
+                    .#{$name}\:#{$abbrev}x-#{$i} {
+                        #{$prop}-left: #{$i * 5}px;
+                        #{$prop}-right: #{$i * 5}px;
+                    }
+                }
+            }
+
+            @for $i from 1 through 20 {
+                .#{$name}\:w-#{$i*5} {
+                    width: $i * 5%;
+                }
+            }
+        }
+    }
+}
