@@ -1,5 +1,5 @@
 {
-  "name": "utilscss",
+  "name": "@iamzozo/utilscss",
   "version": "0.0.1",
   "scripts": {
     "build": "node-sass utils.scss -o ./utils.css"
