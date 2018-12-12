@@ -3,7 +3,8 @@
   "version": "0.0.1",
   "scripts": {
     "build": "node-sass utils.scss > ./build/utils.min.css --output-style=compressed",
-    "dev": "node-sass utils.scss > ./build/utils.css --output-style=expanded"
+    "dev": "node-sass utils.scss > ./build/utils.css --output-style=expanded",
+    "dev-test": "node-sass ./dev/test.scss -o ./dev -w --output-style=expanded"
   },
   "repository": {
     "type": "git",
