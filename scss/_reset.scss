@@ -1,0 +1,32 @@
+// Basic reset
+
+@if($enable-reset) {
+    * {
+        box-sizing: border-box;
+    }
+
+    html,
+    body {
+        margin: 0;
+        padding: 0;
+    }
+
+    body {
+        font-family: $font-family;
+        font-size: 100%;
+        line-height: $line-height;
+    }
+
+    input,
+    button,
+    select,
+    textarea {
+        font-family: inherit;
+        font-size: inherit;
+        line-height: $line-height;
+
+        &:focus {
+            outline: none;
+        }
+    }
+}

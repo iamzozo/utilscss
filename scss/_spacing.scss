@@ -1,0 +1,70 @@
+.mx-auto {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+$i: 0;
+
+@while $i < 100 {
+    @each $prop, $abbrev in (margin: m, padding: p) {
+        $space: #{$i}px;
+        .#{$abbrev}-#{$i} {
+            #{$prop}: $space;
+        }
+        .#{$abbrev}t-#{$i} {
+            #{$prop}-top: $space;
+        }
+        .#{$abbrev}r-#{$i} {
+            #{$prop}-right: $space;
+        }
+        .#{$abbrev}b-#{$i} {
+            #{$prop}-bottom: $space;
+        }
+        .#{$abbrev}l-#{$i} {
+            #{$prop}-left: $space;
+        }
+        .#{$abbrev}y-#{$i} {
+            #{$prop}-top: $space;
+            #{$prop}-bottom: $space;
+        }
+        .#{$abbrev}x-#{$i} {
+            #{$prop}-left: $space;
+            #{$prop}-right: $space;
+        }
+    }
+    $i: $i + 5;
+}
+
+$j: 0;
+
+@include sizing {
+    @while $j < 100 {
+        $space: #{$j}px;
+        @each $prop, $abbrev in (margin: m, padding: p) {
+            &\:#{$abbrev}-#{$j} {
+                #{$prop}: $space;
+            }
+            &\:#{$abbrev}t-#{$j} {
+                #{$prop}-top: $space;
+            }
+            &\:#{$abbrev}r-#{$j} {
+                #{$prop}-right: $space;
+            }
+            &\:#{$abbrev}b-#{$j} {
+                #{$prop}-bottom: $space;
+            }
+            &\:#{$abbrev}l-#{$j} {
+                #{$prop}-left: $space;
+            }
+            &\:#{$abbrev}y-#{$j} {
+                #{$prop}-top: $space;
+                #{$prop}-bottom: $space;
+            }
+            &\:#{$abbrev}x-#{$j} {
+                #{$prop}-left: $space;
+                #{$prop}-right: $space;
+            }
+        }
+        $j: $j + 5;
+    }
+}

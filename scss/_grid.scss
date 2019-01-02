@@ -1,0 +1,64 @@
+$gutter: 15;
+
+.container {
+    max-width: 1240px;
+    margin: 0 auto;
+    padding: 0 #{$gutter}px;
+    position: relative;
+}
+
+.row {
+    margin: 0 -#{$gutter}px;
+    flex-wrap: wrap;
+    display: flex;
+}
+
+.row-center {
+    align-items: center;
+}
+
+.row-inline {
+    display: inline-flex;
+}
+
+%column {
+    margin-left: #{$gutter}px;
+    margin-right: #{$gutter}px;
+    position: relative;
+    width: 100%;
+}
+
+.col {
+    flex: 1;
+    margin: 0 #{$gutter}px;
+}
+
+@for $i from 1 through 12 {
+    .col-#{$i} {
+        @extend %column;
+    }
+
+    .col-#{$i} {
+        flex: 0 1 calc(#{percentage($i/12)} - #{$gutter * 2}px);
+        max-width: calc(#{percentage($i/12)} - #{$gutter * 2}px);
+    }
+}
+
+// Separate iteration to use @extend directive outside
+// media queries
+@each $name, $size in $sizes {
+    @for $i from 1 through 12 {
+        .#{$name}\:col-#{$i} {
+            @extend %column;
+        }
+    }
+}
+
+@include sizing {
+    @for $i from 1 through 12 {
+        &\:col-#{$i} {
+            flex: 0 1 calc(#{percentage($i/12)} - #{$gutter * 2}px);
+            max-width: calc(#{percentage($i/12)} - #{$gutter * 2}px);
+        }
+    }
+}

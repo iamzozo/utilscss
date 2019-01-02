@@ -1,0 +1,28 @@
+@mixin padding($x, $y) {
+    padding: #{u-spacing($x)} #{u-spacing($y)};
+}
+
+@mixin padding-y($size) {
+    padding-top: #{u-spacing($size)};
+    padding-bottom: #{u-spacing($size)};
+}
+
+@mixin padding-x($size) {
+    padding-left: #{u-spacing($size)};
+    padding-right: #{u-spacing($size)};
+}
+
+@mixin button() {
+    text-decoration: none;
+    cursor: pointer;
+}
+
+@mixin sizing() {
+    @each $name, $size in $sizes {
+        @media (min-width: $size) {
+            .#{$name} {
+                @content;
+            }
+        }
+    }
+}
