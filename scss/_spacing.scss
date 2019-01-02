@@ -5,7 +5,7 @@
 
 $i: 0;
 
-@while $i < 100 {
+@while $i <= 100 {
     @each $prop, $abbrev in (margin: m, padding: p) {
         $space: #{$i}px;
         .#{$abbrev}-#{$i} {
@@ -38,7 +38,7 @@ $i: 0;
 $j: 0;
 
 @include sizing {
-    @while $j < 100 {
+    @while $j <= 100 {
         $space: #{$j}px;
         @each $prop, $abbrev in (margin: m, padding: p) {
             &\:#{$abbrev}-#{$j} {

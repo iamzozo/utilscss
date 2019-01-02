@@ -1800,6 +1800,66 @@ textarea:focus {
   padding-right: 95px;
 }
 
+.m-100 {
+  margin: 100px;
+}
+
+.mt-100 {
+  margin-top: 100px;
+}
+
+.mr-100 {
+  margin-right: 100px;
+}
+
+.mb-100 {
+  margin-bottom: 100px;
+}
+
+.ml-100 {
+  margin-left: 100px;
+}
+
+.my-100 {
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
+
+.mx-100 {
+  margin-left: 100px;
+  margin-right: 100px;
+}
+
+.p-100 {
+  padding: 100px;
+}
+
+.pt-100 {
+  padding-top: 100px;
+}
+
+.pr-100 {
+  padding-right: 100px;
+}
+
+.pb-100 {
+  padding-bottom: 100px;
+}
+
+.pl-100 {
+  padding-left: 100px;
+}
+
+.py-100 {
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
+.px-100 {
+  padding-left: 100px;
+  padding-right: 100px;
+}
+
 @media (min-width: 576px) {
   .sm\:m-0 {
     margin: 0px;
@@ -2720,6 +2780,52 @@ textarea:focus {
   .sm\:px-95 {
     padding-left: 95px;
     padding-right: 95px;
+  }
+  .sm\:m-100 {
+    margin: 100px;
+  }
+  .sm\:mt-100 {
+    margin-top: 100px;
+  }
+  .sm\:mr-100 {
+    margin-right: 100px;
+  }
+  .sm\:mb-100 {
+    margin-bottom: 100px;
+  }
+  .sm\:ml-100 {
+    margin-left: 100px;
+  }
+  .sm\:my-100 {
+    margin-top: 100px;
+    margin-bottom: 100px;
+  }
+  .sm\:mx-100 {
+    margin-left: 100px;
+    margin-right: 100px;
+  }
+  .sm\:p-100 {
+    padding: 100px;
+  }
+  .sm\:pt-100 {
+    padding-top: 100px;
+  }
+  .sm\:pr-100 {
+    padding-right: 100px;
+  }
+  .sm\:pb-100 {
+    padding-bottom: 100px;
+  }
+  .sm\:pl-100 {
+    padding-left: 100px;
+  }
+  .sm\:py-100 {
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
+  .sm\:px-100 {
+    padding-left: 100px;
+    padding-right: 100px;
   }
 }
 
@@ -3644,6 +3750,52 @@ textarea:focus {
     padding-left: 95px;
     padding-right: 95px;
   }
+  .md\:m-100 {
+    margin: 100px;
+  }
+  .md\:mt-100 {
+    margin-top: 100px;
+  }
+  .md\:mr-100 {
+    margin-right: 100px;
+  }
+  .md\:mb-100 {
+    margin-bottom: 100px;
+  }
+  .md\:ml-100 {
+    margin-left: 100px;
+  }
+  .md\:my-100 {
+    margin-top: 100px;
+    margin-bottom: 100px;
+  }
+  .md\:mx-100 {
+    margin-left: 100px;
+    margin-right: 100px;
+  }
+  .md\:p-100 {
+    padding: 100px;
+  }
+  .md\:pt-100 {
+    padding-top: 100px;
+  }
+  .md\:pr-100 {
+    padding-right: 100px;
+  }
+  .md\:pb-100 {
+    padding-bottom: 100px;
+  }
+  .md\:pl-100 {
+    padding-left: 100px;
+  }
+  .md\:py-100 {
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
+  .md\:px-100 {
+    padding-left: 100px;
+    padding-right: 100px;
+  }
 }
 
 @media (min-width: 992px) {
@@ -4567,6 +4719,52 @@ textarea:focus {
     padding-left: 95px;
     padding-right: 95px;
   }
+  .lg\:m-100 {
+    margin: 100px;
+  }
+  .lg\:mt-100 {
+    margin-top: 100px;
+  }
+  .lg\:mr-100 {
+    margin-right: 100px;
+  }
+  .lg\:mb-100 {
+    margin-bottom: 100px;
+  }
+  .lg\:ml-100 {
+    margin-left: 100px;
+  }
+  .lg\:my-100 {
+    margin-top: 100px;
+    margin-bottom: 100px;
+  }
+  .lg\:mx-100 {
+    margin-left: 100px;
+    margin-right: 100px;
+  }
+  .lg\:p-100 {
+    padding: 100px;
+  }
+  .lg\:pt-100 {
+    padding-top: 100px;
+  }
+  .lg\:pr-100 {
+    padding-right: 100px;
+  }
+  .lg\:pb-100 {
+    padding-bottom: 100px;
+  }
+  .lg\:pl-100 {
+    padding-left: 100px;
+  }
+  .lg\:py-100 {
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
+  .lg\:px-100 {
+    padding-left: 100px;
+    padding-right: 100px;
+  }
 }
 
 @media (min-width: 1200px) {
@@ -5489,6 +5687,52 @@ textarea:focus {
   .xlg\:px-95 {
     padding-left: 95px;
     padding-right: 95px;
+  }
+  .xlg\:m-100 {
+    margin: 100px;
+  }
+  .xlg\:mt-100 {
+    margin-top: 100px;
+  }
+  .xlg\:mr-100 {
+    margin-right: 100px;
+  }
+  .xlg\:mb-100 {
+    margin-bottom: 100px;
+  }
+  .xlg\:ml-100 {
+    margin-left: 100px;
+  }
+  .xlg\:my-100 {
+    margin-top: 100px;
+    margin-bottom: 100px;
+  }
+  .xlg\:mx-100 {
+    margin-left: 100px;
+    margin-right: 100px;
+  }
+  .xlg\:p-100 {
+    padding: 100px;
+  }
+  .xlg\:pt-100 {
+    padding-top: 100px;
+  }
+  .xlg\:pr-100 {
+    padding-right: 100px;
+  }
+  .xlg\:pb-100 {
+    padding-bottom: 100px;
+  }
+  .xlg\:pl-100 {
+    padding-left: 100px;
+  }
+  .xlg\:py-100 {
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
+  .xlg\:px-100 {
+    padding-left: 100px;
+    padding-right: 100px;
   }
 }
 
