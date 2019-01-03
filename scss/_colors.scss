@@ -1,4 +1,5 @@
-$colors: (
+$u-colors: (
+        transparent: transparent,
         black: black,
         white: white,
         blue: #10a7ff,
@@ -8,7 +9,7 @@ $colors: (
         gray-dark: #ddd,
 ) !default;
 
-@each $name, $color in $colors {
+@each $name, $color in $u-colors {
     .text-#{$name} {
         color: $color;
     }

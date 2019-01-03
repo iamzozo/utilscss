@@ -5,14 +5,14 @@ $w: 10;
     $prefix: getCurrentPrefix();
 
     @while $h <= 200 {
-        #{$prefix}height-#{$h} {
+        #{$prefix}h-#{$h} {
             height: #{$h}px;
         }
         $h: $h + 10;
     }
 
     @while $w <= 100 {
-        #{$prefix}width-#{$w} {
+        #{$prefix}w-#{$w} {
             width: unquote('#{$w}%');
         }
         $w: $w + 5;
