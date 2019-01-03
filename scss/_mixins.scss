@@ -1,26 +1,14 @@
-$current: null;
-
-@function getCurrentPrefix() {
-    $selector: '.';
-    @if ($current != 'base') {
-        $selector: unquote('.#{$current}\\:');
-    }
-    @return $selector;
-}
-
-@function getCurrentPrefixName() {
-    @return $current;
-}
+$u-currentSize: null;
 
 @mixin sizing($withbase: true) {
-    $iteratedSizes : $sizes;
+    $iteratedSizes : $u-sizes;
 
     @if($withbase == false) {
-        $iteratedSizes: map_remove($sizes, 'base');
+        $iteratedSizes: map_remove($u-sizes, 'base');
     }
 
     @each $name, $size in $iteratedSizes {
-        $current: $name !global;
+        $u-currentSize: $name !global;
 
         @if ($name == 'base') {
             @content;

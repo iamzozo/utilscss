@@ -1,3 +1,17 @@
+// $u-currentSize is global
+
+@function getCurrentPrefix() {
+    $selector: '.';
+    @if ($u-currentSize != 'base') {
+        $selector: unquote('.#{$u-currentSize}\\:');
+    }
+    @return $selector;
+}
+
+@function getCurrentPrefixName() {
+    @return $u-currentSize;
+}
+
 @function color-yiq($color, $dark: #000, $light: #fff) {
     $r: red($color);
     $g: green($color);
@@ -5,7 +19,7 @@
 
     $yiq: (($r * 299) + ($g * 587) + ($b * 114)) / 1000;
 
-    @if ($yiq >= $yiq-contrasted-threshold) {
+    @if ($yiq >= $u-yiq-contrasted-threshold) {
         @return $dark;
     } @else {
         @return $light;

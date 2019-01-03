@@ -1,4 +1,4 @@
-$sizes: (
+$u-sizes: (
         base: null,
         sm: 576px,
         md: 768px,
@@ -6,10 +6,10 @@ $sizes: (
         xlg: 1200px
 ) !default;
 
-$yiq-contrasted-threshold: 150 !default;
+$u-yiq-contrasted-threshold: 150 !default;
 
-$enable-reset: true !default;
+$u-enable-reset: true !default;
 
-$line-height: 1.5rem !default;
+$u-line-height: 1.5rem !default;
 
-$font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Helvetica, Arial, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol !default;
+$u-font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Helvetica, Arial, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol !default;

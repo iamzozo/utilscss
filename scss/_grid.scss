@@ -40,7 +40,7 @@ $gutter: 15;
 
 // Separate iteration to use @extend directive outside
 // media queries
-@each $name, $size in $sizes {
+@each $name, $size in $u-sizes {
     @if($name != 'base') {
         @for $i from 1 through 12 {
             .#{$name}\:col-#{$i} {
