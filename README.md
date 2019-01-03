@@ -51,7 +51,16 @@ Media queries defined with `min-width`. For the `sm` prefix the following will b
 ```
 - row
 - col-[1-12]
+- sm:col-[1-12]
+- ...
 ```
+
+**Example:**  
+`<div class="col-6 md:col-4">`
+
+Explanation: 
+ - Using 6 column width on all screen sizes
+ - When screen sizes is above `"md"` using 4 column width
 
 ### Margin and padding
 Build up with the following syntax: `{property}{side}-{size}`.
@@ -68,8 +77,9 @@ Sides is one of:
 - `x`: as horizontal
 - `y`: as vertical
 
-Sizes with stepping `5`:
+Incrementing by `5px` and using pixel units:
 - `0-100 (0, 5, 10, 15, ... 100)`
+- `pt-15` equals: `padding-top: 15px`
 
 **Example:**  
 `<div class="mb-20 px-15 py-10></div>`

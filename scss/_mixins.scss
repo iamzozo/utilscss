@@ -1,26 +1,31 @@
-@mixin padding($x, $y) {
-    padding: #{u-spacing($x)} #{u-spacing($y)};
+$current: null;
+
+@function getCurrentPrefix() {
+    $selector: '.';
+    @if ($current != 'base') {
+        $selector: unquote('.#{$current}\\:');
+    }
+    @return $selector;
 }
 
-@mixin padding-y($size) {
-    padding-top: #{u-spacing($size)};
-    padding-bottom: #{u-spacing($size)};
+@function getCurrentPrefixName() {
+    @return $current;
 }
 
-@mixin padding-x($size) {
-    padding-left: #{u-spacing($size)};
-    padding-right: #{u-spacing($size)};
-}
+@mixin sizing($withbase: true) {
+    $iteratedSizes : $sizes;
 
-@mixin button() {
-    text-decoration: none;
-    cursor: pointer;
-}
+    @if($withbase == false) {
+        $iteratedSizes: map_remove($sizes, 'base');
+    }
 
-@mixin sizing() {
-    @each $name, $size in $sizes {
-        @media (min-width: $size) {
-            .#{$name} {
+    @each $name, $size in $iteratedSizes {
+        $current: $name !global;
+
+        @if ($name == 'base') {
+            @content;
+        } @else {
+            @media (min-width: $size) {
                 @content;
             }
         }

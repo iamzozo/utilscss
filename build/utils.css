@@ -383,7 +383,7 @@ textarea:focus {
   align-self: flex-start;
 }
 
-.self-send {
+.self-end {
   align-self: flex-end;
 }
 
@@ -434,7 +434,7 @@ textarea:focus {
   .sm\:self-start {
     align-self: flex-start;
   }
-  .sm\:self-send {
+  .sm\:self-end {
     align-self: flex-end;
   }
   .sm\:self-center {
@@ -485,7 +485,7 @@ textarea:focus {
   .md\:self-start {
     align-self: flex-start;
   }
-  .md\:self-send {
+  .md\:self-end {
     align-self: flex-end;
   }
   .md\:self-center {
@@ -536,7 +536,7 @@ textarea:focus {
   .lg\:self-start {
     align-self: flex-start;
   }
-  .lg\:self-send {
+  .lg\:self-end {
     align-self: flex-end;
   }
   .lg\:self-center {
@@ -587,7 +587,7 @@ textarea:focus {
   .xlg\:self-start {
     align-self: flex-start;
   }
-  .xlg\:self-send {
+  .xlg\:self-end {
     align-self: flex-end;
   }
   .xlg\:self-center {
@@ -1860,6 +1860,66 @@ textarea:focus {
   padding-right: 100px;
 }
 
+.m-auto {
+  margin: auto;
+}
+
+.mt-auto {
+  margin-top: auto;
+}
+
+.mr-auto {
+  margin-right: auto;
+}
+
+.mb-auto {
+  margin-bottom: auto;
+}
+
+.ml-auto {
+  margin-left: auto;
+}
+
+.my-auto {
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+.mx-auto {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.p-auto {
+  padding: auto;
+}
+
+.pt-auto {
+  padding-top: auto;
+}
+
+.pr-auto {
+  padding-right: auto;
+}
+
+.pb-auto {
+  padding-bottom: auto;
+}
+
+.pl-auto {
+  padding-left: auto;
+}
+
+.py-auto {
+  padding-top: auto;
+  padding-bottom: auto;
+}
+
+.px-auto {
+  padding-left: auto;
+  padding-right: auto;
+}
+
 @media (min-width: 576px) {
   .sm\:m-0 {
     margin: 0px;
@@ -2826,6 +2886,52 @@ textarea:focus {
   .sm\:px-100 {
     padding-left: 100px;
     padding-right: 100px;
+  }
+  .sm\:m-auto {
+    margin: auto;
+  }
+  .sm\:mt-auto {
+    margin-top: auto;
+  }
+  .sm\:mr-auto {
+    margin-right: auto;
+  }
+  .sm\:mb-auto {
+    margin-bottom: auto;
+  }
+  .sm\:ml-auto {
+    margin-left: auto;
+  }
+  .sm\:my-auto {
+    margin-top: auto;
+    margin-bottom: auto;
+  }
+  .sm\:mx-auto {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .sm\:p-auto {
+    padding: auto;
+  }
+  .sm\:pt-auto {
+    padding-top: auto;
+  }
+  .sm\:pr-auto {
+    padding-right: auto;
+  }
+  .sm\:pb-auto {
+    padding-bottom: auto;
+  }
+  .sm\:pl-auto {
+    padding-left: auto;
+  }
+  .sm\:py-auto {
+    padding-top: auto;
+    padding-bottom: auto;
+  }
+  .sm\:px-auto {
+    padding-left: auto;
+    padding-right: auto;
   }
 }
 
@@ -3796,6 +3902,52 @@ textarea:focus {
     padding-left: 100px;
     padding-right: 100px;
   }
+  .md\:m-auto {
+    margin: auto;
+  }
+  .md\:mt-auto {
+    margin-top: auto;
+  }
+  .md\:mr-auto {
+    margin-right: auto;
+  }
+  .md\:mb-auto {
+    margin-bottom: auto;
+  }
+  .md\:ml-auto {
+    margin-left: auto;
+  }
+  .md\:my-auto {
+    margin-top: auto;
+    margin-bottom: auto;
+  }
+  .md\:mx-auto {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .md\:p-auto {
+    padding: auto;
+  }
+  .md\:pt-auto {
+    padding-top: auto;
+  }
+  .md\:pr-auto {
+    padding-right: auto;
+  }
+  .md\:pb-auto {
+    padding-bottom: auto;
+  }
+  .md\:pl-auto {
+    padding-left: auto;
+  }
+  .md\:py-auto {
+    padding-top: auto;
+    padding-bottom: auto;
+  }
+  .md\:px-auto {
+    padding-left: auto;
+    padding-right: auto;
+  }
 }
 
 @media (min-width: 992px) {
@@ -4764,6 +4916,52 @@ textarea:focus {
   .lg\:px-100 {
     padding-left: 100px;
     padding-right: 100px;
+  }
+  .lg\:m-auto {
+    margin: auto;
+  }
+  .lg\:mt-auto {
+    margin-top: auto;
+  }
+  .lg\:mr-auto {
+    margin-right: auto;
+  }
+  .lg\:mb-auto {
+    margin-bottom: auto;
+  }
+  .lg\:ml-auto {
+    margin-left: auto;
+  }
+  .lg\:my-auto {
+    margin-top: auto;
+    margin-bottom: auto;
+  }
+  .lg\:mx-auto {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .lg\:p-auto {
+    padding: auto;
+  }
+  .lg\:pt-auto {
+    padding-top: auto;
+  }
+  .lg\:pr-auto {
+    padding-right: auto;
+  }
+  .lg\:pb-auto {
+    padding-bottom: auto;
+  }
+  .lg\:pl-auto {
+    padding-left: auto;
+  }
+  .lg\:py-auto {
+    padding-top: auto;
+    padding-bottom: auto;
+  }
+  .lg\:px-auto {
+    padding-left: auto;
+    padding-right: auto;
   }
 }
 
@@ -5734,6 +5932,52 @@ textarea:focus {
     padding-left: 100px;
     padding-right: 100px;
   }
+  .xlg\:m-auto {
+    margin: auto;
+  }
+  .xlg\:mt-auto {
+    margin-top: auto;
+  }
+  .xlg\:mr-auto {
+    margin-right: auto;
+  }
+  .xlg\:mb-auto {
+    margin-bottom: auto;
+  }
+  .xlg\:ml-auto {
+    margin-left: auto;
+  }
+  .xlg\:my-auto {
+    margin-top: auto;
+    margin-bottom: auto;
+  }
+  .xlg\:mx-auto {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .xlg\:p-auto {
+    padding: auto;
+  }
+  .xlg\:pt-auto {
+    padding-top: auto;
+  }
+  .xlg\:pr-auto {
+    padding-right: auto;
+  }
+  .xlg\:pb-auto {
+    padding-bottom: auto;
+  }
+  .xlg\:pl-auto {
+    padding-left: auto;
+  }
+  .xlg\:py-auto {
+    padding-top: auto;
+    padding-bottom: auto;
+  }
+  .xlg\:px-auto {
+    padding-left: auto;
+    padding-right: auto;
+  }
 }
 
 .text-left {
@@ -5952,10 +6196,6 @@ textarea:focus {
   }
 }
 
-.height-0 {
-  height: 0px;
-}
-
 .height-10 {
   height: 10px;
 }
@@ -6032,10 +6272,87 @@ textarea:focus {
   height: 190px;
 }
 
+.height-200 {
+  height: 200px;
+}
+
+.width-10 {
+  width: 10%;
+}
+
+.width-15 {
+  width: 15%;
+}
+
+.width-20 {
+  width: 20%;
+}
+
+.width-25 {
+  width: 25%;
+}
+
+.width-30 {
+  width: 30%;
+}
+
+.width-35 {
+  width: 35%;
+}
+
+.width-40 {
+  width: 40%;
+}
+
+.width-45 {
+  width: 45%;
+}
+
+.width-50 {
+  width: 50%;
+}
+
+.width-55 {
+  width: 55%;
+}
+
+.width-60 {
+  width: 60%;
+}
+
+.width-65 {
+  width: 65%;
+}
+
+.width-70 {
+  width: 70%;
+}
+
+.width-75 {
+  width: 75%;
+}
+
+.width-80 {
+  width: 80%;
+}
+
+.width-85 {
+  width: 85%;
+}
+
+.width-90 {
+  width: 90%;
+}
+
+.width-95 {
+  width: 95%;
+}
+
+.width-100 {
+  width: 100%;
+}
+
 @media (min-width: 576px) {
-  .sm\:height-0 {
-    height: 0px;
-  }
   .sm\:height-10 {
     height: 10px;
   }
@@ -6093,12 +6410,69 @@ textarea:focus {
   .sm\:height-190 {
     height: 190px;
   }
+  .sm\:height-200 {
+    height: 200px;
+  }
+  .sm\:width-10 {
+    width: 10%;
+  }
+  .sm\:width-15 {
+    width: 15%;
+  }
+  .sm\:width-20 {
+    width: 20%;
+  }
+  .sm\:width-25 {
+    width: 25%;
+  }
+  .sm\:width-30 {
+    width: 30%;
+  }
+  .sm\:width-35 {
+    width: 35%;
+  }
+  .sm\:width-40 {
+    width: 40%;
+  }
+  .sm\:width-45 {
+    width: 45%;
+  }
+  .sm\:width-50 {
+    width: 50%;
+  }
+  .sm\:width-55 {
+    width: 55%;
+  }
+  .sm\:width-60 {
+    width: 60%;
+  }
+  .sm\:width-65 {
+    width: 65%;
+  }
+  .sm\:width-70 {
+    width: 70%;
+  }
+  .sm\:width-75 {
+    width: 75%;
+  }
+  .sm\:width-80 {
+    width: 80%;
+  }
+  .sm\:width-85 {
+    width: 85%;
+  }
+  .sm\:width-90 {
+    width: 90%;
+  }
+  .sm\:width-95 {
+    width: 95%;
+  }
+  .sm\:width-100 {
+    width: 100%;
+  }
 }
 
 @media (min-width: 768px) {
-  .md\:height-0 {
-    height: 0px;
-  }
   .md\:height-10 {
     height: 10px;
   }
@@ -6156,12 +6530,69 @@ textarea:focus {
   .md\:height-190 {
     height: 190px;
   }
+  .md\:height-200 {
+    height: 200px;
+  }
+  .md\:width-10 {
+    width: 10%;
+  }
+  .md\:width-15 {
+    width: 15%;
+  }
+  .md\:width-20 {
+    width: 20%;
+  }
+  .md\:width-25 {
+    width: 25%;
+  }
+  .md\:width-30 {
+    width: 30%;
+  }
+  .md\:width-35 {
+    width: 35%;
+  }
+  .md\:width-40 {
+    width: 40%;
+  }
+  .md\:width-45 {
+    width: 45%;
+  }
+  .md\:width-50 {
+    width: 50%;
+  }
+  .md\:width-55 {
+    width: 55%;
+  }
+  .md\:width-60 {
+    width: 60%;
+  }
+  .md\:width-65 {
+    width: 65%;
+  }
+  .md\:width-70 {
+    width: 70%;
+  }
+  .md\:width-75 {
+    width: 75%;
+  }
+  .md\:width-80 {
+    width: 80%;
+  }
+  .md\:width-85 {
+    width: 85%;
+  }
+  .md\:width-90 {
+    width: 90%;
+  }
+  .md\:width-95 {
+    width: 95%;
+  }
+  .md\:width-100 {
+    width: 100%;
+  }
 }
 
 @media (min-width: 992px) {
-  .lg\:height-0 {
-    height: 0px;
-  }
   .lg\:height-10 {
     height: 10px;
   }
@@ -6219,12 +6650,69 @@ textarea:focus {
   .lg\:height-190 {
     height: 190px;
   }
+  .lg\:height-200 {
+    height: 200px;
+  }
+  .lg\:width-10 {
+    width: 10%;
+  }
+  .lg\:width-15 {
+    width: 15%;
+  }
+  .lg\:width-20 {
+    width: 20%;
+  }
+  .lg\:width-25 {
+    width: 25%;
+  }
+  .lg\:width-30 {
+    width: 30%;
+  }
+  .lg\:width-35 {
+    width: 35%;
+  }
+  .lg\:width-40 {
+    width: 40%;
+  }
+  .lg\:width-45 {
+    width: 45%;
+  }
+  .lg\:width-50 {
+    width: 50%;
+  }
+  .lg\:width-55 {
+    width: 55%;
+  }
+  .lg\:width-60 {
+    width: 60%;
+  }
+  .lg\:width-65 {
+    width: 65%;
+  }
+  .lg\:width-70 {
+    width: 70%;
+  }
+  .lg\:width-75 {
+    width: 75%;
+  }
+  .lg\:width-80 {
+    width: 80%;
+  }
+  .lg\:width-85 {
+    width: 85%;
+  }
+  .lg\:width-90 {
+    width: 90%;
+  }
+  .lg\:width-95 {
+    width: 95%;
+  }
+  .lg\:width-100 {
+    width: 100%;
+  }
 }
 
 @media (min-width: 1200px) {
-  .xlg\:height-0 {
-    height: 0px;
-  }
   .xlg\:height-10 {
     height: 10px;
   }
@@ -6281,6 +6769,66 @@ textarea:focus {
   }
   .xlg\:height-190 {
     height: 190px;
+  }
+  .xlg\:height-200 {
+    height: 200px;
+  }
+  .xlg\:width-10 {
+    width: 10%;
+  }
+  .xlg\:width-15 {
+    width: 15%;
+  }
+  .xlg\:width-20 {
+    width: 20%;
+  }
+  .xlg\:width-25 {
+    width: 25%;
+  }
+  .xlg\:width-30 {
+    width: 30%;
+  }
+  .xlg\:width-35 {
+    width: 35%;
+  }
+  .xlg\:width-40 {
+    width: 40%;
+  }
+  .xlg\:width-45 {
+    width: 45%;
+  }
+  .xlg\:width-50 {
+    width: 50%;
+  }
+  .xlg\:width-55 {
+    width: 55%;
+  }
+  .xlg\:width-60 {
+    width: 60%;
+  }
+  .xlg\:width-65 {
+    width: 65%;
+  }
+  .xlg\:width-70 {
+    width: 70%;
+  }
+  .xlg\:width-75 {
+    width: 75%;
+  }
+  .xlg\:width-80 {
+    width: 80%;
+  }
+  .xlg\:width-85 {
+    width: 85%;
+  }
+  .xlg\:width-90 {
+    width: 90%;
+  }
+  .xlg\:width-95 {
+    width: 95%;
+  }
+  .xlg\:width-100 {
+    width: 100%;
   }
 }
 

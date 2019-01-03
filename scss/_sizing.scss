@@ -1,18 +1,20 @@
-$i: 0;
+$h: 10;
+$w: 10;
 
-@while $i < 200 {
-    .height-#{$i} {
-        height: #{$i}px;
-    }
-    $i: $i + 10;
-}
-
-$j: 0;
 @include sizing {
-    @while $j < 200 {
-        &\:height-#{$j} {
-            height: #{$j}px;
+    $prefix: getCurrentPrefix();
+
+    @while $h <= 200 {
+        #{$prefix}height-#{$h} {
+            height: #{$h}px;
         }
-        $j: $j + 10;
+        $h: $h + 10;
+    }
+
+    @while $w <= 100 {
+        #{$prefix}width-#{$w} {
+            width: unquote('#{$w}%');
+        }
+        $w: $w + 5;
     }
 }

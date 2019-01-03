@@ -1,49 +1,27 @@
-.text-left {
-    text-align: left;
-}
-
-.text-right {
-    text-align: right;
-}
-
-.text-center {
-    text-align: center;
-}
-
-.text-b {
-    font-weight: bold;
-}
-
-.text-sm {
-    font-size: 0.875rem;
-}
-
-.text-lg {
-    font-size: 1.125rem;
-}
-
 @include sizing {
-    &\:text-left {
+    $prefix: getCurrentPrefix();
+
+    #{$prefix}text-left {
         text-align: left;
     }
 
-    &\:text-right {
+    #{$prefix}text-right {
         text-align: right;
     }
 
-    &\:text-center {
+    #{$prefix}text-center {
         text-align: center;
     }
 
-    &\:text-b {
+    #{$prefix}text-b {
         font-weight: bold;
     }
 
-    &\:text-sm {
+    #{$prefix}text-sm {
         font-size: 0.875rem;
     }
 
-    &\:text-lg {
+    #{$prefix}text-lg {
         font-size: 1.125rem;
     }
 }

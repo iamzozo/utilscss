@@ -5,66 +5,64 @@
 
 $i: 0;
 
-@while $i <= 100 {
-    @each $prop, $abbrev in (margin: m, padding: p) {
-        $space: #{$i}px;
-        .#{$abbrev}-#{$i} {
-            #{$prop}: $space;
-        }
-        .#{$abbrev}t-#{$i} {
-            #{$prop}-top: $space;
-        }
-        .#{$abbrev}r-#{$i} {
-            #{$prop}-right: $space;
-        }
-        .#{$abbrev}b-#{$i} {
-            #{$prop}-bottom: $space;
-        }
-        .#{$abbrev}l-#{$i} {
-            #{$prop}-left: $space;
-        }
-        .#{$abbrev}y-#{$i} {
-            #{$prop}-top: $space;
-            #{$prop}-bottom: $space;
-        }
-        .#{$abbrev}x-#{$i} {
-            #{$prop}-left: $space;
-            #{$prop}-right: $space;
-        }
-    }
-    $i: $i + 5;
-}
-
-$j: 0;
-
 @include sizing {
-    @while $j <= 100 {
-        $space: #{$j}px;
+    $prefix: getCurrentPrefix();
+
+    @while $i <= 100 {
+        $space: #{$i}px;
+
         @each $prop, $abbrev in (margin: m, padding: p) {
-            &\:#{$abbrev}-#{$j} {
+            #{$prefix}#{$abbrev}-#{$i} {
                 #{$prop}: $space;
             }
-            &\:#{$abbrev}t-#{$j} {
+            #{$prefix}#{$abbrev}t-#{$i} {
                 #{$prop}-top: $space;
             }
-            &\:#{$abbrev}r-#{$j} {
+            #{$prefix}#{$abbrev}r-#{$i} {
                 #{$prop}-right: $space;
             }
-            &\:#{$abbrev}b-#{$j} {
+            #{$prefix}#{$abbrev}b-#{$i} {
                 #{$prop}-bottom: $space;
             }
-            &\:#{$abbrev}l-#{$j} {
+            #{$prefix}#{$abbrev}l-#{$i} {
                 #{$prop}-left: $space;
             }
-            &\:#{$abbrev}y-#{$j} {
+            #{$prefix}#{$abbrev}y-#{$i} {
                 #{$prop}-top: $space;
                 #{$prop}-bottom: $space;
             }
-            &\:#{$abbrev}x-#{$j} {
+            #{$prefix}#{$abbrev}x-#{$i} {
                 #{$prop}-left: $space;
                 #{$prop}-right: $space;
             }
         }
-        $j: $j + 5;
+
+        $i: $i + 5;
+    }
+
+    @each $prop, $abbrev in (margin: m, padding: p) {
+        #{$prefix}#{$abbrev}-auto {
+            #{$prop}: auto;
+        }
+        #{$prefix}#{$abbrev}t-auto {
+            #{$prop}-top: auto;
+        }
+        #{$prefix}#{$abbrev}r-auto {
+            #{$prop}-right: auto;
+        }
+        #{$prefix}#{$abbrev}b-auto {
+            #{$prop}-bottom: auto;
+        }
+        #{$prefix}#{$abbrev}l-auto {
+            #{$prop}-left: auto;
+        }
+        #{$prefix}#{$abbrev}y-auto {
+            #{$prop}-top: auto;
+            #{$prop}-bottom: auto;
+        }
+        #{$prefix}#{$abbrev}x-auto {
+            #{$prop}-left: auto;
+            #{$prop}-right: auto;
+        }
     }
 }

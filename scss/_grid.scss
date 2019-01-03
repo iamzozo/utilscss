@@ -1,5 +1,13 @@
 $gutter: 15;
 
+// Columns placeholder to shorten css
+%column {
+    margin-left: #{$gutter}px;
+    margin-right: #{$gutter}px;
+    position: relative;
+    width: 100%;
+}
+
 .container {
     max-width: 1240px;
     margin: 0 auto;
@@ -13,21 +21,7 @@ $gutter: 15;
     display: flex;
 }
 
-.row-center {
-    align-items: center;
-}
-
-.row-inline {
-    display: inline-flex;
-}
-
-%column {
-    margin-left: #{$gutter}px;
-    margin-right: #{$gutter}px;
-    position: relative;
-    width: 100%;
-}
-
+// Simple col definition
 .col {
     flex: 1;
     margin: 0 #{$gutter}px;
@@ -47,16 +41,19 @@ $gutter: 15;
 // Separate iteration to use @extend directive outside
 // media queries
 @each $name, $size in $sizes {
-    @for $i from 1 through 12 {
-        .#{$name}\:col-#{$i} {
-            @extend %column;
+    @if($name != 'base') {
+        @for $i from 1 through 12 {
+            .#{$name}\:col-#{$i} {
+                @extend %column;
+            }
         }
     }
 }
 
-@include sizing {
+@include sizing($withbase: false) {
+    $prefix: getCurrentPrefix();
     @for $i from 1 through 12 {
-        &\:col-#{$i} {
+        #{$prefix}col-#{$i} {
             flex: 0 1 calc(#{percentage($i/12)} - #{$gutter * 2}px);
             max-width: calc(#{percentage($i/12)} - #{$gutter * 2}px);
         }

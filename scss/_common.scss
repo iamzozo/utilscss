@@ -1,51 +1,28 @@
 // Flex in separate file
-
-.d-inline {
-    display: inline;
-}
-
-.d-inline-block {
-    display: inline-block;
-}
-
-.d-block {
-    display: block;
-}
-
-.d-none {
-    display: none;
-}
-
-.pull-right {
-    float: right;
-}
-
-.pull-left {
-    float: left;
-}
-
 @include sizing {
-    &\:d-inline {
+    $prefix: getCurrentPrefix();
+
+    #{$prefix}d-inline {
         display: inline;
     }
 
-    &\:d-inline-block {
+    #{$prefix}d-inline-block {
         display: inline-block;
     }
 
-    &\:d-block {
+    #{$prefix}d-block {
         display: block;
     }
 
-    &\:d-none {
+    #{$prefix}d-none {
         display: none;
     }
 
-    &\:pull-right {
+    #{$prefix}pull-right {
         float: right;
     }
 
-    &\:pull-left {
+    #{$prefix}pull-left {
         float: left;
     }
 }

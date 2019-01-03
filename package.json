@@ -1,6 +1,6 @@
 {
   "name": "@iamzozo/utilscss",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "scripts": {
     "build": "node-sass utils.scss > ./build/utils.min.css --output-style=compressed",
     "dev": "node-sass utils.scss > ./build/utils.css --output-style=expanded",
@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/iamzozo/utilscss/issues"
   },
-  "homepage": "https://github.com/iamzozo/utilscss#readme"
+  "homepage": "https://github.com/iamzozo/utilscss#readme",
+  "devDependencies": {
+    "node-sass": "^4.11.0"
+  }
 }
