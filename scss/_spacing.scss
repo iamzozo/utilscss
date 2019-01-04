@@ -9,7 +9,10 @@ $i: 0;
     $prefix: getCurrentPrefix();
 
     @while $i <= 100 {
-        $space: #{$i}px;
+        $space: 0;
+        @if($i > 0) {
+            $space: #{$i}px;
+        }
 
         @each $prop, $abbrev in (margin: m, padding: p) {
             #{$prefix}#{$abbrev}-#{$i} {
@@ -34,6 +37,33 @@ $i: 0;
             #{$prefix}#{$abbrev}x-#{$i} {
                 #{$prop}-left: $space;
                 #{$prop}-right: $space;
+            }
+
+            // Negatives
+            @if($i > 0) {
+                #{$prefix}#{$abbrev}--#{$i} {
+                    #{$prop}: -#{$space};
+                }
+                #{$prefix}#{$abbrev}t--#{$i} {
+                    #{$prop}-top: -#{$space};
+                }
+                #{$prefix}#{$abbrev}r--#{$i} {
+                    #{$prop}-right: -#{$space};
+                }
+                #{$prefix}#{$abbrev}b--#{$i} {
+                    #{$prop}-bottom: -#{$space};
+                }
+                #{$prefix}#{$abbrev}l--#{$i} {
+                    #{$prop}-left: -#{$space};
+                }
+                #{$prefix}#{$abbrev}y--#{$i} {
+                    #{$prop}-top: -#{$space};
+                    #{$prop}-bottom: -#{$space};
+                }
+                #{$prefix}#{$abbrev}x--#{$i} {
+                    #{$prop}-left: -#{$space};
+                    #{$prop}-right: -#{$space};
+                }
             }
         }
 
