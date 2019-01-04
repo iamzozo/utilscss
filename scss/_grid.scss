@@ -1,5 +1,6 @@
 $u-gutter: 15 !default;
 $u-containerPadding: $u-gutter !default;
+$u-containerWidth: 1100px !default;
 
 // Columns placeholder to shorten css
 %column {
@@ -10,7 +11,7 @@ $u-containerPadding: $u-gutter !default;
 }
 
 .container {
-    max-width: 1240px;
+    max-width: $u-containerWidth;
     margin-left: auto;
     margin-right: auto;
     padding-left: #{$u-containerPadding}px;
