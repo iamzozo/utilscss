@@ -83,3 +83,17 @@ Incrementing by `5px` and using pixel units:
 
 **Example:**  
 `<div class="mb-20 px-15 py-10></div>`
+
+## Components
+Need to import, not included directly
+
+### Card
+`scss/components/_card.scss`
+
+Layouts:
+ - Vertical (default)
+ - Horizontal
+
+**Styling:**   
+By default cards has no background nor shadow
+- `.card-default` adds a white background and box-shadow
