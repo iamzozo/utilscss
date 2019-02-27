@@ -1,6 +1,11 @@
 $h: 10;
 $w: 10;
 
+.responsive {
+    max-width: 100%;
+    height: auto;
+}
+
 @include sizing {
     $prefix: getCurrentPrefix();
 
