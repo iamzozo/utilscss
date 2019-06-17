@@ -6,9 +6,18 @@ $u-sizes: (
         xlg: 1200px
 ) !default;
 
+$u-spaces: (
+        0: 0,
+        xs: 5px,
+        sm: 10px,
+        md: 15px,
+        lg: 20px,
+        xlg: 30px,
+) !default;
+
 $u-yiq-contrasted-threshold: 150 !default;
 
-$u-enable-reset: true !default;
+$u-enable-reset: false !default;
 
 $u-line-height: 1.5rem !default;
 
