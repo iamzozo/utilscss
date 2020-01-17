@@ -32,33 +32,6 @@
                 #{$prop}-left: $space;
                 #{$prop}-right: $space;
             }
-
-            // Negatives
-            @if($space > 0) {
-                #{$prefix}#{$abbrev}--#{$name} {
-                    #{$prop}: -#{$space};
-                }
-                #{$prefix}#{$abbrev}t--#{$name} {
-                    #{$prop}-top: -#{$space};
-                }
-                #{$prefix}#{$abbrev}r--#{$name} {
-                    #{$prop}-right: -#{$space};
-                }
-                #{$prefix}#{$abbrev}b--#{$name} {
-                    #{$prop}-bottom: -#{$space};
-                }
-                #{$prefix}#{$abbrev}l--#{$name} {
-                    #{$prop}-left: -#{$space};
-                }
-                #{$prefix}#{$abbrev}y--#{$name} {
-                    #{$prop}-top: -#{$space};
-                    #{$prop}-bottom: -#{$space};
-                }
-                #{$prefix}#{$abbrev}x--#{$name} {
-                    #{$prop}-left: -#{$space};
-                    #{$prop}-right: -#{$space};
-                }
-            }
         }
     }
 
