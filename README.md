@@ -27,6 +27,25 @@ lg: 992px,
 xlg: 1200px
 ```
 
+Default spacing values:
+
+```
+0: 0
+xs: 5px
+sm: 10px
+md: 15px
+lg: 20px
+xlg: 30px
+auto: auto
+```
+
+Example: `<div class="pt-md mr-xs md:mr-auto"></div>`
+
+Which means:
+- Padding top medium (15px) for all sizes
+- Margin right extra small (5px) for all sizes
+- Margin right auto above 768px
+
 Media queries defined with `min-width`. For the `sm` prefix the following will be defined:
 ```
 @media (min-width: 576px) {
