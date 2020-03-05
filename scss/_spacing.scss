@@ -4,10 +4,7 @@
 }
 
 @include sizing {
-    $prefix: getCurrentPrefix();
-
     @each $name, $space in $u-spaces {
-
         @each $prop, $abbrev in (margin: m, padding: p) {
             #{$prefix}#{$abbrev}-#{$name} {
                 #{$prop}: $space;

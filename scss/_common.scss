@@ -1,7 +1,5 @@
 // Flex in separate file
 @include sizing {
-    $prefix: getCurrentPrefix();
-
     #{$prefix}d-inline {
         display: inline;
     }

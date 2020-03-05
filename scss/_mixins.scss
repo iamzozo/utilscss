@@ -1,5 +1,3 @@
-$u-currentSize: null;
-
 @mixin sizing($withbase: true) {
     $iteratedSizes : $u-sizes;
 
@@ -8,7 +6,12 @@ $u-currentSize: null;
     }
 
     @each $name, $size in $iteratedSizes {
-        $u-currentSize: $name !global;
+        $prepend: '.';
+        @if ($name != 'base') {
+            $prepend: unquote('.#{$name}\\:');
+        }
+
+        $prefix: $prepend !global;
 
         @if ($name == 'base') {
             @content;

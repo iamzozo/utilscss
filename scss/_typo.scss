@@ -1,6 +1,4 @@
 @include sizing {
-    $prefix: getCurrentPrefix();
-
     #{$prefix}text-left {
         text-align: left;
     }

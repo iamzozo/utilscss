@@ -55,7 +55,6 @@ $u-containerWidth: 1100px !default;
 }
 
 @include sizing($withbase: false) {
-    $prefix: getCurrentPrefix();
     @for $i from 1 through 12 {
         #{$prefix}col-#{$i} {
             flex: 0 1 calc(#{percentage($i/12)} - #{$u-gutter * 2}px);

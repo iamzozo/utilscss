@@ -1,6 +1,4 @@
 @include sizing {
-    $prefix: getCurrentPrefix();
-
     #{$prefix}d-flex {
         display: flex;
     }
