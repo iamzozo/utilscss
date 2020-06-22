@@ -1,3 +1,5 @@
+$prefix: null;
+
 @mixin sizing($withbase: true) {
     $iteratedSizes : $u-sizes;
 
@@ -11,7 +13,7 @@
             $prepend: unquote('.#{$name}\\:');
         }
 
-        $prefix: $prepend !global;
+        $prefix: $prepend;
 
         @if ($name == 'base') {
             @content;
