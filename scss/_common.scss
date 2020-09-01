@@ -1,5 +1,5 @@
 // Flex in separate file
-@include sizing {
+@include sizing using($prefix) {
     #{$prefix}d-inline {
         display: inline;
     }

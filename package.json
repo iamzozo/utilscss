@@ -1,9 +1,9 @@
 {
   "name": "@iamzozo/utilscss",
-  "version": "0.0.11",
+  "version": "0.0.12",
   "scripts": {
-    "build": "node-sass utils.scss > ./build/utils.min.css --output-style=compressed",
-    "dev": "node-sass utils.scss -o ./build --output-style=expanded --watch",
+    "build": "sass utils.scss ./build/utils.min.css --style=compressed",
+    "dev": "sass utils.scss ./build/utils.css --style=expanded",
     "dev-test": "node-sass ./dev/test.scss -o ./dev -w --output-style=expanded"
   },
   "repository": {

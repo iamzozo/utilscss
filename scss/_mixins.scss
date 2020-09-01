@@ -1,5 +1,3 @@
-$prefix: null;
-
 @mixin sizing($withbase: true) {
     $iteratedSizes : $u-sizes;
 
@@ -16,10 +14,10 @@ $prefix: null;
         $prefix: $prepend;
 
         @if ($name == 'base') {
-            @content;
+            @content($prefix);
         } @else {
             @media (min-width: $size) {
-                @content;
+                @content($prefix);
             }
         }
     }

@@ -1,4 +1,4 @@
-@include sizing {
+@include sizing using($prefix) {
     #{$prefix}d-flex {
         display: flex;
     }

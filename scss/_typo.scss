@@ -1,4 +1,4 @@
-@include sizing {
+@include sizing using($prefix) {
     #{$prefix}text-left {
         text-align: left;
     }

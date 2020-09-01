@@ -3,7 +3,7 @@
     margin-right: auto;
 }
 
-@include sizing {
+@include sizing using($prefix) {
     @each $name, $space in $u-spaces {
         @each $prop, $abbrev in (margin: m, padding: p) {
             #{$prefix}#{$abbrev}-#{$name} {
