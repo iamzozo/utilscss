@@ -1,3 +1,5 @@
+@use "sass:math";
+
 $u-gutter: 15 !default;
 $u-containerPadding: $u-gutter !default;
 $u-containerWidth: 1100px !default;
@@ -37,8 +39,8 @@ $u-containerWidth: 1100px !default;
     }
 
     .col-#{$i} {
-        flex: 0 1 calc(#{percentage($i/12)} - #{$u-gutter * 2}px);
-        max-width: calc(#{percentage($i/12)} - #{$u-gutter * 2}px);
+        flex: 0 1 calc(#{percentage(math.div($i, 12))} - #{$u-gutter * 2}px);
+        max-width: calc(#{percentage(math.div($i, 12))} - #{$u-gutter * 2}px);
     }
 }
 
@@ -57,8 +59,8 @@ $u-containerWidth: 1100px !default;
 @include sizing($withbase: false) using ($prefix) {
     @for $i from 1 through 12 {
         #{$prefix}col-#{$i} {
-            flex: 0 1 calc(#{percentage($i/12)} - #{$u-gutter * 2}px);
-            max-width: calc(#{percentage($i/12)} - #{$u-gutter * 2}px);
+            flex: 0 1 calc(#{percentage(math.div($i, 12))} - #{$u-gutter * 2}px);
+            max-width: calc(#{percentage(math.div($i, 12))} - #{$u-gutter * 2}px);
         }
     }
 }
