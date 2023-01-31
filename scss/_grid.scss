@@ -4,25 +4,29 @@ $u-gutter: 15 !default;
 $u-containerPadding: $u-gutter !default;
 $u-containerWidth: 1100px !default;
 
+:root {
+
+}
+
 // Columns placeholder to shorten css
 %column {
-    margin-left: #{$u-gutter}px;
-    margin-right: #{$u-gutter}px;
+    margin-left: var(--u-gutter-width);
+    margin-right: var(--u-gutter-width);
     position: relative;
     width: 100%;
 }
 
 .container {
-    max-width: $u-containerWidth;
+    max-width: var(--u-container-width);
     margin-left: auto;
     margin-right: auto;
-    padding-left: #{$u-containerPadding}px;
-    padding-right: #{$u-containerPadding}px;
+    padding-left: var(--u-container-padding);
+    padding-right: var(--u-container-padding);
     position: relative;
 }
 
 .row {
-    margin: 0 -#{$u-gutter}px;
+    margin: 0 calc(var(--u-gutter-width) * -1);
     flex-wrap: wrap;
     display: flex;
 }
@@ -30,7 +34,12 @@ $u-containerWidth: 1100px !default;
 // Simple col definition
 .col {
     flex: 1;
-    margin: 0 #{$u-gutter}px;
+    margin: 0 var(--u-gutter-width);
+}
+
+.col-auto {
+    margin: var(--u-gutter-width);
+    flex: 0 0 auto;
 }
 
 @for $i from 1 through 12 {
@@ -39,8 +48,8 @@ $u-containerWidth: 1100px !default;
     }
 
     .col-#{$i} {
-        flex: 0 1 calc(#{percentage(math.div($i, 12))} - #{$u-gutter * 2}px);
-        max-width: calc(#{percentage(math.div($i, 12))} - #{$u-gutter * 2}px);
+        flex: 0 1 calc(#{percentage(math.div($i, 12))} - (var(--u-gutter-width) * 2));
+        max-width: calc(#{percentage(math.div($i, 12))} - (var(--u-gutter-width) * 2));
     }
 }
 
@@ -59,8 +68,8 @@ $u-containerWidth: 1100px !default;
 @include sizing($withbase: false) using ($prefix) {
     @for $i from 1 through 12 {
         #{$prefix}col-#{$i} {
-            flex: 0 1 calc(#{percentage(math.div($i, 12))} - #{$u-gutter * 2}px);
-            max-width: calc(#{percentage(math.div($i, 12))} - #{$u-gutter * 2}px);
+            flex: 0 1 calc(#{percentage(math.div($i, 12))} - (var(--u-gutter-width) * 2));
+            max-width: calc(#{percentage(math.div($i, 12))} - (var(--u-gutter-width) * 2));
         }
     }
 }
