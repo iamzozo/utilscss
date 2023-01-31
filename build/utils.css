@@ -31,6 +31,11 @@
   margin: 0 var(--u-gutter-width);
 }
 
+.col-auto {
+  margin: 0 var(--u-gutter-width);
+  flex: 0 0 auto;
+}
+
 .col-1 {
   flex: 0 1 calc(8.3333333333% - (var(--u-gutter-width) * 2));
   max-width: calc(8.3333333333% - (var(--u-gutter-width) * 2));

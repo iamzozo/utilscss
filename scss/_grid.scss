@@ -38,7 +38,7 @@ $u-containerWidth: 1100px !default;
 }
 
 .col-auto {
-    margin: var(--u-gutter-width);
+    margin: 0 var(--u-gutter-width);
     flex: 0 0 auto;
 }
 
