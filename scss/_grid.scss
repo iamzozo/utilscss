@@ -1,13 +1,5 @@
 @use "sass:math";
 
-$u-gutter: 15 !default;
-$u-containerPadding: $u-gutter !default;
-$u-containerWidth: 1100px !default;
-
-:root {
-
-}
-
 // Columns placeholder to shorten css
 %column {
     margin-left: var(--u-gutter-width);

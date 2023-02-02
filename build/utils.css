@@ -1,6 +1,6 @@
 :root {
   --u-gutter-width: 15px;
-  --u-container-width: $u-containerWidth;
+  --u-container-width: 1100px;
   --u-container-padding: var(--u-gutter-width, 15px);
 }
 
