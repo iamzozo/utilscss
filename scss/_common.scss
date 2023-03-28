@@ -1,26 +1,18 @@
 // Flex in separate file
 @include sizing using($prefix) {
     #{$prefix}d-inline {
-        display: inline;
+        display: important(inline);
     }
 
     #{$prefix}d-inline-block {
-        display: inline-block;
+        display: important(inline-block);
     }
 
     #{$prefix}d-block {
-        display: block;
+        display: important(block);
     }
 
     #{$prefix}d-none {
-        display: none;
-    }
-
-    #{$prefix}pull-right {
-        float: right;
-    }
-
-    #{$prefix}pull-left {
-        float: left;
+        display: important(none);
     }
 }

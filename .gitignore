@@ -2,3 +2,5 @@
 node_modules
 package-lock.json
 build/utils.*.map
+dev/test.css
+dev/test.css.map

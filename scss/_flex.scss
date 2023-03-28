@@ -1,65 +1,65 @@
 @include sizing using($prefix) {
     #{$prefix}d-flex {
-        display: flex;
+        display: important(flex);
     }
 
     #{$prefix}d-inline-flex {
-        display: inline-flex;
+        display: important(inline-flex);
     }
 
     #{$prefix}flex-wrap {
-        flex-wrap: wrap;
+        flex-wrap: important(wrap);
     }
 
     #{$prefix}flex-fill {
-        flex: 1;
+        flex: important(1);
     }
 
     #{$prefix}flex-row {
-        flex-direction: row;
+        flex-direction: important(row);
     }
 
     #{$prefix}flex-column {
-        flex-direction: column;
+        flex-direction: important(column);
     }
 
     #{$prefix}justify-between {
-        justify-content: space-between;
+        justify-content: important(space-between);
     }
 
     #{$prefix}justify-center {
-        justify-content: center;
+        justify-content: important(center);
     }
 
     #{$prefix}justify-start {
-        justify-content: flex-start;
+        justify-content: important(flex-start);
     }
 
     #{$prefix}justify-end {
-        justify-content: flex-end;
+        justify-content: important(flex-end);
     }
 
     #{$prefix}items-start {
-        align-items: flex-start;
+        align-items: important(flex-start);
     }
 
     #{$prefix}items-center {
-        align-items: center;
+        align-items: important(center);
     }
 
     #{$prefix}items-end {
-        align-items: flex-end;
+        align-items: important(flex-end);
     }
 
     #{$prefix}self-start {
-        align-self: flex-start;
+        align-self: important(flex-start);
     }
 
     #{$prefix}self-end {
-        align-self: flex-end;
+        align-self: important(flex-end);
     }
 
     #{$prefix}self-center {
-        align-self: center;
+        align-self: important(center);
     }
 }

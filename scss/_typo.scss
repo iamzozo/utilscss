@@ -1,25 +1,17 @@
 @include sizing using($prefix) {
     #{$prefix}text-left {
-        text-align: left;
+        text-align: important(left);
     }
 
     #{$prefix}text-right {
-        text-align: right;
+        text-align: important(right);
     }
 
     #{$prefix}text-center {
-        text-align: center;
+        text-align: important(center);
     }
 
     #{$prefix}text-b {
-        font-weight: bold;
-    }
-
-    #{$prefix}text-sm {
-        font-size: 0.875rem;
-    }
-
-    #{$prefix}text-lg {
-        font-size: 1.125rem;
+        font-weight: important(bold);
     }
 }
