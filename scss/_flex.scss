@@ -62,4 +62,10 @@
     #{$prefix}self-center {
         align-self: important(center);
     }
+
+    @each $name, $space in $u-spaces {
+        #{$prefix}gap-#{$name} {
+            gap: important($space);
+        }
+    }
 }
