@@ -65,3 +65,28 @@
         }
     }
 }
+
+%grid {
+    display: grid;
+    align-items: start;
+    grid-template-columns: repeat(var(--grid-columns,12),1fr);
+}
+
+// New grid
+@for $j from 1 through 12 {
+    .grid-#{$j} {
+        @extend %grid;
+    }
+
+    .grid-#{$j} {
+        --grid-columns: #{$j};
+    }
+}
+
+@include sizing($withbase: false) using ($prefix) {
+    @for $i from 1 through 12 {
+        #{$prefix}grid-#{$i} {
+            --grid-columns: #{$i};
+        }
+    }
+}
