@@ -5,32 +5,36 @@
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-<!--    <link rel="stylesheet" href="../build/utils.css">-->
-    <link rel="stylesheet" href="test.css">
+    <link rel="stylesheet" href="./test.css">
     <title>Utilscss</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+    </style>
 </head>
 <body>
 <div id="something">
     <div class="container">
-        <div class="border-gray-b mt-100">
+        <div class="mt-md">
             <h1>UtilsCss</h1>
         </div>
     </div>
     <div class="container">
         <h2>Visibility</h2>
-        <div class="d-none sm:d-block p-30 bg-blue text-white text-center">
+        <div class="d-none sm:d-block p-30 text-center">
             Hide on small
         </div>
     </div>
     <div class="container">
         <h2>Grid</h2>
         <div class="row">
-            <div class="bg-gray-light sm:col-6 md:col-4 p-30 mb-30 height-200">One</div>
-            <div class="bg-gray-light sm:col-6 md:col-4 p-30 mb-30 height-200">Two</div>
-            <div class="bg-gray-light md:col-4 sm:col-6 p-30 mb-30 height-200">Three</div>
-            <div class="bg-gray-light md:col-4 sm:col-6 p-30 mb-30 height-200">Four</div>
+            <div class="sm:col-6 md:col-4 p-30 mb-30">One</div>
+            <div class="sm:col-6 md:col-4 p-30 mb-30">Two</div>
+            <div class="md:col-4 sm:col-6 p-30 mb-30">Three</div>
+            <div class="md:col-4 sm:col-6 p-30 mb-30">Four</div>
         </div>
-
 
         <h2>Flex</h2>
         <div class="d-flex items-center gap-xs md:gap-lg">
@@ -44,44 +48,11 @@
             <div style="height: 10px; background: blue;">Three</div>
         </div>
 
-        <h2>Cards</h2>
-        <div class="grid-2 md:grid-4 gap-md mb-md">
-            <div class="card card-default">
-                <div class="card-img">
-                    <img src="images/dummy.png" style="max-width: 100%; height: auto; vertical-align: top">
-                </div>
-                <div class="card-body">
-                    <h3>A card title</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus, nulla fuga consequuntur veniam quibusdam laboriosam saepe laudantium dolorum</p>
-                </div>
-            </div>
-            <div class="card">
-                <div class="card-img">
-                    <img src="images/dummy.png" style="max-width: 100%; height: auto; vertical-align: top">
-                </div>
-                <div class="card-body">
-                    <h3>A card title</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus, nulla fuga consequuntur veniam quibusdam laboriosam saepe laudantium dolorum</p>
-                </div>
-            </div>
-            <div class="card">
-                <div class="card-img">
-                    <img src="images/dummy.png" style="max-width: 100%; height: auto; vertical-align: top">
-                </div>
-                <div class="card-body">
-                    <h3>A card title</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus, nulla fuga consequuntur veniam quibusdam laboriosam saepe laudantium dolorum</p>
-                </div>
-            </div>
-            <div class="card">
-                <div class="card-img">
-                    <img src="images/dummy.png" style="max-width: 100%; height: auto; vertical-align: top">
-                </div>
-                <div class="card-body">
-                    <h3>A card title</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus, nulla fuga consequuntur veniam quibusdam laboriosam saepe laudantium dolorum</p>
-                </div>
-            </div>
+        <h2>Flex sizes</h2>
+        <div class="d-flex">
+            <div class="flex-2 p-md" style="border: 1px solid #ddd;">One</div>
+            <div class="md:flex-3 p-md" style="border: 1px solid #ddd;">Two</div>
+            <div class="lg:flex-1 p-md" style="border: 1px solid #ddd;">Three</div>
         </div>
     </div>
 </div>

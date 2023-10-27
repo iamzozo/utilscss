@@ -1,14 +1,6 @@
 @use "sass:math";
 
-// Columns placeholder to shorten css
-%column {
-    margin-left: var(--u-gutter-width);
-    margin-right: var(--u-gutter-width);
-    position: relative;
-    width: 100%;
-}
-
-.container {
+.#{$u-prefix}container {
     max-width: var(--u-container-width, $u-containerWidth);
     margin-left: auto;
     margin-right: auto;
@@ -17,29 +9,37 @@
     position: relative;
 }
 
-.row {
+.#{$u-prefix}row {
     margin: 0 calc(var(--u-gutter-width) * -1);
     flex-wrap: wrap;
     display: flex;
 }
 
 // Simple col definition
-.col {
+.#{$u-prefix}col {
     flex: 1;
     margin: 0 var(--u-gutter-width);
 }
 
-.col-auto {
+.#{$u-prefix}col-auto {
     margin: 0 var(--u-gutter-width);
     flex: 0 0 auto;
 }
 
+// Columns placeholder to shorten css
+%column {
+    margin-left: var(--u-gutter-width);
+    margin-right: var(--u-gutter-width);
+    position: relative;
+    width: 100%;
+}
+
 @for $i from 1 through 12 {
-    .col-#{$i} {
+    .#{$u-prefix}col-#{$i} {
         @extend %column;
     }
 
-    .col-#{$i} {
+    .#{$u-prefix}col-#{$i} {
         flex: 0 1 calc(#{percentage(math.div($i, 12))} - (var(--u-gutter-width) * 2));
         max-width: calc(#{percentage(math.div($i, 12))} - (var(--u-gutter-width) * 2));
     }
@@ -50,7 +50,7 @@
 @each $name, $size in $u-sizes {
     @if($name != 'base') {
         @for $i from 1 through 12 {
-            .#{$name}\:col-#{$i} {
+            .#{$name}\:#{$u-prefix}col-#{$i} {
                 @extend %column;
             }
         }
@@ -63,23 +63,6 @@
             flex: 0 1 calc(#{percentage(math.div($i, 12))} - (var(--u-gutter-width) * 2));
             max-width: calc(#{percentage(math.div($i, 12))} - (var(--u-gutter-width) * 2));
         }
-    }
-}
-
-%grid {
-    display: grid;
-    align-items: start;
-    grid-template-columns: repeat(var(--grid-columns,12),1fr);
-}
-
-// New grid
-@for $j from 1 through 12 {
-    .grid-#{$j} {
-        @extend %grid;
-    }
-
-    .grid-#{$j} {
-        --grid-columns: #{$j};
     }
 }
 

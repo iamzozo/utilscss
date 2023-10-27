@@ -16,20 +16,15 @@ $u-spaces: (
 ) !default;
 
 $u-forced-rules: true !default;
-
 $u-yiq-contrasted-threshold: 150 !default;
-
 $u-enable-reset: false !default;
-
 $u-line-height: 1.5rem !default;
-
 $u-font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Helvetica, Arial, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol !default;
-
 $u-root: ':root' !default;
-
 $u-gutter: 15 !default;
 $u-containerPadding: $u-gutter !default;
 $u-containerWidth: 1100px !default;
+$u-prefix: '' !default;
 
 @at-root #{$u-root} {
     --u-gutter-width: 15px;

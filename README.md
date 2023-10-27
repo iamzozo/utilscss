@@ -96,9 +96,5 @@ Sides is one of:
 - `x`: as horizontal
 - `y`: as vertical
 
-Incrementing by `5px` and using pixel units:
-- `0-100 (0, 5, 10, 15, ... 100)`
-- `pt-15` equals: `padding-top: 15px`
-
 **Example:**  
-`<div class="mb-20 px-15 py-10></div>`
+`<div class="mb-lg px-xs py-sm></div>`

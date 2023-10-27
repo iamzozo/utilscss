@@ -1,17 +1,3 @@
-@function color-yiq($color, $dark: #000, $light: #fff) {
-    $r: red($color);
-    $g: green($color);
-    $b: blue($color);
-
-    $yiq: (($r * 299) + ($g * 587) + ($b * 114)) / 1000;
-
-    @if ($yiq >= $u-yiq-contrasted-threshold) {
-        @return $dark;
-    } @else {
-        @return $light;
-    }
-}
-
 @function important($value) {
     @if $u-forced-rules {
         @return #{$value} !important;

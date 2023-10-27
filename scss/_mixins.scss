@@ -8,7 +8,10 @@
     @each $name, $size in $iteratedSizes {
         $prepend: '.';
         @if ($name != 'base') {
-            $prepend: unquote('.#{$name}\\:');
+            $prepend: unquote('.#{$name}\\:#{$u-prefix}');
+        }
+        @else {
+            $prepend: '.#{$u-prefix}';
         }
 
         $prefix: $prepend;
