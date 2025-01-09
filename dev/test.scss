@@ -1,5 +1,6 @@
+@use '../utils';
+
 #something {
     //$u-prefix: 'mx-';
 
-    @import '../utils';
 }

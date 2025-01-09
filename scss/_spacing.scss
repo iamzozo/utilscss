@@ -1,55 +1,59 @@
-@include sizing using($prefix) {
-    @each $name, $space in $u-spaces {
+@use "mixins";
+@use "variables";
+@use "functions";
+
+@include mixins.sizing using($prefix) {
+    @each $name, $space in variables.$u-spaces {
         @each $prop, $abbrev in (margin: m, padding: p) {
             #{$prefix}#{$abbrev}-#{$name} {
-                #{$prop}: important($space);
+                #{$prop}: functions.important($space);
             }
             #{$prefix}#{$abbrev}t-#{$name} {
-                #{$prop}-top: important($space);
+                #{$prop}-top: functions.important($space);
             }
             #{$prefix}#{$abbrev}r-#{$name} {
-                #{$prop}-right: important($space);
+                #{$prop}-right: functions.important($space);
             }
             #{$prefix}#{$abbrev}b-#{$name} {
-                #{$prop}-bottom: important($space);
+                #{$prop}-bottom: functions.important($space);
             }
             #{$prefix}#{$abbrev}l-#{$name} {
-                #{$prop}-left: important($space);
+                #{$prop}-left: functions.important($space);
             }
             #{$prefix}#{$abbrev}y-#{$name} {
-                #{$prop}-top: important($space);
-                #{$prop}-bottom: important($space);
+                #{$prop}-top: functions.important($space);
+                #{$prop}-bottom: functions.important($space);
             }
             #{$prefix}#{$abbrev}x-#{$name} {
-                #{$prop}-left: important($space);
-                #{$prop}-right: important($space);
+                #{$prop}-left: functions.important($space);
+                #{$prop}-right: functions.important($space);
             }
         }
     }
 
     @each $prop, $abbrev in (margin: m, padding: p) {
         #{$prefix}#{$abbrev}-auto {
-            #{$prop}: important(auto);
+            #{$prop}: functions.important(auto);
         }
         #{$prefix}#{$abbrev}t-auto {
-            #{$prop}-top: important(auto);
+            #{$prop}-top: functions.important(auto);
         }
         #{$prefix}#{$abbrev}r-auto {
-            #{$prop}-right: important(auto);
+            #{$prop}-right: functions.important(auto);
         }
         #{$prefix}#{$abbrev}b-auto {
-            #{$prop}-bottom: important(auto);
+            #{$prop}-bottom: functions.important(auto);
         }
         #{$prefix}#{$abbrev}l-auto {
-            #{$prop}-left: important(auto);
+            #{$prop}-left: functions.important(auto);
         }
         #{$prefix}#{$abbrev}y-auto {
-            #{$prop}-top: important(auto);
-            #{$prop}-bottom: important(auto);
+            #{$prop}-top: functions.important(auto);
+            #{$prop}-bottom: functions.important(auto);
         }
         #{$prefix}#{$abbrev}x-auto {
-            #{$prop}-left: important(auto);
-            #{$prop}-right: important(auto);
+            #{$prop}-left: functions.important(auto);
+            #{$prop}-right: functions.important(auto);
         }
     }
 }

@@ -4,13 +4,6 @@
   --u-container-padding: var(--u-gutter-width, 15px);
 }
 
-.xlg\:col-12, .xlg\:col-11, .xlg\:col-10, .xlg\:col-9, .xlg\:col-8, .xlg\:col-7, .xlg\:col-6, .xlg\:col-5, .xlg\:col-4, .xlg\:col-3, .xlg\:col-2, .xlg\:col-1, .lg\:col-12, .lg\:col-11, .lg\:col-10, .lg\:col-9, .lg\:col-8, .lg\:col-7, .lg\:col-6, .lg\:col-5, .lg\:col-4, .lg\:col-3, .lg\:col-2, .lg\:col-1, .md\:col-12, .md\:col-11, .md\:col-10, .md\:col-9, .md\:col-8, .md\:col-7, .md\:col-6, .md\:col-5, .md\:col-4, .md\:col-3, .md\:col-2, .md\:col-1, .sm\:col-12, .sm\:col-11, .sm\:col-10, .sm\:col-9, .sm\:col-8, .sm\:col-7, .sm\:col-6, .sm\:col-5, .sm\:col-4, .sm\:col-3, .sm\:col-2, .sm\:col-1, .col-12, .col-11, .col-10, .col-9, .col-8, .col-7, .col-6, .col-5, .col-4, .col-3, .col-2, .col-1 {
-  margin-left: var(--u-gutter-width);
-  margin-right: var(--u-gutter-width);
-  position: relative;
-  width: 100%;
-}
-
 .container {
   max-width: var(--u-container-width, 1100px);
   margin-left: auto;
@@ -36,320 +29,273 @@
   flex: 0 0 auto;
 }
 
+.xlg\:col-12, .xlg\:col-11, .xlg\:col-10, .xlg\:col-9, .xlg\:col-8, .xlg\:col-7, .xlg\:col-6, .xlg\:col-5, .xlg\:col-4, .xlg\:col-3, .xlg\:col-2, .xlg\:col-1, .lg\:col-12, .lg\:col-11, .lg\:col-10, .lg\:col-9, .lg\:col-8, .lg\:col-7, .lg\:col-6, .lg\:col-5, .lg\:col-4, .lg\:col-3, .lg\:col-2, .lg\:col-1, .md\:col-12, .md\:col-11, .md\:col-10, .md\:col-9, .md\:col-8, .md\:col-7, .md\:col-6, .md\:col-5, .md\:col-4, .md\:col-3, .md\:col-2, .md\:col-1, .sm\:col-12, .sm\:col-11, .sm\:col-10, .sm\:col-9, .sm\:col-8, .sm\:col-7, .sm\:col-6, .sm\:col-5, .sm\:col-4, .sm\:col-3, .sm\:col-2, .sm\:col-1, .col-12, .col-11, .col-10, .col-9, .col-8, .col-7, .col-6, .col-5, .col-4, .col-3, .col-2, .col-1 {
+  margin-left: var(--u-gutter-width);
+  margin-right: var(--u-gutter-width);
+  position: relative;
+  width: 100%;
+}
+
 .col-1 {
-  flex: 0 1 calc(8.3333333333% - (var(--u-gutter-width) * 2));
-  max-width: calc(8.3333333333% - (var(--u-gutter-width) * 2));
+  flex: 0 1 calc(8.3333333333% - var(--u-gutter-width) * 2);
+  max-width: calc(8.3333333333% - var(--u-gutter-width) * 2);
 }
 
 .col-2 {
-  flex: 0 1 calc(16.6666666667% - (var(--u-gutter-width) * 2));
-  max-width: calc(16.6666666667% - (var(--u-gutter-width) * 2));
+  flex: 0 1 calc(16.6666666667% - var(--u-gutter-width) * 2);
+  max-width: calc(16.6666666667% - var(--u-gutter-width) * 2);
 }
 
 .col-3 {
-  flex: 0 1 calc(25% - (var(--u-gutter-width) * 2));
-  max-width: calc(25% - (var(--u-gutter-width) * 2));
+  flex: 0 1 calc(25% - var(--u-gutter-width) * 2);
+  max-width: calc(25% - var(--u-gutter-width) * 2);
 }
 
 .col-4 {
-  flex: 0 1 calc(33.3333333333% - (var(--u-gutter-width) * 2));
-  max-width: calc(33.3333333333% - (var(--u-gutter-width) * 2));
+  flex: 0 1 calc(33.3333333333% - var(--u-gutter-width) * 2);
+  max-width: calc(33.3333333333% - var(--u-gutter-width) * 2);
 }
 
 .col-5 {
-  flex: 0 1 calc(41.6666666667% - (var(--u-gutter-width) * 2));
-  max-width: calc(41.6666666667% - (var(--u-gutter-width) * 2));
+  flex: 0 1 calc(41.6666666667% - var(--u-gutter-width) * 2);
+  max-width: calc(41.6666666667% - var(--u-gutter-width) * 2);
 }
 
 .col-6 {
-  flex: 0 1 calc(50% - (var(--u-gutter-width) * 2));
-  max-width: calc(50% - (var(--u-gutter-width) * 2));
+  flex: 0 1 calc(50% - var(--u-gutter-width) * 2);
+  max-width: calc(50% - var(--u-gutter-width) * 2);
 }
 
 .col-7 {
-  flex: 0 1 calc(58.3333333333% - (var(--u-gutter-width) * 2));
-  max-width: calc(58.3333333333% - (var(--u-gutter-width) * 2));
+  flex: 0 1 calc(58.3333333333% - var(--u-gutter-width) * 2);
+  max-width: calc(58.3333333333% - var(--u-gutter-width) * 2);
 }
 
 .col-8 {
-  flex: 0 1 calc(66.6666666667% - (var(--u-gutter-width) * 2));
-  max-width: calc(66.6666666667% - (var(--u-gutter-width) * 2));
+  flex: 0 1 calc(66.6666666667% - var(--u-gutter-width) * 2);
+  max-width: calc(66.6666666667% - var(--u-gutter-width) * 2);
 }
 
 .col-9 {
-  flex: 0 1 calc(75% - (var(--u-gutter-width) * 2));
-  max-width: calc(75% - (var(--u-gutter-width) * 2));
+  flex: 0 1 calc(75% - var(--u-gutter-width) * 2);
+  max-width: calc(75% - var(--u-gutter-width) * 2);
 }
 
 .col-10 {
-  flex: 0 1 calc(83.3333333333% - (var(--u-gutter-width) * 2));
-  max-width: calc(83.3333333333% - (var(--u-gutter-width) * 2));
+  flex: 0 1 calc(83.3333333333% - var(--u-gutter-width) * 2);
+  max-width: calc(83.3333333333% - var(--u-gutter-width) * 2);
 }
 
 .col-11 {
-  flex: 0 1 calc(91.6666666667% - (var(--u-gutter-width) * 2));
-  max-width: calc(91.6666666667% - (var(--u-gutter-width) * 2));
+  flex: 0 1 calc(91.6666666667% - var(--u-gutter-width) * 2);
+  max-width: calc(91.6666666667% - var(--u-gutter-width) * 2);
 }
 
 .col-12 {
-  flex: 0 1 calc(100% - (var(--u-gutter-width) * 2));
-  max-width: calc(100% - (var(--u-gutter-width) * 2));
+  flex: 0 1 calc(100% - var(--u-gutter-width) * 2);
+  max-width: calc(100% - var(--u-gutter-width) * 2);
 }
 
 @media (min-width: 576px) {
   .sm\:col-1 {
-    flex: 0 1 calc(8.3333333333% - (var(--u-gutter-width) * 2));
-    max-width: calc(8.3333333333% - (var(--u-gutter-width) * 2));
+    flex: 0 1 calc(8.3333333333% - var(--u-gutter-width) * 2);
+    max-width: calc(8.3333333333% - var(--u-gutter-width) * 2);
   }
   .sm\:col-2 {
-    flex: 0 1 calc(16.6666666667% - (var(--u-gutter-width) * 2));
-    max-width: calc(16.6666666667% - (var(--u-gutter-width) * 2));
+    flex: 0 1 calc(16.6666666667% - var(--u-gutter-width) * 2);
+    max-width: calc(16.6666666667% - var(--u-gutter-width) * 2);
   }
   .sm\:col-3 {
-    flex: 0 1 calc(25% - (var(--u-gutter-width) * 2));
-    max-width: calc(25% - (var(--u-gutter-width) * 2));
+    flex: 0 1 calc(25% - var(--u-gutter-width) * 2);
+    max-width: calc(25% - var(--u-gutter-width) * 2);
   }
   .sm\:col-4 {
-    flex: 0 1 calc(33.3333333333% - (var(--u-gutter-width) * 2));
-    max-width: calc(33.3333333333% - (var(--u-gutter-width) * 2));
+    flex: 0 1 calc(33.3333333333% - var(--u-gutter-width) * 2);
+    max-width: calc(33.3333333333% - var(--u-gutter-width) * 2);
   }
   .sm\:col-5 {
-    flex: 0 1 calc(41.6666666667% - (var(--u-gutter-width) * 2));
-    max-width: calc(41.6666666667% - (var(--u-gutter-width) * 2));
+    flex: 0 1 calc(41.6666666667% - var(--u-gutter-width) * 2);
+    max-width: calc(41.6666666667% - var(--u-gutter-width) * 2);
   }
   .sm\:col-6 {
-    flex: 0 1 calc(50% - (var(--u-gutter-width) * 2));
-    max-width: calc(50% - (var(--u-gutter-width) * 2));
+    flex: 0 1 calc(50% - var(--u-gutter-width) * 2);
+    max-width: calc(50% - var(--u-gutter-width) * 2);
   }
   .sm\:col-7 {
-    flex: 0 1 calc(58.3333333333% - (var(--u-gutter-width) * 2));
-    max-width: calc(58.3333333333% - (var(--u-gutter-width) * 2));
+    flex: 0 1 calc(58.3333333333% - var(--u-gutter-width) * 2);
+    max-width: calc(58.3333333333% - var(--u-gutter-width) * 2);
   }
   .sm\:col-8 {
-    flex: 0 1 calc(66.6666666667% - (var(--u-gutter-width) * 2));
-    max-width: calc(66.6666666667% - (var(--u-gutter-width) * 2));
+    flex: 0 1 calc(66.6666666667% - var(--u-gutter-width) * 2);
+    max-width: calc(66.6666666667% - var(--u-gutter-width) * 2);
   }
   .sm\:col-9 {
-    flex: 0 1 calc(75% - (var(--u-gutter-width) * 2));
-    max-width: calc(75% - (var(--u-gutter-width) * 2));
+    flex: 0 1 calc(75% - var(--u-gutter-width) * 2);
+    max-width: calc(75% - var(--u-gutter-width) * 2);
   }
   .sm\:col-10 {
-    flex: 0 1 calc(83.3333333333% - (var(--u-gutter-width) * 2));
-    max-width: calc(83.3333333333% - (var(--u-gutter-width) * 2));
+    flex: 0 1 calc(83.3333333333% - var(--u-gutter-width) * 2);
+    max-width: calc(83.3333333333% - var(--u-gutter-width) * 2);
   }
   .sm\:col-11 {
-    flex: 0 1 calc(91.6666666667% - (var(--u-gutter-width) * 2));
-    max-width: calc(91.6666666667% - (var(--u-gutter-width) * 2));
+    flex: 0 1 calc(91.6666666667% - var(--u-gutter-width) * 2);
+    max-width: calc(91.6666666667% - var(--u-gutter-width) * 2);
   }
   .sm\:col-12 {
-    flex: 0 1 calc(100% - (var(--u-gutter-width) * 2));
-    max-width: calc(100% - (var(--u-gutter-width) * 2));
+    flex: 0 1 calc(100% - var(--u-gutter-width) * 2);
+    max-width: calc(100% - var(--u-gutter-width) * 2);
   }
 }
 @media (min-width: 768px) {
   .md\:col-1 {
-    flex: 0 1 calc(8.3333333333% - (var(--u-gutter-width) * 2));
-    max-width: calc(8.3333333333% - (var(--u-gutter-width) * 2));
+    flex: 0 1 calc(8.3333333333% - var(--u-gutter-width) * 2);
+    max-width: calc(8.3333333333% - var(--u-gutter-width) * 2);
   }
   .md\:col-2 {
-    flex: 0 1 calc(16.6666666667% - (var(--u-gutter-width) * 2));
-    max-width: calc(16.6666666667% - (var(--u-gutter-width) * 2));
+    flex: 0 1 calc(16.6666666667% - var(--u-gutter-width) * 2);
+    max-width: calc(16.6666666667% - var(--u-gutter-width) * 2);
   }
   .md\:col-3 {
-    flex: 0 1 calc(25% - (var(--u-gutter-width) * 2));
-    max-width: calc(25% - (var(--u-gutter-width) * 2));
+    flex: 0 1 calc(25% - var(--u-gutter-width) * 2);
+    max-width: calc(25% - var(--u-gutter-width) * 2);
   }
   .md\:col-4 {
-    flex: 0 1 calc(33.3333333333% - (var(--u-gutter-width) * 2));
-    max-width: calc(33.3333333333% - (var(--u-gutter-width) * 2));
+    flex: 0 1 calc(33.3333333333% - var(--u-gutter-width) * 2);
+    max-width: calc(33.3333333333% - var(--u-gutter-width) * 2);
   }
   .md\:col-5 {
-    flex: 0 1 calc(41.6666666667% - (var(--u-gutter-width) * 2));
-    max-width: calc(41.6666666667% - (var(--u-gutter-width) * 2));
+    flex: 0 1 calc(41.6666666667% - var(--u-gutter-width) * 2);
+    max-width: calc(41.6666666667% - var(--u-gutter-width) * 2);
   }
   .md\:col-6 {
-    flex: 0 1 calc(50% - (var(--u-gutter-width) * 2));
-    max-width: calc(50% - (var(--u-gutter-width) * 2));
+    flex: 0 1 calc(50% - var(--u-gutter-width) * 2);
+    max-width: calc(50% - var(--u-gutter-width) * 2);
   }
   .md\:col-7 {
-    flex: 0 1 calc(58.3333333333% - (var(--u-gutter-width) * 2));
-    max-width: calc(58.3333333333% - (var(--u-gutter-width) * 2));
+    flex: 0 1 calc(58.3333333333% - var(--u-gutter-width) * 2);
+    max-width: calc(58.3333333333% - var(--u-gutter-width) * 2);
   }
   .md\:col-8 {
-    flex: 0 1 calc(66.6666666667% - (var(--u-gutter-width) * 2));
-    max-width: calc(66.6666666667% - (var(--u-gutter-width) * 2));
+    flex: 0 1 calc(66.6666666667% - var(--u-gutter-width) * 2);
+    max-width: calc(66.6666666667% - var(--u-gutter-width) * 2);
   }
   .md\:col-9 {
-    flex: 0 1 calc(75% - (var(--u-gutter-width) * 2));
-    max-width: calc(75% - (var(--u-gutter-width) * 2));
+    flex: 0 1 calc(75% - var(--u-gutter-width) * 2);
+    max-width: calc(75% - var(--u-gutter-width) * 2);
   }
   .md\:col-10 {
-    flex: 0 1 calc(83.3333333333% - (var(--u-gutter-width) * 2));
-    max-width: calc(83.3333333333% - (var(--u-gutter-width) * 2));
+    flex: 0 1 calc(83.3333333333% - var(--u-gutter-width) * 2);
+    max-width: calc(83.3333333333% - var(--u-gutter-width) * 2);
   }
   .md\:col-11 {
-    flex: 0 1 calc(91.6666666667% - (var(--u-gutter-width) * 2));
-    max-width: calc(91.6666666667% - (var(--u-gutter-width) * 2));
+    flex: 0 1 calc(91.6666666667% - var(--u-gutter-width) * 2);
+    max-width: calc(91.6666666667% - var(--u-gutter-width) * 2);
   }
   .md\:col-12 {
-    flex: 0 1 calc(100% - (var(--u-gutter-width) * 2));
-    max-width: calc(100% - (var(--u-gutter-width) * 2));
+    flex: 0 1 calc(100% - var(--u-gutter-width) * 2);
+    max-width: calc(100% - var(--u-gutter-width) * 2);
   }
 }
 @media (min-width: 992px) {
   .lg\:col-1 {
-    flex: 0 1 calc(8.3333333333% - (var(--u-gutter-width) * 2));
-    max-width: calc(8.3333333333% - (var(--u-gutter-width) * 2));
+    flex: 0 1 calc(8.3333333333% - var(--u-gutter-width) * 2);
+    max-width: calc(8.3333333333% - var(--u-gutter-width) * 2);
   }
   .lg\:col-2 {
-    flex: 0 1 calc(16.6666666667% - (var(--u-gutter-width) * 2));
-    max-width: calc(16.6666666667% - (var(--u-gutter-width) * 2));
+    flex: 0 1 calc(16.6666666667% - var(--u-gutter-width) * 2);
+    max-width: calc(16.6666666667% - var(--u-gutter-width) * 2);
   }
   .lg\:col-3 {
-    flex: 0 1 calc(25% - (var(--u-gutter-width) * 2));
-    max-width: calc(25% - (var(--u-gutter-width) * 2));
+    flex: 0 1 calc(25% - var(--u-gutter-width) * 2);
+    max-width: calc(25% - var(--u-gutter-width) * 2);
   }
   .lg\:col-4 {
-    flex: 0 1 calc(33.3333333333% - (var(--u-gutter-width) * 2));
-    max-width: calc(33.3333333333% - (var(--u-gutter-width) * 2));
+    flex: 0 1 calc(33.3333333333% - var(--u-gutter-width) * 2);
+    max-width: calc(33.3333333333% - var(--u-gutter-width) * 2);
   }
   .lg\:col-5 {
-    flex: 0 1 calc(41.6666666667% - (var(--u-gutter-width) * 2));
-    max-width: calc(41.6666666667% - (var(--u-gutter-width) * 2));
+    flex: 0 1 calc(41.6666666667% - var(--u-gutter-width) * 2);
+    max-width: calc(41.6666666667% - var(--u-gutter-width) * 2);
   }
   .lg\:col-6 {
-    flex: 0 1 calc(50% - (var(--u-gutter-width) * 2));
-    max-width: calc(50% - (var(--u-gutter-width) * 2));
+    flex: 0 1 calc(50% - var(--u-gutter-width) * 2);
+    max-width: calc(50% - var(--u-gutter-width) * 2);
   }
   .lg\:col-7 {
-    flex: 0 1 calc(58.3333333333% - (var(--u-gutter-width) * 2));
-    max-width: calc(58.3333333333% - (var(--u-gutter-width) * 2));
+    flex: 0 1 calc(58.3333333333% - var(--u-gutter-width) * 2);
+    max-width: calc(58.3333333333% - var(--u-gutter-width) * 2);
   }
   .lg\:col-8 {
-    flex: 0 1 calc(66.6666666667% - (var(--u-gutter-width) * 2));
-    max-width: calc(66.6666666667% - (var(--u-gutter-width) * 2));
+    flex: 0 1 calc(66.6666666667% - var(--u-gutter-width) * 2);
+    max-width: calc(66.6666666667% - var(--u-gutter-width) * 2);
   }
   .lg\:col-9 {
-    flex: 0 1 calc(75% - (var(--u-gutter-width) * 2));
-    max-width: calc(75% - (var(--u-gutter-width) * 2));
+    flex: 0 1 calc(75% - var(--u-gutter-width) * 2);
+    max-width: calc(75% - var(--u-gutter-width) * 2);
   }
   .lg\:col-10 {
-    flex: 0 1 calc(83.3333333333% - (var(--u-gutter-width) * 2));
-    max-width: calc(83.3333333333% - (var(--u-gutter-width) * 2));
+    flex: 0 1 calc(83.3333333333% - var(--u-gutter-width) * 2);
+    max-width: calc(83.3333333333% - var(--u-gutter-width) * 2);
   }
   .lg\:col-11 {
-    flex: 0 1 calc(91.6666666667% - (var(--u-gutter-width) * 2));
-    max-width: calc(91.6666666667% - (var(--u-gutter-width) * 2));
+    flex: 0 1 calc(91.6666666667% - var(--u-gutter-width) * 2);
+    max-width: calc(91.6666666667% - var(--u-gutter-width) * 2);
   }
   .lg\:col-12 {
-    flex: 0 1 calc(100% - (var(--u-gutter-width) * 2));
-    max-width: calc(100% - (var(--u-gutter-width) * 2));
+    flex: 0 1 calc(100% - var(--u-gutter-width) * 2);
+    max-width: calc(100% - var(--u-gutter-width) * 2);
   }
 }
 @media (min-width: 1200px) {
   .xlg\:col-1 {
-    flex: 0 1 calc(8.3333333333% - (var(--u-gutter-width) * 2));
-    max-width: calc(8.3333333333% - (var(--u-gutter-width) * 2));
+    flex: 0 1 calc(8.3333333333% - var(--u-gutter-width) * 2);
+    max-width: calc(8.3333333333% - var(--u-gutter-width) * 2);
   }
   .xlg\:col-2 {
-    flex: 0 1 calc(16.6666666667% - (var(--u-gutter-width) * 2));
-    max-width: calc(16.6666666667% - (var(--u-gutter-width) * 2));
+    flex: 0 1 calc(16.6666666667% - var(--u-gutter-width) * 2);
+    max-width: calc(16.6666666667% - var(--u-gutter-width) * 2);
   }
   .xlg\:col-3 {
-    flex: 0 1 calc(25% - (var(--u-gutter-width) * 2));
-    max-width: calc(25% - (var(--u-gutter-width) * 2));
+    flex: 0 1 calc(25% - var(--u-gutter-width) * 2);
+    max-width: calc(25% - var(--u-gutter-width) * 2);
   }
   .xlg\:col-4 {
-    flex: 0 1 calc(33.3333333333% - (var(--u-gutter-width) * 2));
-    max-width: calc(33.3333333333% - (var(--u-gutter-width) * 2));
+    flex: 0 1 calc(33.3333333333% - var(--u-gutter-width) * 2);
+    max-width: calc(33.3333333333% - var(--u-gutter-width) * 2);
   }
   .xlg\:col-5 {
-    flex: 0 1 calc(41.6666666667% - (var(--u-gutter-width) * 2));
-    max-width: calc(41.6666666667% - (var(--u-gutter-width) * 2));
+    flex: 0 1 calc(41.6666666667% - var(--u-gutter-width) * 2);
+    max-width: calc(41.6666666667% - var(--u-gutter-width) * 2);
   }
   .xlg\:col-6 {
-    flex: 0 1 calc(50% - (var(--u-gutter-width) * 2));
-    max-width: calc(50% - (var(--u-gutter-width) * 2));
+    flex: 0 1 calc(50% - var(--u-gutter-width) * 2);
+    max-width: calc(50% - var(--u-gutter-width) * 2);
   }
   .xlg\:col-7 {
-    flex: 0 1 calc(58.3333333333% - (var(--u-gutter-width) * 2));
-    max-width: calc(58.3333333333% - (var(--u-gutter-width) * 2));
+    flex: 0 1 calc(58.3333333333% - var(--u-gutter-width) * 2);
+    max-width: calc(58.3333333333% - var(--u-gutter-width) * 2);
   }
   .xlg\:col-8 {
-    flex: 0 1 calc(66.6666666667% - (var(--u-gutter-width) * 2));
-    max-width: calc(66.6666666667% - (var(--u-gutter-width) * 2));
+    flex: 0 1 calc(66.6666666667% - var(--u-gutter-width) * 2);
+    max-width: calc(66.6666666667% - var(--u-gutter-width) * 2);
   }
   .xlg\:col-9 {
-    flex: 0 1 calc(75% - (var(--u-gutter-width) * 2));
-    max-width: calc(75% - (var(--u-gutter-width) * 2));
+    flex: 0 1 calc(75% - var(--u-gutter-width) * 2);
+    max-width: calc(75% - var(--u-gutter-width) * 2);
   }
   .xlg\:col-10 {
-    flex: 0 1 calc(83.3333333333% - (var(--u-gutter-width) * 2));
-    max-width: calc(83.3333333333% - (var(--u-gutter-width) * 2));
+    flex: 0 1 calc(83.3333333333% - var(--u-gutter-width) * 2);
+    max-width: calc(83.3333333333% - var(--u-gutter-width) * 2);
   }
   .xlg\:col-11 {
-    flex: 0 1 calc(91.6666666667% - (var(--u-gutter-width) * 2));
-    max-width: calc(91.6666666667% - (var(--u-gutter-width) * 2));
+    flex: 0 1 calc(91.6666666667% - var(--u-gutter-width) * 2);
+    max-width: calc(91.6666666667% - var(--u-gutter-width) * 2);
   }
   .xlg\:col-12 {
-    flex: 0 1 calc(100% - (var(--u-gutter-width) * 2));
-    max-width: calc(100% - (var(--u-gutter-width) * 2));
+    flex: 0 1 calc(100% - var(--u-gutter-width) * 2);
+    max-width: calc(100% - var(--u-gutter-width) * 2);
   }
 }
-.grid-12, .grid-11, .grid-10, .grid-9, .grid-8, .grid-7, .grid-6, .grid-5, .grid-4, .grid-3, .grid-2, .grid-1 {
-  display: grid;
-  align-items: start;
-  grid-template-columns: repeat(var(--grid-columns, 12), 1fr);
-}
-
-.grid-1 {
-  --grid-columns: 1;
-}
-
-.grid-2 {
-  --grid-columns: 2;
-}
-
-.grid-3 {
-  --grid-columns: 3;
-}
-
-.grid-4 {
-  --grid-columns: 4;
-}
-
-.grid-5 {
-  --grid-columns: 5;
-}
-
-.grid-6 {
-  --grid-columns: 6;
-}
-
-.grid-7 {
-  --grid-columns: 7;
-}
-
-.grid-8 {
-  --grid-columns: 8;
-}
-
-.grid-9 {
-  --grid-columns: 9;
-}
-
-.grid-10 {
-  --grid-columns: 10;
-}
-
-.grid-11 {
-  --grid-columns: 11;
-}
-
-.grid-12 {
-  --grid-columns: 12;
-}
-
 @media (min-width: 576px) {
   .sm\:grid-1 {
     --grid-columns: 1;
@@ -503,163 +449,163 @@
   }
 }
 .d-inline {
-  display: inline !important;
+  display: important(inline);
 }
 
 .d-inline-block {
-  display: inline-block !important;
+  display: important(inline-block);
 }
 
 .d-block {
-  display: block !important;
+  display: important(block);
 }
 
 .d-none {
-  display: none !important;
+  display: important(none);
 }
 
 @media (min-width: 576px) {
   .sm\:d-inline {
-    display: inline !important;
+    display: important(inline);
   }
   .sm\:d-inline-block {
-    display: inline-block !important;
+    display: important(inline-block);
   }
   .sm\:d-block {
-    display: block !important;
+    display: important(block);
   }
   .sm\:d-none {
-    display: none !important;
+    display: important(none);
   }
 }
 @media (min-width: 768px) {
   .md\:d-inline {
-    display: inline !important;
+    display: important(inline);
   }
   .md\:d-inline-block {
-    display: inline-block !important;
+    display: important(inline-block);
   }
   .md\:d-block {
-    display: block !important;
+    display: important(block);
   }
   .md\:d-none {
-    display: none !important;
+    display: important(none);
   }
 }
 @media (min-width: 992px) {
   .lg\:d-inline {
-    display: inline !important;
+    display: important(inline);
   }
   .lg\:d-inline-block {
-    display: inline-block !important;
+    display: important(inline-block);
   }
   .lg\:d-block {
-    display: block !important;
+    display: important(block);
   }
   .lg\:d-none {
-    display: none !important;
+    display: important(none);
   }
 }
 @media (min-width: 1200px) {
   .xlg\:d-inline {
-    display: inline !important;
+    display: important(inline);
   }
   .xlg\:d-inline-block {
-    display: inline-block !important;
+    display: important(inline-block);
   }
   .xlg\:d-block {
-    display: block !important;
+    display: important(block);
   }
   .xlg\:d-none {
-    display: none !important;
+    display: important(none);
   }
 }
 .d-flex {
-  display: flex !important;
+  display: important(flex);
 }
 
 .d-inline-flex {
-  display: inline-flex !important;
+  display: important(inline-flex);
 }
 
 .flex-wrap {
-  flex-wrap: wrap !important;
+  flex-wrap: important(wrap);
 }
 
 .flex-fill {
-  flex: 1 !important;
+  flex: important(1);
 }
 
 .flex-row {
-  flex-direction: row !important;
+  flex-direction: important(row);
 }
 
 .flex-column {
-  flex-direction: column !important;
+  flex-direction: important(column);
 }
 
 .justify-between {
-  justify-content: space-between !important;
+  justify-content: important(space-between);
 }
 
 .justify-center {
-  justify-content: center !important;
+  justify-content: important(center);
 }
 
 .justify-start {
-  justify-content: flex-start !important;
+  justify-content: important(flex-start);
 }
 
 .justify-end {
-  justify-content: flex-end !important;
+  justify-content: important(flex-end);
 }
 
 .items-start {
-  align-items: flex-start !important;
+  align-items: important(flex-start);
 }
 
 .items-center {
-  align-items: center !important;
+  align-items: important(center);
 }
 
 .items-end {
-  align-items: flex-end !important;
+  align-items: important(flex-end);
 }
 
 .self-start {
-  align-self: flex-start !important;
+  align-self: important(flex-start);
 }
 
 .self-end {
-  align-self: flex-end !important;
+  align-self: important(flex-end);
 }
 
 .self-center {
-  align-self: center !important;
+  align-self: important(center);
 }
 
 .gap-0 {
-  gap: 0 !important;
+  gap: important(0);
 }
 
 .gap-xs {
-  gap: 5px !important;
+  gap: important(5px);
 }
 
 .gap-sm {
-  gap: 10px !important;
+  gap: important(10px);
 }
 
 .gap-md {
-  gap: 15px !important;
+  gap: important(15px);
 }
 
 .gap-lg {
-  gap: 20px !important;
+  gap: important(20px);
 }
 
 .gap-xlg {
-  gap: 30px !important;
+  gap: important(30px);
 }
 
 .flex-0 {
@@ -704,70 +650,70 @@
 
 @media (min-width: 576px) {
   .sm\:d-flex {
-    display: flex !important;
+    display: important(flex);
   }
   .sm\:d-inline-flex {
-    display: inline-flex !important;
+    display: important(inline-flex);
   }
   .sm\:flex-wrap {
-    flex-wrap: wrap !important;
+    flex-wrap: important(wrap);
   }
   .sm\:flex-fill {
-    flex: 1 !important;
+    flex: important(1);
   }
   .sm\:flex-row {
-    flex-direction: row !important;
+    flex-direction: important(row);
   }
   .sm\:flex-column {
-    flex-direction: column !important;
+    flex-direction: important(column);
   }
   .sm\:justify-between {
-    justify-content: space-between !important;
+    justify-content: important(space-between);
   }
   .sm\:justify-center {
-    justify-content: center !important;
+    justify-content: important(center);
   }
   .sm\:justify-start {
-    justify-content: flex-start !important;
+    justify-content: important(flex-start);
   }
   .sm\:justify-end {
-    justify-content: flex-end !important;
+    justify-content: important(flex-end);
   }
   .sm\:items-start {
-    align-items: flex-start !important;
+    align-items: important(flex-start);
   }
   .sm\:items-center {
-    align-items: center !important;
+    align-items: important(center);
   }
   .sm\:items-end {
-    align-items: flex-end !important;
+    align-items: important(flex-end);
   }
   .sm\:self-start {
-    align-self: flex-start !important;
+    align-self: important(flex-start);
   }
   .sm\:self-end {
-    align-self: flex-end !important;
+    align-self: important(flex-end);
   }
   .sm\:self-center {
-    align-self: center !important;
+    align-self: important(center);
   }
   .sm\:gap-0 {
-    gap: 0 !important;
+    gap: important(0);
   }
   .sm\:gap-xs {
-    gap: 5px !important;
+    gap: important(5px);
   }
   .sm\:gap-sm {
-    gap: 10px !important;
+    gap: important(10px);
   }
   .sm\:gap-md {
-    gap: 15px !important;
+    gap: important(15px);
   }
   .sm\:gap-lg {
-    gap: 20px !important;
+    gap: important(20px);
   }
   .sm\:gap-xlg {
-    gap: 30px !important;
+    gap: important(30px);
   }
   .sm\:flex-0 {
     flex: 0;
@@ -802,70 +748,70 @@
 }
 @media (min-width: 768px) {
   .md\:d-flex {
-    display: flex !important;
+    display: important(flex);
   }
   .md\:d-inline-flex {
-    display: inline-flex !important;
+    display: important(inline-flex);
   }
   .md\:flex-wrap {
-    flex-wrap: wrap !important;
+    flex-wrap: important(wrap);
   }
   .md\:flex-fill {
-    flex: 1 !important;
+    flex: important(1);
   }
   .md\:flex-row {
-    flex-direction: row !important;
+    flex-direction: important(row);
   }
   .md\:flex-column {
-    flex-direction: column !important;
+    flex-direction: important(column);
   }
   .md\:justify-between {
-    justify-content: space-between !important;
+    justify-content: important(space-between);
   }
   .md\:justify-center {
-    justify-content: center !important;
+    justify-content: important(center);
   }
   .md\:justify-start {
-    justify-content: flex-start !important;
+    justify-content: important(flex-start);
   }
   .md\:justify-end {
-    justify-content: flex-end !important;
+    justify-content: important(flex-end);
   }
   .md\:items-start {
-    align-items: flex-start !important;
+    align-items: important(flex-start);
   }
   .md\:items-center {
-    align-items: center !important;
+    align-items: important(center);
   }
   .md\:items-end {
-    align-items: flex-end !important;
+    align-items: important(flex-end);
   }
   .md\:self-start {
-    align-self: flex-start !important;
+    align-self: important(flex-start);
   }
   .md\:self-end {
-    align-self: flex-end !important;
+    align-self: important(flex-end);
   }
   .md\:self-center {
-    align-self: center !important;
+    align-self: important(center);
   }
   .md\:gap-0 {
-    gap: 0 !important;
+    gap: important(0);
   }
   .md\:gap-xs {
-    gap: 5px !important;
+    gap: important(5px);
   }
   .md\:gap-sm {
-    gap: 10px !important;
+    gap: important(10px);
   }
   .md\:gap-md {
-    gap: 15px !important;
+    gap: important(15px);
   }
   .md\:gap-lg {
-    gap: 20px !important;
+    gap: important(20px);
   }
   .md\:gap-xlg {
-    gap: 30px !important;
+    gap: important(30px);
   }
   .md\:flex-0 {
     flex: 0;
@@ -900,70 +846,70 @@
 }
 @media (min-width: 992px) {
   .lg\:d-flex {
-    display: flex !important;
+    display: important(flex);
   }
   .lg\:d-inline-flex {
-    display: inline-flex !important;
+    display: important(inline-flex);
   }
   .lg\:flex-wrap {
-    flex-wrap: wrap !important;
+    flex-wrap: important(wrap);
   }
   .lg\:flex-fill {
-    flex: 1 !important;
+    flex: important(1);
   }
   .lg\:flex-row {
-    flex-direction: row !important;
+    flex-direction: important(row);
   }
   .lg\:flex-column {
-    flex-direction: column !important;
+    flex-direction: important(column);
   }
   .lg\:justify-between {
-    justify-content: space-between !important;
+    justify-content: important(space-between);
   }
   .lg\:justify-center {
-    justify-content: center !important;
+    justify-content: important(center);
   }
   .lg\:justify-start {
-    justify-content: flex-start !important;
+    justify-content: important(flex-start);
   }
   .lg\:justify-end {
-    justify-content: flex-end !important;
+    justify-content: important(flex-end);
   }
   .lg\:items-start {
-    align-items: flex-start !important;
+    align-items: important(flex-start);
   }
   .lg\:items-center {
-    align-items: center !important;
+    align-items: important(center);
   }
   .lg\:items-end {
-    align-items: flex-end !important;
+    align-items: important(flex-end);
   }
   .lg\:self-start {
-    align-self: flex-start !important;
+    align-self: important(flex-start);
   }
   .lg\:self-end {
-    align-self: flex-end !important;
+    align-self: important(flex-end);
   }
   .lg\:self-center {
-    align-self: center !important;
+    align-self: important(center);
   }
   .lg\:gap-0 {
-    gap: 0 !important;
+    gap: important(0);
   }
   .lg\:gap-xs {
-    gap: 5px !important;
+    gap: important(5px);
   }
   .lg\:gap-sm {
-    gap: 10px !important;
+    gap: important(10px);
   }
   .lg\:gap-md {
-    gap: 15px !important;
+    gap: important(15px);
   }
   .lg\:gap-lg {
-    gap: 20px !important;
+    gap: important(20px);
   }
   .lg\:gap-xlg {
-    gap: 30px !important;
+    gap: important(30px);
   }
   .lg\:flex-0 {
     flex: 0;
@@ -998,70 +944,70 @@
 }
 @media (min-width: 1200px) {
   .xlg\:d-flex {
-    display: flex !important;
+    display: important(flex);
   }
   .xlg\:d-inline-flex {
-    display: inline-flex !important;
+    display: important(inline-flex);
   }
   .xlg\:flex-wrap {
-    flex-wrap: wrap !important;
+    flex-wrap: important(wrap);
   }
   .xlg\:flex-fill {
-    flex: 1 !important;
+    flex: important(1);
   }
   .xlg\:flex-row {
-    flex-direction: row !important;
+    flex-direction: important(row);
   }
   .xlg\:flex-column {
-    flex-direction: column !important;
+    flex-direction: important(column);
   }
   .xlg\:justify-between {
-    justify-content: space-between !important;
+    justify-content: important(space-between);
   }
   .xlg\:justify-center {
-    justify-content: center !important;
+    justify-content: important(center);
   }
   .xlg\:justify-start {
-    justify-content: flex-start !important;
+    justify-content: important(flex-start);
   }
   .xlg\:justify-end {
-    justify-content: flex-end !important;
+    justify-content: important(flex-end);
   }
   .xlg\:items-start {
-    align-items: flex-start !important;
+    align-items: important(flex-start);
   }
   .xlg\:items-center {
-    align-items: center !important;
+    align-items: important(center);
   }
   .xlg\:items-end {
-    align-items: flex-end !important;
+    align-items: important(flex-end);
   }
   .xlg\:self-start {
-    align-self: flex-start !important;
+    align-self: important(flex-start);
   }
   .xlg\:self-end {
-    align-self: flex-end !important;
+    align-self: important(flex-end);
   }
   .xlg\:self-center {
-    align-self: center !important;
+    align-self: important(center);
   }
   .xlg\:gap-0 {
-    gap: 0 !important;
+    gap: important(0);
   }
   .xlg\:gap-xs {
-    gap: 5px !important;
+    gap: important(5px);
   }
   .xlg\:gap-sm {
-    gap: 10px !important;
+    gap: important(10px);
   }
   .xlg\:gap-md {
-    gap: 15px !important;
+    gap: important(15px);
   }
   .xlg\:gap-lg {
-    gap: 20px !important;
+    gap: important(20px);
   }
   .xlg\:gap-xlg {
-    gap: 30px !important;
+    gap: important(30px);
   }
   .xlg\:flex-0 {
     flex: 0;
@@ -1095,1791 +1041,1791 @@
   }
 }
 .m-0 {
-  margin: 0 !important;
+  margin: important(0);
 }
 
 .mt-0 {
-  margin-top: 0 !important;
+  margin-top: important(0);
 }
 
 .mr-0 {
-  margin-right: 0 !important;
+  margin-right: important(0);
 }
 
 .mb-0 {
-  margin-bottom: 0 !important;
+  margin-bottom: important(0);
 }
 
 .ml-0 {
-  margin-left: 0 !important;
+  margin-left: important(0);
 }
 
 .my-0 {
-  margin-top: 0 !important;
-  margin-bottom: 0 !important;
+  margin-top: important(0);
+  margin-bottom: important(0);
 }
 
 .mx-0 {
-  margin-left: 0 !important;
-  margin-right: 0 !important;
+  margin-left: important(0);
+  margin-right: important(0);
 }
 
 .p-0 {
-  padding: 0 !important;
+  padding: important(0);
 }
 
 .pt-0 {
-  padding-top: 0 !important;
+  padding-top: important(0);
 }
 
 .pr-0 {
-  padding-right: 0 !important;
+  padding-right: important(0);
 }
 
 .pb-0 {
-  padding-bottom: 0 !important;
+  padding-bottom: important(0);
 }
 
 .pl-0 {
-  padding-left: 0 !important;
+  padding-left: important(0);
 }
 
 .py-0 {
-  padding-top: 0 !important;
-  padding-bottom: 0 !important;
+  padding-top: important(0);
+  padding-bottom: important(0);
 }
 
 .px-0 {
-  padding-left: 0 !important;
-  padding-right: 0 !important;
+  padding-left: important(0);
+  padding-right: important(0);
 }
 
 .m-xs {
-  margin: 5px !important;
+  margin: important(5px);
 }
 
 .mt-xs {
-  margin-top: 5px !important;
+  margin-top: important(5px);
 }
 
 .mr-xs {
-  margin-right: 5px !important;
+  margin-right: important(5px);
 }
 
 .mb-xs {
-  margin-bottom: 5px !important;
+  margin-bottom: important(5px);
 }
 
 .ml-xs {
-  margin-left: 5px !important;
+  margin-left: important(5px);
 }
 
 .my-xs {
-  margin-top: 5px !important;
-  margin-bottom: 5px !important;
+  margin-top: important(5px);
+  margin-bottom: important(5px);
 }
 
 .mx-xs {
-  margin-left: 5px !important;
-  margin-right: 5px !important;
+  margin-left: important(5px);
+  margin-right: important(5px);
 }
 
 .p-xs {
-  padding: 5px !important;
+  padding: important(5px);
 }
 
 .pt-xs {
-  padding-top: 5px !important;
+  padding-top: important(5px);
 }
 
 .pr-xs {
-  padding-right: 5px !important;
+  padding-right: important(5px);
 }
 
 .pb-xs {
-  padding-bottom: 5px !important;
+  padding-bottom: important(5px);
 }
 
 .pl-xs {
-  padding-left: 5px !important;
+  padding-left: important(5px);
 }
 
 .py-xs {
-  padding-top: 5px !important;
-  padding-bottom: 5px !important;
+  padding-top: important(5px);
+  padding-bottom: important(5px);
 }
 
 .px-xs {
-  padding-left: 5px !important;
-  padding-right: 5px !important;
+  padding-left: important(5px);
+  padding-right: important(5px);
 }
 
 .m-sm {
-  margin: 10px !important;
+  margin: important(10px);
 }
 
 .mt-sm {
-  margin-top: 10px !important;
+  margin-top: important(10px);
 }
 
 .mr-sm {
-  margin-right: 10px !important;
+  margin-right: important(10px);
 }
 
 .mb-sm {
-  margin-bottom: 10px !important;
+  margin-bottom: important(10px);
 }
 
 .ml-sm {
-  margin-left: 10px !important;
+  margin-left: important(10px);
 }
 
 .my-sm {
-  margin-top: 10px !important;
-  margin-bottom: 10px !important;
+  margin-top: important(10px);
+  margin-bottom: important(10px);
 }
 
 .mx-sm {
-  margin-left: 10px !important;
-  margin-right: 10px !important;
+  margin-left: important(10px);
+  margin-right: important(10px);
 }
 
 .p-sm {
-  padding: 10px !important;
+  padding: important(10px);
 }
 
 .pt-sm {
-  padding-top: 10px !important;
+  padding-top: important(10px);
 }
 
 .pr-sm {
-  padding-right: 10px !important;
+  padding-right: important(10px);
 }
 
 .pb-sm {
-  padding-bottom: 10px !important;
+  padding-bottom: important(10px);
 }
 
 .pl-sm {
-  padding-left: 10px !important;
+  padding-left: important(10px);
 }
 
 .py-sm {
-  padding-top: 10px !important;
-  padding-bottom: 10px !important;
+  padding-top: important(10px);
+  padding-bottom: important(10px);
 }
 
 .px-sm {
-  padding-left: 10px !important;
-  padding-right: 10px !important;
+  padding-left: important(10px);
+  padding-right: important(10px);
 }
 
 .m-md {
-  margin: 15px !important;
+  margin: important(15px);
 }
 
 .mt-md {
-  margin-top: 15px !important;
+  margin-top: important(15px);
 }
 
 .mr-md {
-  margin-right: 15px !important;
+  margin-right: important(15px);
 }
 
 .mb-md {
-  margin-bottom: 15px !important;
+  margin-bottom: important(15px);
 }
 
 .ml-md {
-  margin-left: 15px !important;
+  margin-left: important(15px);
 }
 
 .my-md {
-  margin-top: 15px !important;
-  margin-bottom: 15px !important;
+  margin-top: important(15px);
+  margin-bottom: important(15px);
 }
 
 .mx-md {
-  margin-left: 15px !important;
-  margin-right: 15px !important;
+  margin-left: important(15px);
+  margin-right: important(15px);
 }
 
 .p-md {
-  padding: 15px !important;
+  padding: important(15px);
 }
 
 .pt-md {
-  padding-top: 15px !important;
+  padding-top: important(15px);
 }
 
 .pr-md {
-  padding-right: 15px !important;
+  padding-right: important(15px);
 }
 
 .pb-md {
-  padding-bottom: 15px !important;
+  padding-bottom: important(15px);
 }
 
 .pl-md {
-  padding-left: 15px !important;
+  padding-left: important(15px);
 }
 
 .py-md {
-  padding-top: 15px !important;
-  padding-bottom: 15px !important;
+  padding-top: important(15px);
+  padding-bottom: important(15px);
 }
 
 .px-md {
-  padding-left: 15px !important;
-  padding-right: 15px !important;
+  padding-left: important(15px);
+  padding-right: important(15px);
 }
 
 .m-lg {
-  margin: 20px !important;
+  margin: important(20px);
 }
 
 .mt-lg {
-  margin-top: 20px !important;
+  margin-top: important(20px);
 }
 
 .mr-lg {
-  margin-right: 20px !important;
+  margin-right: important(20px);
 }
 
 .mb-lg {
-  margin-bottom: 20px !important;
+  margin-bottom: important(20px);
 }
 
 .ml-lg {
-  margin-left: 20px !important;
+  margin-left: important(20px);
 }
 
 .my-lg {
-  margin-top: 20px !important;
-  margin-bottom: 20px !important;
+  margin-top: important(20px);
+  margin-bottom: important(20px);
 }
 
 .mx-lg {
-  margin-left: 20px !important;
-  margin-right: 20px !important;
+  margin-left: important(20px);
+  margin-right: important(20px);
 }
 
 .p-lg {
-  padding: 20px !important;
+  padding: important(20px);
 }
 
 .pt-lg {
-  padding-top: 20px !important;
+  padding-top: important(20px);
 }
 
 .pr-lg {
-  padding-right: 20px !important;
+  padding-right: important(20px);
 }
 
 .pb-lg {
-  padding-bottom: 20px !important;
+  padding-bottom: important(20px);
 }
 
 .pl-lg {
-  padding-left: 20px !important;
+  padding-left: important(20px);
 }
 
 .py-lg {
-  padding-top: 20px !important;
-  padding-bottom: 20px !important;
+  padding-top: important(20px);
+  padding-bottom: important(20px);
 }
 
 .px-lg {
-  padding-left: 20px !important;
-  padding-right: 20px !important;
+  padding-left: important(20px);
+  padding-right: important(20px);
 }
 
 .m-xlg {
-  margin: 30px !important;
+  margin: important(30px);
 }
 
 .mt-xlg {
-  margin-top: 30px !important;
+  margin-top: important(30px);
 }
 
 .mr-xlg {
-  margin-right: 30px !important;
+  margin-right: important(30px);
 }
 
 .mb-xlg {
-  margin-bottom: 30px !important;
+  margin-bottom: important(30px);
 }
 
 .ml-xlg {
-  margin-left: 30px !important;
+  margin-left: important(30px);
 }
 
 .my-xlg {
-  margin-top: 30px !important;
-  margin-bottom: 30px !important;
+  margin-top: important(30px);
+  margin-bottom: important(30px);
 }
 
 .mx-xlg {
-  margin-left: 30px !important;
-  margin-right: 30px !important;
+  margin-left: important(30px);
+  margin-right: important(30px);
 }
 
 .p-xlg {
-  padding: 30px !important;
+  padding: important(30px);
 }
 
 .pt-xlg {
-  padding-top: 30px !important;
+  padding-top: important(30px);
 }
 
 .pr-xlg {
-  padding-right: 30px !important;
+  padding-right: important(30px);
 }
 
 .pb-xlg {
-  padding-bottom: 30px !important;
+  padding-bottom: important(30px);
 }
 
 .pl-xlg {
-  padding-left: 30px !important;
+  padding-left: important(30px);
 }
 
 .py-xlg {
-  padding-top: 30px !important;
-  padding-bottom: 30px !important;
+  padding-top: important(30px);
+  padding-bottom: important(30px);
 }
 
 .px-xlg {
-  padding-left: 30px !important;
-  padding-right: 30px !important;
+  padding-left: important(30px);
+  padding-right: important(30px);
 }
 
 .m-auto {
-  margin: auto !important;
+  margin: important(auto);
 }
 
 .mt-auto {
-  margin-top: auto !important;
+  margin-top: important(auto);
 }
 
 .mr-auto {
-  margin-right: auto !important;
+  margin-right: important(auto);
 }
 
 .mb-auto {
-  margin-bottom: auto !important;
+  margin-bottom: important(auto);
 }
 
 .ml-auto {
-  margin-left: auto !important;
+  margin-left: important(auto);
 }
 
 .my-auto {
-  margin-top: auto !important;
-  margin-bottom: auto !important;
+  margin-top: important(auto);
+  margin-bottom: important(auto);
 }
 
 .mx-auto {
-  margin-left: auto !important;
-  margin-right: auto !important;
+  margin-left: important(auto);
+  margin-right: important(auto);
 }
 
 .p-auto {
-  padding: auto !important;
+  padding: important(auto);
 }
 
 .pt-auto {
-  padding-top: auto !important;
+  padding-top: important(auto);
 }
 
 .pr-auto {
-  padding-right: auto !important;
+  padding-right: important(auto);
 }
 
 .pb-auto {
-  padding-bottom: auto !important;
+  padding-bottom: important(auto);
 }
 
 .pl-auto {
-  padding-left: auto !important;
+  padding-left: important(auto);
 }
 
 .py-auto {
-  padding-top: auto !important;
-  padding-bottom: auto !important;
+  padding-top: important(auto);
+  padding-bottom: important(auto);
 }
 
 .px-auto {
-  padding-left: auto !important;
-  padding-right: auto !important;
+  padding-left: important(auto);
+  padding-right: important(auto);
 }
 
 @media (min-width: 576px) {
   .sm\:m-0 {
-    margin: 0 !important;
+    margin: important(0);
   }
   .sm\:mt-0 {
-    margin-top: 0 !important;
+    margin-top: important(0);
   }
   .sm\:mr-0 {
-    margin-right: 0 !important;
+    margin-right: important(0);
   }
   .sm\:mb-0 {
-    margin-bottom: 0 !important;
+    margin-bottom: important(0);
   }
   .sm\:ml-0 {
-    margin-left: 0 !important;
+    margin-left: important(0);
   }
   .sm\:my-0 {
-    margin-top: 0 !important;
-    margin-bottom: 0 !important;
+    margin-top: important(0);
+    margin-bottom: important(0);
   }
   .sm\:mx-0 {
-    margin-left: 0 !important;
-    margin-right: 0 !important;
+    margin-left: important(0);
+    margin-right: important(0);
   }
   .sm\:p-0 {
-    padding: 0 !important;
+    padding: important(0);
   }
   .sm\:pt-0 {
-    padding-top: 0 !important;
+    padding-top: important(0);
   }
   .sm\:pr-0 {
-    padding-right: 0 !important;
+    padding-right: important(0);
   }
   .sm\:pb-0 {
-    padding-bottom: 0 !important;
+    padding-bottom: important(0);
   }
   .sm\:pl-0 {
-    padding-left: 0 !important;
+    padding-left: important(0);
   }
   .sm\:py-0 {
-    padding-top: 0 !important;
-    padding-bottom: 0 !important;
+    padding-top: important(0);
+    padding-bottom: important(0);
   }
   .sm\:px-0 {
-    padding-left: 0 !important;
-    padding-right: 0 !important;
+    padding-left: important(0);
+    padding-right: important(0);
   }
   .sm\:m-xs {
-    margin: 5px !important;
+    margin: important(5px);
   }
   .sm\:mt-xs {
-    margin-top: 5px !important;
+    margin-top: important(5px);
   }
   .sm\:mr-xs {
-    margin-right: 5px !important;
+    margin-right: important(5px);
   }
   .sm\:mb-xs {
-    margin-bottom: 5px !important;
+    margin-bottom: important(5px);
   }
   .sm\:ml-xs {
-    margin-left: 5px !important;
+    margin-left: important(5px);
   }
   .sm\:my-xs {
-    margin-top: 5px !important;
-    margin-bottom: 5px !important;
+    margin-top: important(5px);
+    margin-bottom: important(5px);
   }
   .sm\:mx-xs {
-    margin-left: 5px !important;
-    margin-right: 5px !important;
+    margin-left: important(5px);
+    margin-right: important(5px);
   }
   .sm\:p-xs {
-    padding: 5px !important;
+    padding: important(5px);
   }
   .sm\:pt-xs {
-    padding-top: 5px !important;
+    padding-top: important(5px);
   }
   .sm\:pr-xs {
-    padding-right: 5px !important;
+    padding-right: important(5px);
   }
   .sm\:pb-xs {
-    padding-bottom: 5px !important;
+    padding-bottom: important(5px);
   }
   .sm\:pl-xs {
-    padding-left: 5px !important;
+    padding-left: important(5px);
   }
   .sm\:py-xs {
-    padding-top: 5px !important;
-    padding-bottom: 5px !important;
+    padding-top: important(5px);
+    padding-bottom: important(5px);
   }
   .sm\:px-xs {
-    padding-left: 5px !important;
-    padding-right: 5px !important;
+    padding-left: important(5px);
+    padding-right: important(5px);
   }
   .sm\:m-sm {
-    margin: 10px !important;
+    margin: important(10px);
   }
   .sm\:mt-sm {
-    margin-top: 10px !important;
+    margin-top: important(10px);
   }
   .sm\:mr-sm {
-    margin-right: 10px !important;
+    margin-right: important(10px);
   }
   .sm\:mb-sm {
-    margin-bottom: 10px !important;
+    margin-bottom: important(10px);
   }
   .sm\:ml-sm {
-    margin-left: 10px !important;
+    margin-left: important(10px);
   }
   .sm\:my-sm {
-    margin-top: 10px !important;
-    margin-bottom: 10px !important;
+    margin-top: important(10px);
+    margin-bottom: important(10px);
   }
   .sm\:mx-sm {
-    margin-left: 10px !important;
-    margin-right: 10px !important;
+    margin-left: important(10px);
+    margin-right: important(10px);
   }
   .sm\:p-sm {
-    padding: 10px !important;
+    padding: important(10px);
   }
   .sm\:pt-sm {
-    padding-top: 10px !important;
+    padding-top: important(10px);
   }
   .sm\:pr-sm {
-    padding-right: 10px !important;
+    padding-right: important(10px);
   }
   .sm\:pb-sm {
-    padding-bottom: 10px !important;
+    padding-bottom: important(10px);
   }
   .sm\:pl-sm {
-    padding-left: 10px !important;
+    padding-left: important(10px);
   }
   .sm\:py-sm {
-    padding-top: 10px !important;
-    padding-bottom: 10px !important;
+    padding-top: important(10px);
+    padding-bottom: important(10px);
   }
   .sm\:px-sm {
-    padding-left: 10px !important;
-    padding-right: 10px !important;
+    padding-left: important(10px);
+    padding-right: important(10px);
   }
   .sm\:m-md {
-    margin: 15px !important;
+    margin: important(15px);
   }
   .sm\:mt-md {
-    margin-top: 15px !important;
+    margin-top: important(15px);
   }
   .sm\:mr-md {
-    margin-right: 15px !important;
+    margin-right: important(15px);
   }
   .sm\:mb-md {
-    margin-bottom: 15px !important;
+    margin-bottom: important(15px);
   }
   .sm\:ml-md {
-    margin-left: 15px !important;
+    margin-left: important(15px);
   }
   .sm\:my-md {
-    margin-top: 15px !important;
-    margin-bottom: 15px !important;
+    margin-top: important(15px);
+    margin-bottom: important(15px);
   }
   .sm\:mx-md {
-    margin-left: 15px !important;
-    margin-right: 15px !important;
+    margin-left: important(15px);
+    margin-right: important(15px);
   }
   .sm\:p-md {
-    padding: 15px !important;
+    padding: important(15px);
   }
   .sm\:pt-md {
-    padding-top: 15px !important;
+    padding-top: important(15px);
   }
   .sm\:pr-md {
-    padding-right: 15px !important;
+    padding-right: important(15px);
   }
   .sm\:pb-md {
-    padding-bottom: 15px !important;
+    padding-bottom: important(15px);
   }
   .sm\:pl-md {
-    padding-left: 15px !important;
+    padding-left: important(15px);
   }
   .sm\:py-md {
-    padding-top: 15px !important;
-    padding-bottom: 15px !important;
+    padding-top: important(15px);
+    padding-bottom: important(15px);
   }
   .sm\:px-md {
-    padding-left: 15px !important;
-    padding-right: 15px !important;
+    padding-left: important(15px);
+    padding-right: important(15px);
   }
   .sm\:m-lg {
-    margin: 20px !important;
+    margin: important(20px);
   }
   .sm\:mt-lg {
-    margin-top: 20px !important;
+    margin-top: important(20px);
   }
   .sm\:mr-lg {
-    margin-right: 20px !important;
+    margin-right: important(20px);
   }
   .sm\:mb-lg {
-    margin-bottom: 20px !important;
+    margin-bottom: important(20px);
   }
   .sm\:ml-lg {
-    margin-left: 20px !important;
+    margin-left: important(20px);
   }
   .sm\:my-lg {
-    margin-top: 20px !important;
-    margin-bottom: 20px !important;
+    margin-top: important(20px);
+    margin-bottom: important(20px);
   }
   .sm\:mx-lg {
-    margin-left: 20px !important;
-    margin-right: 20px !important;
+    margin-left: important(20px);
+    margin-right: important(20px);
   }
   .sm\:p-lg {
-    padding: 20px !important;
+    padding: important(20px);
   }
   .sm\:pt-lg {
-    padding-top: 20px !important;
+    padding-top: important(20px);
   }
   .sm\:pr-lg {
-    padding-right: 20px !important;
+    padding-right: important(20px);
   }
   .sm\:pb-lg {
-    padding-bottom: 20px !important;
+    padding-bottom: important(20px);
   }
   .sm\:pl-lg {
-    padding-left: 20px !important;
+    padding-left: important(20px);
   }
   .sm\:py-lg {
-    padding-top: 20px !important;
-    padding-bottom: 20px !important;
+    padding-top: important(20px);
+    padding-bottom: important(20px);
   }
   .sm\:px-lg {
-    padding-left: 20px !important;
-    padding-right: 20px !important;
+    padding-left: important(20px);
+    padding-right: important(20px);
   }
   .sm\:m-xlg {
-    margin: 30px !important;
+    margin: important(30px);
   }
   .sm\:mt-xlg {
-    margin-top: 30px !important;
+    margin-top: important(30px);
   }
   .sm\:mr-xlg {
-    margin-right: 30px !important;
+    margin-right: important(30px);
   }
   .sm\:mb-xlg {
-    margin-bottom: 30px !important;
+    margin-bottom: important(30px);
   }
   .sm\:ml-xlg {
-    margin-left: 30px !important;
+    margin-left: important(30px);
   }
   .sm\:my-xlg {
-    margin-top: 30px !important;
-    margin-bottom: 30px !important;
+    margin-top: important(30px);
+    margin-bottom: important(30px);
   }
   .sm\:mx-xlg {
-    margin-left: 30px !important;
-    margin-right: 30px !important;
+    margin-left: important(30px);
+    margin-right: important(30px);
   }
   .sm\:p-xlg {
-    padding: 30px !important;
+    padding: important(30px);
   }
   .sm\:pt-xlg {
-    padding-top: 30px !important;
+    padding-top: important(30px);
   }
   .sm\:pr-xlg {
-    padding-right: 30px !important;
+    padding-right: important(30px);
   }
   .sm\:pb-xlg {
-    padding-bottom: 30px !important;
+    padding-bottom: important(30px);
   }
   .sm\:pl-xlg {
-    padding-left: 30px !important;
+    padding-left: important(30px);
   }
   .sm\:py-xlg {
-    padding-top: 30px !important;
-    padding-bottom: 30px !important;
+    padding-top: important(30px);
+    padding-bottom: important(30px);
   }
   .sm\:px-xlg {
-    padding-left: 30px !important;
-    padding-right: 30px !important;
+    padding-left: important(30px);
+    padding-right: important(30px);
   }
   .sm\:m-auto {
-    margin: auto !important;
+    margin: important(auto);
   }
   .sm\:mt-auto {
-    margin-top: auto !important;
+    margin-top: important(auto);
   }
   .sm\:mr-auto {
-    margin-right: auto !important;
+    margin-right: important(auto);
   }
   .sm\:mb-auto {
-    margin-bottom: auto !important;
+    margin-bottom: important(auto);
   }
   .sm\:ml-auto {
-    margin-left: auto !important;
+    margin-left: important(auto);
   }
   .sm\:my-auto {
-    margin-top: auto !important;
-    margin-bottom: auto !important;
+    margin-top: important(auto);
+    margin-bottom: important(auto);
   }
   .sm\:mx-auto {
-    margin-left: auto !important;
-    margin-right: auto !important;
+    margin-left: important(auto);
+    margin-right: important(auto);
   }
   .sm\:p-auto {
-    padding: auto !important;
+    padding: important(auto);
   }
   .sm\:pt-auto {
-    padding-top: auto !important;
+    padding-top: important(auto);
   }
   .sm\:pr-auto {
-    padding-right: auto !important;
+    padding-right: important(auto);
   }
   .sm\:pb-auto {
-    padding-bottom: auto !important;
+    padding-bottom: important(auto);
   }
   .sm\:pl-auto {
-    padding-left: auto !important;
+    padding-left: important(auto);
   }
   .sm\:py-auto {
-    padding-top: auto !important;
-    padding-bottom: auto !important;
+    padding-top: important(auto);
+    padding-bottom: important(auto);
   }
   .sm\:px-auto {
-    padding-left: auto !important;
-    padding-right: auto !important;
+    padding-left: important(auto);
+    padding-right: important(auto);
   }
 }
 @media (min-width: 768px) {
   .md\:m-0 {
-    margin: 0 !important;
+    margin: important(0);
   }
   .md\:mt-0 {
-    margin-top: 0 !important;
+    margin-top: important(0);
   }
   .md\:mr-0 {
-    margin-right: 0 !important;
+    margin-right: important(0);
   }
   .md\:mb-0 {
-    margin-bottom: 0 !important;
+    margin-bottom: important(0);
   }
   .md\:ml-0 {
-    margin-left: 0 !important;
+    margin-left: important(0);
   }
   .md\:my-0 {
-    margin-top: 0 !important;
-    margin-bottom: 0 !important;
+    margin-top: important(0);
+    margin-bottom: important(0);
   }
   .md\:mx-0 {
-    margin-left: 0 !important;
-    margin-right: 0 !important;
+    margin-left: important(0);
+    margin-right: important(0);
   }
   .md\:p-0 {
-    padding: 0 !important;
+    padding: important(0);
   }
   .md\:pt-0 {
-    padding-top: 0 !important;
+    padding-top: important(0);
   }
   .md\:pr-0 {
-    padding-right: 0 !important;
+    padding-right: important(0);
   }
   .md\:pb-0 {
-    padding-bottom: 0 !important;
+    padding-bottom: important(0);
   }
   .md\:pl-0 {
-    padding-left: 0 !important;
+    padding-left: important(0);
   }
   .md\:py-0 {
-    padding-top: 0 !important;
-    padding-bottom: 0 !important;
+    padding-top: important(0);
+    padding-bottom: important(0);
   }
   .md\:px-0 {
-    padding-left: 0 !important;
-    padding-right: 0 !important;
+    padding-left: important(0);
+    padding-right: important(0);
   }
   .md\:m-xs {
-    margin: 5px !important;
+    margin: important(5px);
   }
   .md\:mt-xs {
-    margin-top: 5px !important;
+    margin-top: important(5px);
   }
   .md\:mr-xs {
-    margin-right: 5px !important;
+    margin-right: important(5px);
   }
   .md\:mb-xs {
-    margin-bottom: 5px !important;
+    margin-bottom: important(5px);
   }
   .md\:ml-xs {
-    margin-left: 5px !important;
+    margin-left: important(5px);
   }
   .md\:my-xs {
-    margin-top: 5px !important;
-    margin-bottom: 5px !important;
+    margin-top: important(5px);
+    margin-bottom: important(5px);
   }
   .md\:mx-xs {
-    margin-left: 5px !important;
-    margin-right: 5px !important;
+    margin-left: important(5px);
+    margin-right: important(5px);
   }
   .md\:p-xs {
-    padding: 5px !important;
+    padding: important(5px);
   }
   .md\:pt-xs {
-    padding-top: 5px !important;
+    padding-top: important(5px);
   }
   .md\:pr-xs {
-    padding-right: 5px !important;
+    padding-right: important(5px);
   }
   .md\:pb-xs {
-    padding-bottom: 5px !important;
+    padding-bottom: important(5px);
   }
   .md\:pl-xs {
-    padding-left: 5px !important;
+    padding-left: important(5px);
   }
   .md\:py-xs {
-    padding-top: 5px !important;
-    padding-bottom: 5px !important;
+    padding-top: important(5px);
+    padding-bottom: important(5px);
   }
   .md\:px-xs {
-    padding-left: 5px !important;
-    padding-right: 5px !important;
+    padding-left: important(5px);
+    padding-right: important(5px);
   }
   .md\:m-sm {
-    margin: 10px !important;
+    margin: important(10px);
   }
   .md\:mt-sm {
-    margin-top: 10px !important;
+    margin-top: important(10px);
   }
   .md\:mr-sm {
-    margin-right: 10px !important;
+    margin-right: important(10px);
   }
   .md\:mb-sm {
-    margin-bottom: 10px !important;
+    margin-bottom: important(10px);
   }
   .md\:ml-sm {
-    margin-left: 10px !important;
+    margin-left: important(10px);
   }
   .md\:my-sm {
-    margin-top: 10px !important;
-    margin-bottom: 10px !important;
+    margin-top: important(10px);
+    margin-bottom: important(10px);
   }
   .md\:mx-sm {
-    margin-left: 10px !important;
-    margin-right: 10px !important;
+    margin-left: important(10px);
+    margin-right: important(10px);
   }
   .md\:p-sm {
-    padding: 10px !important;
+    padding: important(10px);
   }
   .md\:pt-sm {
-    padding-top: 10px !important;
+    padding-top: important(10px);
   }
   .md\:pr-sm {
-    padding-right: 10px !important;
+    padding-right: important(10px);
   }
   .md\:pb-sm {
-    padding-bottom: 10px !important;
+    padding-bottom: important(10px);
   }
   .md\:pl-sm {
-    padding-left: 10px !important;
+    padding-left: important(10px);
   }
   .md\:py-sm {
-    padding-top: 10px !important;
-    padding-bottom: 10px !important;
+    padding-top: important(10px);
+    padding-bottom: important(10px);
   }
   .md\:px-sm {
-    padding-left: 10px !important;
-    padding-right: 10px !important;
+    padding-left: important(10px);
+    padding-right: important(10px);
   }
   .md\:m-md {
-    margin: 15px !important;
+    margin: important(15px);
   }
   .md\:mt-md {
-    margin-top: 15px !important;
+    margin-top: important(15px);
   }
   .md\:mr-md {
-    margin-right: 15px !important;
+    margin-right: important(15px);
   }
   .md\:mb-md {
-    margin-bottom: 15px !important;
+    margin-bottom: important(15px);
   }
   .md\:ml-md {
-    margin-left: 15px !important;
+    margin-left: important(15px);
   }
   .md\:my-md {
-    margin-top: 15px !important;
-    margin-bottom: 15px !important;
+    margin-top: important(15px);
+    margin-bottom: important(15px);
   }
   .md\:mx-md {
-    margin-left: 15px !important;
-    margin-right: 15px !important;
+    margin-left: important(15px);
+    margin-right: important(15px);
   }
   .md\:p-md {
-    padding: 15px !important;
+    padding: important(15px);
   }
   .md\:pt-md {
-    padding-top: 15px !important;
+    padding-top: important(15px);
   }
   .md\:pr-md {
-    padding-right: 15px !important;
+    padding-right: important(15px);
   }
   .md\:pb-md {
-    padding-bottom: 15px !important;
+    padding-bottom: important(15px);
   }
   .md\:pl-md {
-    padding-left: 15px !important;
+    padding-left: important(15px);
   }
   .md\:py-md {
-    padding-top: 15px !important;
-    padding-bottom: 15px !important;
+    padding-top: important(15px);
+    padding-bottom: important(15px);
   }
   .md\:px-md {
-    padding-left: 15px !important;
-    padding-right: 15px !important;
+    padding-left: important(15px);
+    padding-right: important(15px);
   }
   .md\:m-lg {
-    margin: 20px !important;
+    margin: important(20px);
   }
   .md\:mt-lg {
-    margin-top: 20px !important;
+    margin-top: important(20px);
   }
   .md\:mr-lg {
-    margin-right: 20px !important;
+    margin-right: important(20px);
   }
   .md\:mb-lg {
-    margin-bottom: 20px !important;
+    margin-bottom: important(20px);
   }
   .md\:ml-lg {
-    margin-left: 20px !important;
+    margin-left: important(20px);
   }
   .md\:my-lg {
-    margin-top: 20px !important;
-    margin-bottom: 20px !important;
+    margin-top: important(20px);
+    margin-bottom: important(20px);
   }
   .md\:mx-lg {
-    margin-left: 20px !important;
-    margin-right: 20px !important;
+    margin-left: important(20px);
+    margin-right: important(20px);
   }
   .md\:p-lg {
-    padding: 20px !important;
+    padding: important(20px);
   }
   .md\:pt-lg {
-    padding-top: 20px !important;
+    padding-top: important(20px);
   }
   .md\:pr-lg {
-    padding-right: 20px !important;
+    padding-right: important(20px);
   }
   .md\:pb-lg {
-    padding-bottom: 20px !important;
+    padding-bottom: important(20px);
   }
   .md\:pl-lg {
-    padding-left: 20px !important;
+    padding-left: important(20px);
   }
   .md\:py-lg {
-    padding-top: 20px !important;
-    padding-bottom: 20px !important;
+    padding-top: important(20px);
+    padding-bottom: important(20px);
   }
   .md\:px-lg {
-    padding-left: 20px !important;
-    padding-right: 20px !important;
+    padding-left: important(20px);
+    padding-right: important(20px);
   }
   .md\:m-xlg {
-    margin: 30px !important;
+    margin: important(30px);
   }
   .md\:mt-xlg {
-    margin-top: 30px !important;
+    margin-top: important(30px);
   }
   .md\:mr-xlg {
-    margin-right: 30px !important;
+    margin-right: important(30px);
   }
   .md\:mb-xlg {
-    margin-bottom: 30px !important;
+    margin-bottom: important(30px);
   }
   .md\:ml-xlg {
-    margin-left: 30px !important;
+    margin-left: important(30px);
   }
   .md\:my-xlg {
-    margin-top: 30px !important;
-    margin-bottom: 30px !important;
+    margin-top: important(30px);
+    margin-bottom: important(30px);
   }
   .md\:mx-xlg {
-    margin-left: 30px !important;
-    margin-right: 30px !important;
+    margin-left: important(30px);
+    margin-right: important(30px);
   }
   .md\:p-xlg {
-    padding: 30px !important;
+    padding: important(30px);
   }
   .md\:pt-xlg {
-    padding-top: 30px !important;
+    padding-top: important(30px);
   }
   .md\:pr-xlg {
-    padding-right: 30px !important;
+    padding-right: important(30px);
   }
   .md\:pb-xlg {
-    padding-bottom: 30px !important;
+    padding-bottom: important(30px);
   }
   .md\:pl-xlg {
-    padding-left: 30px !important;
+    padding-left: important(30px);
   }
   .md\:py-xlg {
-    padding-top: 30px !important;
-    padding-bottom: 30px !important;
+    padding-top: important(30px);
+    padding-bottom: important(30px);
   }
   .md\:px-xlg {
-    padding-left: 30px !important;
-    padding-right: 30px !important;
+    padding-left: important(30px);
+    padding-right: important(30px);
   }
   .md\:m-auto {
-    margin: auto !important;
+    margin: important(auto);
   }
   .md\:mt-auto {
-    margin-top: auto !important;
+    margin-top: important(auto);
   }
   .md\:mr-auto {
-    margin-right: auto !important;
+    margin-right: important(auto);
   }
   .md\:mb-auto {
-    margin-bottom: auto !important;
+    margin-bottom: important(auto);
   }
   .md\:ml-auto {
-    margin-left: auto !important;
+    margin-left: important(auto);
   }
   .md\:my-auto {
-    margin-top: auto !important;
-    margin-bottom: auto !important;
+    margin-top: important(auto);
+    margin-bottom: important(auto);
   }
   .md\:mx-auto {
-    margin-left: auto !important;
-    margin-right: auto !important;
+    margin-left: important(auto);
+    margin-right: important(auto);
   }
   .md\:p-auto {
-    padding: auto !important;
+    padding: important(auto);
   }
   .md\:pt-auto {
-    padding-top: auto !important;
+    padding-top: important(auto);
   }
   .md\:pr-auto {
-    padding-right: auto !important;
+    padding-right: important(auto);
   }
   .md\:pb-auto {
-    padding-bottom: auto !important;
+    padding-bottom: important(auto);
   }
   .md\:pl-auto {
-    padding-left: auto !important;
+    padding-left: important(auto);
   }
   .md\:py-auto {
-    padding-top: auto !important;
-    padding-bottom: auto !important;
+    padding-top: important(auto);
+    padding-bottom: important(auto);
   }
   .md\:px-auto {
-    padding-left: auto !important;
-    padding-right: auto !important;
+    padding-left: important(auto);
+    padding-right: important(auto);
   }
 }
 @media (min-width: 992px) {
   .lg\:m-0 {
-    margin: 0 !important;
+    margin: important(0);
   }
   .lg\:mt-0 {
-    margin-top: 0 !important;
+    margin-top: important(0);
   }
   .lg\:mr-0 {
-    margin-right: 0 !important;
+    margin-right: important(0);
   }
   .lg\:mb-0 {
-    margin-bottom: 0 !important;
+    margin-bottom: important(0);
   }
   .lg\:ml-0 {
-    margin-left: 0 !important;
+    margin-left: important(0);
   }
   .lg\:my-0 {
-    margin-top: 0 !important;
-    margin-bottom: 0 !important;
+    margin-top: important(0);
+    margin-bottom: important(0);
   }
   .lg\:mx-0 {
-    margin-left: 0 !important;
-    margin-right: 0 !important;
+    margin-left: important(0);
+    margin-right: important(0);
   }
   .lg\:p-0 {
-    padding: 0 !important;
+    padding: important(0);
   }
   .lg\:pt-0 {
-    padding-top: 0 !important;
+    padding-top: important(0);
   }
   .lg\:pr-0 {
-    padding-right: 0 !important;
+    padding-right: important(0);
   }
   .lg\:pb-0 {
-    padding-bottom: 0 !important;
+    padding-bottom: important(0);
   }
   .lg\:pl-0 {
-    padding-left: 0 !important;
+    padding-left: important(0);
   }
   .lg\:py-0 {
-    padding-top: 0 !important;
-    padding-bottom: 0 !important;
+    padding-top: important(0);
+    padding-bottom: important(0);
   }
   .lg\:px-0 {
-    padding-left: 0 !important;
-    padding-right: 0 !important;
+    padding-left: important(0);
+    padding-right: important(0);
   }
   .lg\:m-xs {
-    margin: 5px !important;
+    margin: important(5px);
   }
   .lg\:mt-xs {
-    margin-top: 5px !important;
+    margin-top: important(5px);
   }
   .lg\:mr-xs {
-    margin-right: 5px !important;
+    margin-right: important(5px);
   }
   .lg\:mb-xs {
-    margin-bottom: 5px !important;
+    margin-bottom: important(5px);
   }
   .lg\:ml-xs {
-    margin-left: 5px !important;
+    margin-left: important(5px);
   }
   .lg\:my-xs {
-    margin-top: 5px !important;
-    margin-bottom: 5px !important;
+    margin-top: important(5px);
+    margin-bottom: important(5px);
   }
   .lg\:mx-xs {
-    margin-left: 5px !important;
-    margin-right: 5px !important;
+    margin-left: important(5px);
+    margin-right: important(5px);
   }
   .lg\:p-xs {
-    padding: 5px !important;
+    padding: important(5px);
   }
   .lg\:pt-xs {
-    padding-top: 5px !important;
+    padding-top: important(5px);
   }
   .lg\:pr-xs {
-    padding-right: 5px !important;
+    padding-right: important(5px);
   }
   .lg\:pb-xs {
-    padding-bottom: 5px !important;
+    padding-bottom: important(5px);
   }
   .lg\:pl-xs {
-    padding-left: 5px !important;
+    padding-left: important(5px);
   }
   .lg\:py-xs {
-    padding-top: 5px !important;
-    padding-bottom: 5px !important;
+    padding-top: important(5px);
+    padding-bottom: important(5px);
   }
   .lg\:px-xs {
-    padding-left: 5px !important;
-    padding-right: 5px !important;
+    padding-left: important(5px);
+    padding-right: important(5px);
   }
   .lg\:m-sm {
-    margin: 10px !important;
+    margin: important(10px);
   }
   .lg\:mt-sm {
-    margin-top: 10px !important;
+    margin-top: important(10px);
   }
   .lg\:mr-sm {
-    margin-right: 10px !important;
+    margin-right: important(10px);
   }
   .lg\:mb-sm {
-    margin-bottom: 10px !important;
+    margin-bottom: important(10px);
   }
   .lg\:ml-sm {
-    margin-left: 10px !important;
+    margin-left: important(10px);
   }
   .lg\:my-sm {
-    margin-top: 10px !important;
-    margin-bottom: 10px !important;
+    margin-top: important(10px);
+    margin-bottom: important(10px);
   }
   .lg\:mx-sm {
-    margin-left: 10px !important;
-    margin-right: 10px !important;
+    margin-left: important(10px);
+    margin-right: important(10px);
   }
   .lg\:p-sm {
-    padding: 10px !important;
+    padding: important(10px);
   }
   .lg\:pt-sm {
-    padding-top: 10px !important;
+    padding-top: important(10px);
   }
   .lg\:pr-sm {
-    padding-right: 10px !important;
+    padding-right: important(10px);
   }
   .lg\:pb-sm {
-    padding-bottom: 10px !important;
+    padding-bottom: important(10px);
   }
   .lg\:pl-sm {
-    padding-left: 10px !important;
+    padding-left: important(10px);
   }
   .lg\:py-sm {
-    padding-top: 10px !important;
-    padding-bottom: 10px !important;
+    padding-top: important(10px);
+    padding-bottom: important(10px);
   }
   .lg\:px-sm {
-    padding-left: 10px !important;
-    padding-right: 10px !important;
+    padding-left: important(10px);
+    padding-right: important(10px);
   }
   .lg\:m-md {
-    margin: 15px !important;
+    margin: important(15px);
   }
   .lg\:mt-md {
-    margin-top: 15px !important;
+    margin-top: important(15px);
   }
   .lg\:mr-md {
-    margin-right: 15px !important;
+    margin-right: important(15px);
   }
   .lg\:mb-md {
-    margin-bottom: 15px !important;
+    margin-bottom: important(15px);
   }
   .lg\:ml-md {
-    margin-left: 15px !important;
+    margin-left: important(15px);
   }
   .lg\:my-md {
-    margin-top: 15px !important;
-    margin-bottom: 15px !important;
+    margin-top: important(15px);
+    margin-bottom: important(15px);
   }
   .lg\:mx-md {
-    margin-left: 15px !important;
-    margin-right: 15px !important;
+    margin-left: important(15px);
+    margin-right: important(15px);
   }
   .lg\:p-md {
-    padding: 15px !important;
+    padding: important(15px);
   }
   .lg\:pt-md {
-    padding-top: 15px !important;
+    padding-top: important(15px);
   }
   .lg\:pr-md {
-    padding-right: 15px !important;
+    padding-right: important(15px);
   }
   .lg\:pb-md {
-    padding-bottom: 15px !important;
+    padding-bottom: important(15px);
   }
   .lg\:pl-md {
-    padding-left: 15px !important;
+    padding-left: important(15px);
   }
   .lg\:py-md {
-    padding-top: 15px !important;
-    padding-bottom: 15px !important;
+    padding-top: important(15px);
+    padding-bottom: important(15px);
   }
   .lg\:px-md {
-    padding-left: 15px !important;
-    padding-right: 15px !important;
+    padding-left: important(15px);
+    padding-right: important(15px);
   }
   .lg\:m-lg {
-    margin: 20px !important;
+    margin: important(20px);
   }
   .lg\:mt-lg {
-    margin-top: 20px !important;
+    margin-top: important(20px);
   }
   .lg\:mr-lg {
-    margin-right: 20px !important;
+    margin-right: important(20px);
   }
   .lg\:mb-lg {
-    margin-bottom: 20px !important;
+    margin-bottom: important(20px);
   }
   .lg\:ml-lg {
-    margin-left: 20px !important;
+    margin-left: important(20px);
   }
   .lg\:my-lg {
-    margin-top: 20px !important;
-    margin-bottom: 20px !important;
+    margin-top: important(20px);
+    margin-bottom: important(20px);
   }
   .lg\:mx-lg {
-    margin-left: 20px !important;
-    margin-right: 20px !important;
+    margin-left: important(20px);
+    margin-right: important(20px);
   }
   .lg\:p-lg {
-    padding: 20px !important;
+    padding: important(20px);
   }
   .lg\:pt-lg {
-    padding-top: 20px !important;
+    padding-top: important(20px);
   }
   .lg\:pr-lg {
-    padding-right: 20px !important;
+    padding-right: important(20px);
   }
   .lg\:pb-lg {
-    padding-bottom: 20px !important;
+    padding-bottom: important(20px);
   }
   .lg\:pl-lg {
-    padding-left: 20px !important;
+    padding-left: important(20px);
   }
   .lg\:py-lg {
-    padding-top: 20px !important;
-    padding-bottom: 20px !important;
+    padding-top: important(20px);
+    padding-bottom: important(20px);
   }
   .lg\:px-lg {
-    padding-left: 20px !important;
-    padding-right: 20px !important;
+    padding-left: important(20px);
+    padding-right: important(20px);
   }
   .lg\:m-xlg {
-    margin: 30px !important;
+    margin: important(30px);
   }
   .lg\:mt-xlg {
-    margin-top: 30px !important;
+    margin-top: important(30px);
   }
   .lg\:mr-xlg {
-    margin-right: 30px !important;
+    margin-right: important(30px);
   }
   .lg\:mb-xlg {
-    margin-bottom: 30px !important;
+    margin-bottom: important(30px);
   }
   .lg\:ml-xlg {
-    margin-left: 30px !important;
+    margin-left: important(30px);
   }
   .lg\:my-xlg {
-    margin-top: 30px !important;
-    margin-bottom: 30px !important;
+    margin-top: important(30px);
+    margin-bottom: important(30px);
   }
   .lg\:mx-xlg {
-    margin-left: 30px !important;
-    margin-right: 30px !important;
+    margin-left: important(30px);
+    margin-right: important(30px);
   }
   .lg\:p-xlg {
-    padding: 30px !important;
+    padding: important(30px);
   }
   .lg\:pt-xlg {
-    padding-top: 30px !important;
+    padding-top: important(30px);
   }
   .lg\:pr-xlg {
-    padding-right: 30px !important;
+    padding-right: important(30px);
   }
   .lg\:pb-xlg {
-    padding-bottom: 30px !important;
+    padding-bottom: important(30px);
   }
   .lg\:pl-xlg {
-    padding-left: 30px !important;
+    padding-left: important(30px);
   }
   .lg\:py-xlg {
-    padding-top: 30px !important;
-    padding-bottom: 30px !important;
+    padding-top: important(30px);
+    padding-bottom: important(30px);
   }
   .lg\:px-xlg {
-    padding-left: 30px !important;
-    padding-right: 30px !important;
+    padding-left: important(30px);
+    padding-right: important(30px);
   }
   .lg\:m-auto {
-    margin: auto !important;
+    margin: important(auto);
   }
   .lg\:mt-auto {
-    margin-top: auto !important;
+    margin-top: important(auto);
   }
   .lg\:mr-auto {
-    margin-right: auto !important;
+    margin-right: important(auto);
   }
   .lg\:mb-auto {
-    margin-bottom: auto !important;
+    margin-bottom: important(auto);
   }
   .lg\:ml-auto {
-    margin-left: auto !important;
+    margin-left: important(auto);
   }
   .lg\:my-auto {
-    margin-top: auto !important;
-    margin-bottom: auto !important;
+    margin-top: important(auto);
+    margin-bottom: important(auto);
   }
   .lg\:mx-auto {
-    margin-left: auto !important;
-    margin-right: auto !important;
+    margin-left: important(auto);
+    margin-right: important(auto);
   }
   .lg\:p-auto {
-    padding: auto !important;
+    padding: important(auto);
   }
   .lg\:pt-auto {
-    padding-top: auto !important;
+    padding-top: important(auto);
   }
   .lg\:pr-auto {
-    padding-right: auto !important;
+    padding-right: important(auto);
   }
   .lg\:pb-auto {
-    padding-bottom: auto !important;
+    padding-bottom: important(auto);
   }
   .lg\:pl-auto {
-    padding-left: auto !important;
+    padding-left: important(auto);
   }
   .lg\:py-auto {
-    padding-top: auto !important;
-    padding-bottom: auto !important;
+    padding-top: important(auto);
+    padding-bottom: important(auto);
   }
   .lg\:px-auto {
-    padding-left: auto !important;
-    padding-right: auto !important;
+    padding-left: important(auto);
+    padding-right: important(auto);
   }
 }
 @media (min-width: 1200px) {
   .xlg\:m-0 {
-    margin: 0 !important;
+    margin: important(0);
   }
   .xlg\:mt-0 {
-    margin-top: 0 !important;
+    margin-top: important(0);
   }
   .xlg\:mr-0 {
-    margin-right: 0 !important;
+    margin-right: important(0);
   }
   .xlg\:mb-0 {
-    margin-bottom: 0 !important;
+    margin-bottom: important(0);
   }
   .xlg\:ml-0 {
-    margin-left: 0 !important;
+    margin-left: important(0);
   }
   .xlg\:my-0 {
-    margin-top: 0 !important;
-    margin-bottom: 0 !important;
+    margin-top: important(0);
+    margin-bottom: important(0);
   }
   .xlg\:mx-0 {
-    margin-left: 0 !important;
-    margin-right: 0 !important;
+    margin-left: important(0);
+    margin-right: important(0);
   }
   .xlg\:p-0 {
-    padding: 0 !important;
+    padding: important(0);
   }
   .xlg\:pt-0 {
-    padding-top: 0 !important;
+    padding-top: important(0);
   }
   .xlg\:pr-0 {
-    padding-right: 0 !important;
+    padding-right: important(0);
   }
   .xlg\:pb-0 {
-    padding-bottom: 0 !important;
+    padding-bottom: important(0);
   }
   .xlg\:pl-0 {
-    padding-left: 0 !important;
+    padding-left: important(0);
   }
   .xlg\:py-0 {
-    padding-top: 0 !important;
-    padding-bottom: 0 !important;
+    padding-top: important(0);
+    padding-bottom: important(0);
   }
   .xlg\:px-0 {
-    padding-left: 0 !important;
-    padding-right: 0 !important;
+    padding-left: important(0);
+    padding-right: important(0);
   }
   .xlg\:m-xs {
-    margin: 5px !important;
+    margin: important(5px);
   }
   .xlg\:mt-xs {
-    margin-top: 5px !important;
+    margin-top: important(5px);
   }
   .xlg\:mr-xs {
-    margin-right: 5px !important;
+    margin-right: important(5px);
   }
   .xlg\:mb-xs {
-    margin-bottom: 5px !important;
+    margin-bottom: important(5px);
   }
   .xlg\:ml-xs {
-    margin-left: 5px !important;
+    margin-left: important(5px);
   }
   .xlg\:my-xs {
-    margin-top: 5px !important;
-    margin-bottom: 5px !important;
+    margin-top: important(5px);
+    margin-bottom: important(5px);
   }
   .xlg\:mx-xs {
-    margin-left: 5px !important;
-    margin-right: 5px !important;
+    margin-left: important(5px);
+    margin-right: important(5px);
   }
   .xlg\:p-xs {
-    padding: 5px !important;
+    padding: important(5px);
   }
   .xlg\:pt-xs {
-    padding-top: 5px !important;
+    padding-top: important(5px);
   }
   .xlg\:pr-xs {
-    padding-right: 5px !important;
+    padding-right: important(5px);
   }
   .xlg\:pb-xs {
-    padding-bottom: 5px !important;
+    padding-bottom: important(5px);
   }
   .xlg\:pl-xs {
-    padding-left: 5px !important;
+    padding-left: important(5px);
   }
   .xlg\:py-xs {
-    padding-top: 5px !important;
-    padding-bottom: 5px !important;
+    padding-top: important(5px);
+    padding-bottom: important(5px);
   }
   .xlg\:px-xs {
-    padding-left: 5px !important;
-    padding-right: 5px !important;
+    padding-left: important(5px);
+    padding-right: important(5px);
   }
   .xlg\:m-sm {
-    margin: 10px !important;
+    margin: important(10px);
   }
   .xlg\:mt-sm {
-    margin-top: 10px !important;
+    margin-top: important(10px);
   }
   .xlg\:mr-sm {
-    margin-right: 10px !important;
+    margin-right: important(10px);
   }
   .xlg\:mb-sm {
-    margin-bottom: 10px !important;
+    margin-bottom: important(10px);
   }
   .xlg\:ml-sm {
-    margin-left: 10px !important;
+    margin-left: important(10px);
   }
   .xlg\:my-sm {
-    margin-top: 10px !important;
-    margin-bottom: 10px !important;
+    margin-top: important(10px);
+    margin-bottom: important(10px);
   }
   .xlg\:mx-sm {
-    margin-left: 10px !important;
-    margin-right: 10px !important;
+    margin-left: important(10px);
+    margin-right: important(10px);
   }
   .xlg\:p-sm {
-    padding: 10px !important;
+    padding: important(10px);
   }
   .xlg\:pt-sm {
-    padding-top: 10px !important;
+    padding-top: important(10px);
   }
   .xlg\:pr-sm {
-    padding-right: 10px !important;
+    padding-right: important(10px);
   }
   .xlg\:pb-sm {
-    padding-bottom: 10px !important;
+    padding-bottom: important(10px);
   }
   .xlg\:pl-sm {
-    padding-left: 10px !important;
+    padding-left: important(10px);
   }
   .xlg\:py-sm {
-    padding-top: 10px !important;
-    padding-bottom: 10px !important;
+    padding-top: important(10px);
+    padding-bottom: important(10px);
   }
   .xlg\:px-sm {
-    padding-left: 10px !important;
-    padding-right: 10px !important;
+    padding-left: important(10px);
+    padding-right: important(10px);
   }
   .xlg\:m-md {
-    margin: 15px !important;
+    margin: important(15px);
   }
   .xlg\:mt-md {
-    margin-top: 15px !important;
+    margin-top: important(15px);
   }
   .xlg\:mr-md {
-    margin-right: 15px !important;
+    margin-right: important(15px);
   }
   .xlg\:mb-md {
-    margin-bottom: 15px !important;
+    margin-bottom: important(15px);
   }
   .xlg\:ml-md {
-    margin-left: 15px !important;
+    margin-left: important(15px);
   }
   .xlg\:my-md {
-    margin-top: 15px !important;
-    margin-bottom: 15px !important;
+    margin-top: important(15px);
+    margin-bottom: important(15px);
   }
   .xlg\:mx-md {
-    margin-left: 15px !important;
-    margin-right: 15px !important;
+    margin-left: important(15px);
+    margin-right: important(15px);
   }
   .xlg\:p-md {
-    padding: 15px !important;
+    padding: important(15px);
   }
   .xlg\:pt-md {
-    padding-top: 15px !important;
+    padding-top: important(15px);
   }
   .xlg\:pr-md {
-    padding-right: 15px !important;
+    padding-right: important(15px);
   }
   .xlg\:pb-md {
-    padding-bottom: 15px !important;
+    padding-bottom: important(15px);
   }
   .xlg\:pl-md {
-    padding-left: 15px !important;
+    padding-left: important(15px);
   }
   .xlg\:py-md {
-    padding-top: 15px !important;
-    padding-bottom: 15px !important;
+    padding-top: important(15px);
+    padding-bottom: important(15px);
   }
   .xlg\:px-md {
-    padding-left: 15px !important;
-    padding-right: 15px !important;
+    padding-left: important(15px);
+    padding-right: important(15px);
   }
   .xlg\:m-lg {
-    margin: 20px !important;
+    margin: important(20px);
   }
   .xlg\:mt-lg {
-    margin-top: 20px !important;
+    margin-top: important(20px);
   }
   .xlg\:mr-lg {
-    margin-right: 20px !important;
+    margin-right: important(20px);
   }
   .xlg\:mb-lg {
-    margin-bottom: 20px !important;
+    margin-bottom: important(20px);
   }
   .xlg\:ml-lg {
-    margin-left: 20px !important;
+    margin-left: important(20px);
   }
   .xlg\:my-lg {
-    margin-top: 20px !important;
-    margin-bottom: 20px !important;
+    margin-top: important(20px);
+    margin-bottom: important(20px);
   }
   .xlg\:mx-lg {
-    margin-left: 20px !important;
-    margin-right: 20px !important;
+    margin-left: important(20px);
+    margin-right: important(20px);
   }
   .xlg\:p-lg {
-    padding: 20px !important;
+    padding: important(20px);
   }
   .xlg\:pt-lg {
-    padding-top: 20px !important;
+    padding-top: important(20px);
   }
   .xlg\:pr-lg {
-    padding-right: 20px !important;
+    padding-right: important(20px);
   }
   .xlg\:pb-lg {
-    padding-bottom: 20px !important;
+    padding-bottom: important(20px);
   }
   .xlg\:pl-lg {
-    padding-left: 20px !important;
+    padding-left: important(20px);
   }
   .xlg\:py-lg {
-    padding-top: 20px !important;
-    padding-bottom: 20px !important;
+    padding-top: important(20px);
+    padding-bottom: important(20px);
   }
   .xlg\:px-lg {
-    padding-left: 20px !important;
-    padding-right: 20px !important;
+    padding-left: important(20px);
+    padding-right: important(20px);
   }
   .xlg\:m-xlg {
-    margin: 30px !important;
+    margin: important(30px);
   }
   .xlg\:mt-xlg {
-    margin-top: 30px !important;
+    margin-top: important(30px);
   }
   .xlg\:mr-xlg {
-    margin-right: 30px !important;
+    margin-right: important(30px);
   }
   .xlg\:mb-xlg {
-    margin-bottom: 30px !important;
+    margin-bottom: important(30px);
   }
   .xlg\:ml-xlg {
-    margin-left: 30px !important;
+    margin-left: important(30px);
   }
   .xlg\:my-xlg {
-    margin-top: 30px !important;
-    margin-bottom: 30px !important;
+    margin-top: important(30px);
+    margin-bottom: important(30px);
   }
   .xlg\:mx-xlg {
-    margin-left: 30px !important;
-    margin-right: 30px !important;
+    margin-left: important(30px);
+    margin-right: important(30px);
   }
   .xlg\:p-xlg {
-    padding: 30px !important;
+    padding: important(30px);
   }
   .xlg\:pt-xlg {
-    padding-top: 30px !important;
+    padding-top: important(30px);
   }
   .xlg\:pr-xlg {
-    padding-right: 30px !important;
+    padding-right: important(30px);
   }
   .xlg\:pb-xlg {
-    padding-bottom: 30px !important;
+    padding-bottom: important(30px);
   }
   .xlg\:pl-xlg {
-    padding-left: 30px !important;
+    padding-left: important(30px);
   }
   .xlg\:py-xlg {
-    padding-top: 30px !important;
-    padding-bottom: 30px !important;
+    padding-top: important(30px);
+    padding-bottom: important(30px);
   }
   .xlg\:px-xlg {
-    padding-left: 30px !important;
-    padding-right: 30px !important;
+    padding-left: important(30px);
+    padding-right: important(30px);
   }
   .xlg\:m-auto {
-    margin: auto !important;
+    margin: important(auto);
   }
   .xlg\:mt-auto {
-    margin-top: auto !important;
+    margin-top: important(auto);
   }
   .xlg\:mr-auto {
-    margin-right: auto !important;
+    margin-right: important(auto);
   }
   .xlg\:mb-auto {
-    margin-bottom: auto !important;
+    margin-bottom: important(auto);
   }
   .xlg\:ml-auto {
-    margin-left: auto !important;
+    margin-left: important(auto);
   }
   .xlg\:my-auto {
-    margin-top: auto !important;
-    margin-bottom: auto !important;
+    margin-top: important(auto);
+    margin-bottom: important(auto);
   }
   .xlg\:mx-auto {
-    margin-left: auto !important;
-    margin-right: auto !important;
+    margin-left: important(auto);
+    margin-right: important(auto);
   }
   .xlg\:p-auto {
-    padding: auto !important;
+    padding: important(auto);
   }
   .xlg\:pt-auto {
-    padding-top: auto !important;
+    padding-top: important(auto);
   }
   .xlg\:pr-auto {
-    padding-right: auto !important;
+    padding-right: important(auto);
   }
   .xlg\:pb-auto {
-    padding-bottom: auto !important;
+    padding-bottom: important(auto);
   }
   .xlg\:pl-auto {
-    padding-left: auto !important;
+    padding-left: important(auto);
   }
   .xlg\:py-auto {
-    padding-top: auto !important;
-    padding-bottom: auto !important;
+    padding-top: important(auto);
+    padding-bottom: important(auto);
   }
   .xlg\:px-auto {
-    padding-left: auto !important;
-    padding-right: auto !important;
+    padding-left: important(auto);
+    padding-right: important(auto);
   }
 }
 .text-left {
-  text-align: left !important;
+  text-align: important(left);
 }
 
 .text-right {
-  text-align: right !important;
+  text-align: important(right);
 }
 
 .text-center {
-  text-align: center !important;
+  text-align: important(center);
 }
 
 .text-b {
-  font-weight: bold !important;
+  font-weight: important(bold);
 }
 
 @media (min-width: 576px) {
   .sm\:text-left {
-    text-align: left !important;
+    text-align: important(left);
   }
   .sm\:text-right {
-    text-align: right !important;
+    text-align: important(right);
   }
   .sm\:text-center {
-    text-align: center !important;
+    text-align: important(center);
   }
   .sm\:text-b {
-    font-weight: bold !important;
+    font-weight: important(bold);
   }
 }
 @media (min-width: 768px) {
   .md\:text-left {
-    text-align: left !important;
+    text-align: important(left);
   }
   .md\:text-right {
-    text-align: right !important;
+    text-align: important(right);
   }
   .md\:text-center {
-    text-align: center !important;
+    text-align: important(center);
   }
   .md\:text-b {
-    font-weight: bold !important;
+    font-weight: important(bold);
   }
 }
 @media (min-width: 992px) {
   .lg\:text-left {
-    text-align: left !important;
+    text-align: important(left);
   }
   .lg\:text-right {
-    text-align: right !important;
+    text-align: important(right);
   }
   .lg\:text-center {
-    text-align: center !important;
+    text-align: important(center);
   }
   .lg\:text-b {
-    font-weight: bold !important;
+    font-weight: important(bold);
   }
 }
 @media (min-width: 1200px) {
   .xlg\:text-left {
-    text-align: left !important;
+    text-align: important(left);
   }
   .xlg\:text-right {
-    text-align: right !important;
+    text-align: important(right);
   }
   .xlg\:text-center {
-    text-align: center !important;
+    text-align: important(center);
   }
   .xlg\:text-b {
-    font-weight: bold !important;
+    font-weight: important(bold);
   }
 }
 

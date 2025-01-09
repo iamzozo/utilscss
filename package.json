@@ -1,6 +1,6 @@
 {
   "name": "@iamzozo/utilscss",
-  "version": "0.0.23",
+  "version": "0.0.24",
   "scripts": {
     "build": "sass utils.scss ./build/utils.min.css --style=compressed",
     "dev": "sass utils.scss ./build/utils.css --style=expanded -w",
@@ -17,6 +17,6 @@
   },
   "homepage": "https://github.com/iamzozo/utilscss#readme",
   "devDependencies": {
-    "sass": "^1.49.9"
+    "sass": "^1.83.1"
   }
 }

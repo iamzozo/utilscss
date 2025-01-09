@@ -1,11 +1,11 @@
-@import "scss/variables";
-@import "scss/functions";
-@import "scss/mixins";
+@use "scss/variables";
+@use "scss/functions";
+@use "scss/mixins";
 
 // Core
-@import "scss/reset";
-@import "scss/grid";
-@import "scss/common";
-@import "scss/flex";
-@import "scss/spacing";
-@import "scss/typo";
+@use "scss/reset";
+@use "scss/grid";
+@use "scss/common";
+@use "scss/flex";
+@use "scss/spacing";
+@use "scss/typo";

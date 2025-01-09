@@ -1,71 +1,75 @@
-@include sizing using($prefix) {
+@use "variables";
+@use "mixins";
+@use "functions";
+
+@include mixins.sizing using($prefix) {
     #{$prefix}d-flex {
-        display: important(flex);
+        display: functions.important(flex);
     }
 
     #{$prefix}d-inline-flex {
-        display: important(inline-flex);
+        display: functions.important(inline-flex);
     }
 
     #{$prefix}flex-wrap {
-        flex-wrap: important(wrap);
+        flex-wrap: functions.important(wrap);
     }
 
     #{$prefix}flex-fill {
-        flex: important(1);
+        flex: functions.important(1);
     }
 
     #{$prefix}flex-row {
-        flex-direction: important(row);
+        flex-direction: functions.important(row);
     }
 
     #{$prefix}flex-column {
-        flex-direction: important(column);
+        flex-direction: functions.important(column);
     }
 
     #{$prefix}justify-between {
-        justify-content: important(space-between);
+        justify-content: functions.important(space-between);
     }
 
     #{$prefix}justify-center {
-        justify-content: important(center);
+        justify-content: functions.important(center);
     }
 
     #{$prefix}justify-start {
-        justify-content: important(flex-start);
+        justify-content: functions.important(flex-start);
     }
 
     #{$prefix}justify-end {
-        justify-content: important(flex-end);
+        justify-content: functions.important(flex-end);
     }
 
     #{$prefix}items-start {
-        align-items: important(flex-start);
+        align-items: functions.important(flex-start);
     }
 
     #{$prefix}items-center {
-        align-items: important(center);
+        align-items: functions.important(center);
     }
 
     #{$prefix}items-end {
-        align-items: important(flex-end);
+        align-items: functions.important(flex-end);
     }
 
     #{$prefix}self-start {
-        align-self: important(flex-start);
+        align-self: functions.important(flex-start);
     }
 
     #{$prefix}self-end {
-        align-self: important(flex-end);
+        align-self: functions.important(flex-end);
     }
 
     #{$prefix}self-center {
-        align-self: important(center);
+        align-self: functions.important(center);
     }
 
-    @each $name, $space in $u-spaces {
+    @each $name, $space in variables.$u-spaces {
         #{$prefix}gap-#{$name} {
-            gap: important($space);
+            gap: functions.important($space);
         }
     }
 

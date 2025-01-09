@@ -1,18 +1,21 @@
 // Flex in separate file
-@include sizing using($prefix) {
+@use "mixins";
+@use "functions";
+
+@include mixins.sizing using($prefix) {
     #{$prefix}d-inline {
-        display: important(inline);
+        display: functions.important(inline);
     }
 
     #{$prefix}d-inline-block {
-        display: important(inline-block);
+        display: functions.important(inline-block);
     }
 
     #{$prefix}d-block {
-        display: important(block);
+        display: functions.important(block);
     }
 
     #{$prefix}d-none {
-        display: important(none);
+        display: functions.important(none);
     }
 }

@@ -1,6 +1,7 @@
 // Basic reset
+@use "./variables";
 
-@if($u-enable-reset) {
+@if(variables.$u-enable-reset) {
     * {
         box-sizing: border-box;
     }
@@ -12,9 +13,9 @@
     }
 
     body {
-        font-family: $u-font-family;
+        font-family: variables.$u-font-family;
         font-size: 100%;
-        line-height: $u-line-height;
+        line-height: variables.$u-line-height;
     }
 
     input,
@@ -23,7 +24,7 @@
     textarea {
         font-family: inherit;
         font-size: inherit;
-        line-height: $u-line-height;
+        line-height: variables.$u-line-height;
 
         &:focus {
             outline: none;

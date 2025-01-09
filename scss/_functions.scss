@@ -1,5 +1,7 @@
+@use "variables";
+
 @function important($value) {
-    @if $u-forced-rules {
+    @if variables.$u-forced-rules {
         @return #{$value} !important;
     }
     @else {

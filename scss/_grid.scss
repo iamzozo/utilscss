@@ -1,7 +1,9 @@
 @use "sass:math";
+@use "variables";
+@use "mixins";
 
-.#{$u-prefix}container {
-    max-width: var(--u-container-width, $u-containerWidth);
+.#{variables.$u-prefix}container {
+    max-width: var(--u-container-width, variables.$u-containerWidth);
     margin-left: auto;
     margin-right: auto;
     padding-left: var(--u-container-padding);
@@ -9,19 +11,19 @@
     position: relative;
 }
 
-.#{$u-prefix}row {
+.#{variables.$u-prefix}row {
     margin: 0 calc(var(--u-gutter-width) * -1);
     flex-wrap: wrap;
     display: flex;
 }
 
 // Simple col definition
-.#{$u-prefix}col {
+.#{variables.$u-prefix}col {
     flex: 1;
     margin: 0 var(--u-gutter-width);
 }
 
-.#{$u-prefix}col-auto {
+.#{variables.$u-prefix}col-auto {
     margin: 0 var(--u-gutter-width);
     flex: 0 0 auto;
 }
@@ -35,38 +37,38 @@
 }
 
 @for $i from 1 through 12 {
-    .#{$u-prefix}col-#{$i} {
+    .#{variables.$u-prefix}col-#{$i} {
         @extend %column;
     }
 
-    .#{$u-prefix}col-#{$i} {
-        flex: 0 1 calc(#{percentage(math.div($i, 12))} - (var(--u-gutter-width) * 2));
-        max-width: calc(#{percentage(math.div($i, 12))} - (var(--u-gutter-width) * 2));
+    .#{variables.$u-prefix}col-#{$i} {
+        flex: 0 1 calc(#{math.percentage(math.div($i, 12))} - (var(--u-gutter-width) * 2));
+        max-width: calc(#{math.percentage(math.div($i, 12))} - (var(--u-gutter-width) * 2));
     }
 }
 
 // Separate iteration to use @extend directive outside
 // media queries
-@each $name, $size in $u-sizes {
+@each $name, $size in variables.$u-sizes {
     @if($name != 'base') {
         @for $i from 1 through 12 {
-            .#{$name}\:#{$u-prefix}col-#{$i} {
+            .#{$name}\:#{variables.$u-prefix}col-#{$i} {
                 @extend %column;
             }
         }
     }
 }
 
-@include sizing($withbase: false) using ($prefix) {
+@include mixins.sizing($withbase: false) using ($prefix) {
     @for $i from 1 through 12 {
         #{$prefix}col-#{$i} {
-            flex: 0 1 calc(#{percentage(math.div($i, 12))} - (var(--u-gutter-width) * 2));
-            max-width: calc(#{percentage(math.div($i, 12))} - (var(--u-gutter-width) * 2));
+            flex: 0 1 calc(#{math.percentage(math.div($i, 12))} - (var(--u-gutter-width) * 2));
+            max-width: calc(#{math.percentage(math.div($i, 12))} - (var(--u-gutter-width) * 2));
         }
     }
 }
 
-@include sizing($withbase: false) using ($prefix) {
+@include mixins.sizing($withbase: false) using ($prefix) {
     @for $i from 1 through 12 {
         #{$prefix}grid-#{$i} {
             --grid-columns: #{$i};

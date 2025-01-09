@@ -1,17 +1,21 @@
+@use "sass:string";
+@use "sass:map";
+@use "variables";
+
 @mixin sizing($withbase: true) {
-    $iteratedSizes : $u-sizes;
+    $iteratedSizes : variables.$u-sizes;
 
     @if($withbase == false) {
-        $iteratedSizes: map_remove($u-sizes, 'base');
+        $iteratedSizes: map.remove(variables.$u-sizes, 'base');
     }
 
     @each $name, $size in $iteratedSizes {
         $prepend: '.';
         @if ($name != 'base') {
-            $prepend: unquote('.#{$name}\\:#{$u-prefix}');
+            $prepend: string.unquote('.#{$name}\\:#{variables.$u-prefix}');
         }
         @else {
-            $prepend: '.#{$u-prefix}';
+            $prepend: '.#{variables.$u-prefix}';
         }
 
         $prefix: $prepend;
