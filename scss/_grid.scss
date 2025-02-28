@@ -68,12 +68,4 @@
             }
         }
     }
-
-    @include mixins.sizing($withbase: false) using ($prefix) {
-        @for $i from 1 through 12 {
-            #{$prefix}grid-#{$i} {
-                --grid-columns: #{$i};
-            }
-        }
-    }
 }

@@ -5,6 +5,7 @@
 // Core
 @forward "scss/reset" as reset-*;
 @forward "scss/grid" as grid-*;
+@forward "scss/grid-2" as grid-2-*;
 @forward "scss/common" as common-*;
 @forward "scss/flex" as flex-*;
 @forward "scss/spacing" as spacing-*;
@@ -12,14 +13,19 @@
 
 @use "scss/reset";
 @use "scss/grid";
+@use "scss/grid-2";
 @use "scss/common";
 @use "scss/flex";
 @use "scss/spacing";
 @use "scss/typo";
 
-@mixin styles() {
+@mixin styles($newGrid: false) {
   @include reset.styles();
-  @include grid.styles();
+  @if $newGrid {
+    @include grid-2.styles();
+  } @else {
+    @include grid.styles();
+  }
   @include common.styles();
   @include flex.styles();
   @include spacing.styles();
