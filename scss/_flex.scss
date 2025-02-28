@@ -2,80 +2,82 @@
 @use "mixins";
 @use "functions";
 
-@include mixins.sizing using($prefix) {
-    #{$prefix}d-flex {
-        display: functions.important(flex);
-    }
-
-    #{$prefix}d-inline-flex {
-        display: functions.important(inline-flex);
-    }
-
-    #{$prefix}flex-wrap {
-        flex-wrap: functions.important(wrap);
-    }
-
-    #{$prefix}flex-fill {
-        flex: functions.important(1);
-    }
-
-    #{$prefix}flex-row {
-        flex-direction: functions.important(row);
-    }
-
-    #{$prefix}flex-column {
-        flex-direction: functions.important(column);
-    }
-
-    #{$prefix}justify-between {
-        justify-content: functions.important(space-between);
-    }
-
-    #{$prefix}justify-center {
-        justify-content: functions.important(center);
-    }
-
-    #{$prefix}justify-start {
-        justify-content: functions.important(flex-start);
-    }
-
-    #{$prefix}justify-end {
-        justify-content: functions.important(flex-end);
-    }
-
-    #{$prefix}items-start {
-        align-items: functions.important(flex-start);
-    }
-
-    #{$prefix}items-center {
-        align-items: functions.important(center);
-    }
-
-    #{$prefix}items-end {
-        align-items: functions.important(flex-end);
-    }
-
-    #{$prefix}self-start {
-        align-self: functions.important(flex-start);
-    }
-
-    #{$prefix}self-end {
-        align-self: functions.important(flex-end);
-    }
-
-    #{$prefix}self-center {
-        align-self: functions.important(center);
-    }
-
-    @each $name, $space in variables.$u-spaces {
-        #{$prefix}gap-#{$name} {
-            gap: functions.important($space);
+@mixin styles() {
+    @include mixins.sizing using($prefix) {
+        #{$prefix}d-flex {
+            display: functions.important(flex);
         }
-    }
 
-    @for $i from 0 to 10 {
-        #{$prefix}flex-#{$i} {
-            flex: $i;
+        #{$prefix}d-inline-flex {
+            display: functions.important(inline-flex);
+        }
+
+        #{$prefix}flex-wrap {
+            flex-wrap: functions.important(wrap);
+        }
+
+        #{$prefix}flex-fill {
+            flex: functions.important(1);
+        }
+
+        #{$prefix}flex-row {
+            flex-direction: functions.important(row);
+        }
+
+        #{$prefix}flex-column {
+            flex-direction: functions.important(column);
+        }
+
+        #{$prefix}justify-between {
+            justify-content: functions.important(space-between);
+        }
+
+        #{$prefix}justify-center {
+            justify-content: functions.important(center);
+        }
+
+        #{$prefix}justify-start {
+            justify-content: functions.important(flex-start);
+        }
+
+        #{$prefix}justify-end {
+            justify-content: functions.important(flex-end);
+        }
+
+        #{$prefix}items-start {
+            align-items: functions.important(flex-start);
+        }
+
+        #{$prefix}items-center {
+            align-items: functions.important(center);
+        }
+
+        #{$prefix}items-end {
+            align-items: functions.important(flex-end);
+        }
+
+        #{$prefix}self-start {
+            align-self: functions.important(flex-start);
+        }
+
+        #{$prefix}self-end {
+            align-self: functions.important(flex-end);
+        }
+
+        #{$prefix}self-center {
+            align-self: functions.important(center);
+        }
+
+        @each $name, $space in variables.$u-spaces {
+            #{$prefix}gap-#{$name} {
+                gap: functions.important($space);
+            }
+        }
+
+        @for $i from 0 to 10 {
+            #{$prefix}flex-#{$i} {
+                flex: functions.important($i);
+            }
         }
     }
 }

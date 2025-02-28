@@ -2,20 +2,22 @@
 @use "mixins";
 @use "functions";
 
-@include mixins.sizing using($prefix) {
-    #{$prefix}d-inline {
-        display: functions.important(inline);
-    }
+@mixin styles() {
+    @include mixins.sizing using($prefix) {
+        #{$prefix}d-inline {
+            display: functions.important(inline);
+        }
 
-    #{$prefix}d-inline-block {
-        display: functions.important(inline-block);
-    }
+        #{$prefix}d-inline-block {
+            display: functions.important(inline-block);
+        }
 
-    #{$prefix}d-block {
-        display: functions.important(block);
-    }
+        #{$prefix}d-block {
+            display: functions.important(block);
+        }
 
-    #{$prefix}d-none {
-        display: functions.important(none);
+        #{$prefix}d-none {
+            display: functions.important(none);
+        }
     }
 }

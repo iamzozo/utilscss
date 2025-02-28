@@ -1,33 +1,41 @@
 // Basic reset
 @use "./variables";
 
-@if(variables.$u-enable-reset) {
-    * {
-        box-sizing: border-box;
-    }
+@mixin styles() {
+    @if(variables.$u-enable-reset) {
+        * {
+            box-sizing: border-box;
+        }
 
-    html,
-    body {
-        margin: 0;
-        padding: 0;
-    }
+        html,
+        body {
+            margin: 0;
+            padding: 0;
+        }
 
-    body {
-        font-family: variables.$u-font-family;
-        font-size: 100%;
-        line-height: variables.$u-line-height;
-    }
+        body {
+            font-family: variables.$u-font-family;
+            font-size: 100%;
+            line-height: variables.$u-line-height;
+        }
 
-    input,
-    button,
-    select,
-    textarea {
-        font-family: inherit;
-        font-size: inherit;
-        line-height: variables.$u-line-height;
+        input,
+        button,
+        select,
+        textarea {
+            font-family: inherit;
+            font-size: inherit;
+            line-height: variables.$u-line-height;
 
-        &:focus {
-            outline: none;
+            &:focus {
+                outline: none;
+            }
         }
     }
+}
+
+@at-root #{variables.$u-root} {
+    --u-gutter-width: 15px;
+    --u-container-width: #{variables.$u-containerWidth};
+    --u-container-padding: var(--u-gutter-width, 15px);
 }

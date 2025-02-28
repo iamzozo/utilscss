@@ -1,6 +1,13 @@
-@use '../utils';
+@use '../utils' with (
+  $u-root: '#something',
+  $u-sizes: (
+    base: null,
+    sm: 768px,
+    lg: 1200px
+  )
+);
 
 #something {
-    //$u-prefix: 'mx-';
-
+    @include utils.sizing();
+    @include utils.grid-styles();
 }

@@ -1,11 +1,27 @@
-@use "scss/variables";
-@use "scss/functions";
-@use "scss/mixins";
+@forward "scss/variables";
+@forward "scss/functions";
+@forward "scss/mixins";
 
 // Core
+@forward "scss/reset" as reset-*;
+@forward "scss/grid" as grid-*;
+@forward "scss/common" as common-*;
+@forward "scss/flex" as flex-*;
+@forward "scss/spacing" as spacing-*;
+@forward "scss/typo" as typo-*;
+
 @use "scss/reset";
 @use "scss/grid";
 @use "scss/common";
 @use "scss/flex";
 @use "scss/spacing";
 @use "scss/typo";
+
+@mixin styles() {
+  @include reset.styles();
+  @include grid.styles();
+  @include common.styles();
+  @include flex.styles();
+  @include spacing.styles();
+  @include typo.styles();
+}

@@ -1,20 +1,22 @@
 @use "mixins";
 @use "functions";
 
-@include mixins.sizing using($prefix) {
-    #{$prefix}text-left {
-        text-align: functions.important(left);
-    }
+@mixin styles() {
+    @include mixins.sizing using($prefix) {
+        #{$prefix}text-left {
+            text-align: functions.important(left);
+        }
 
-    #{$prefix}text-right {
-        text-align: functions.important(right);
-    }
+        #{$prefix}text-right {
+            text-align: functions.important(right);
+        }
 
-    #{$prefix}text-center {
-        text-align: functions.important(center);
-    }
+        #{$prefix}text-center {
+            text-align: functions.important(center);
+        }
 
-    #{$prefix}text-b {
-        font-weight: functions.important(bold);
+        #{$prefix}text-b {
+            font-weight: functions.important(bold);
+        }
     }
 }
