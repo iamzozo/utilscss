@@ -10,51 +10,89 @@
                     #{$prop}: functions.important($space);
                 }
                 #{$prefix}#{$abbrev}t-#{$name} {
-                    #{$prop}-top: functions.important($space);
+                    #{$prop}-block-start: functions.important($space);
                 }
                 #{$prefix}#{$abbrev}r-#{$name} {
-                    #{$prop}-right: functions.important($space);
+                    #{$prop}-inline-end: functions.important($space);
                 }
                 #{$prefix}#{$abbrev}b-#{$name} {
-                    #{$prop}-bottom: functions.important($space);
+                    #{$prop}-block-end: functions.important($space);
                 }
                 #{$prefix}#{$abbrev}l-#{$name} {
-                    #{$prop}-left: functions.important($space);
+                    #{$prop}-inline-start: functions.important($space);
                 }
                 #{$prefix}#{$abbrev}y-#{$name} {
-                    #{$prop}-top: functions.important($space);
-                    #{$prop}-bottom: functions.important($space);
+                    #{$prop}-block-start: functions.important($space);
+                    #{$prop}-block-end: functions.important($space);
                 }
                 #{$prefix}#{$abbrev}x-#{$name} {
-                    #{$prop}-left: functions.important($space);
-                    #{$prop}-right: functions.important($space);
+                    #{$prop}-inline-start: functions.important($space);
+                    #{$prop}-inline-end: functions.important($space);
                 }
             }
         }
 
-        @each $prop, $abbrev in (margin: m, padding: p) {
+        $name: 0;
+        $spacing: 1rem;
+        @each $space in variables.$u-spaces-numeric {
+            @each $prop, $abbrev in (margin: m, padding: p) {
+                $value: 0;
+                @if $space == 0 {
+                    $value: 0;
+                }
+                @else {
+                    $value: $spacing * $space;
+                }
+                #{$prefix}#{$abbrev}-#{$name} {
+                    #{$prop}: functions.important($value);
+                }
+                #{$prefix}#{$abbrev}t-#{$name} {
+                    #{$prop}-block-start: functions.important($value);
+                }
+                #{$prefix}#{$abbrev}r-#{$name} {
+                    #{$prop}-inline-end: functions.important($value);
+                }
+                #{$prefix}#{$abbrev}b-#{$name} {
+                    #{$prop}-block-end: functions.important($value);
+                }
+                #{$prefix}#{$abbrev}l-#{$name} {
+                    #{$prop}-inline-start: functions.important($value);
+                }
+                #{$prefix}#{$abbrev}y-#{$name} {
+                    #{$prop}-block-start: functions.important($value);
+                    #{$prop}-block-end: functions.important($value);
+                }
+                #{$prefix}#{$abbrev}x-#{$name} {
+                    #{$prop}-inline-start: functions.important($value);
+                    #{$prop}-inline-end: functions.important($value);
+                }
+            }
+            $name: $name + 1;
+        }
+
+        @each $prop, $abbrev in (margin: m) {
             #{$prefix}#{$abbrev}-auto {
                 #{$prop}: functions.important(auto);
             }
             #{$prefix}#{$abbrev}t-auto {
-                #{$prop}-top: functions.important(auto);
+                #{$prop}-block-start: functions.important(auto);
             }
             #{$prefix}#{$abbrev}r-auto {
-                #{$prop}-right: functions.important(auto);
+                #{$prop}-inline-end: functions.important(auto);
             }
             #{$prefix}#{$abbrev}b-auto {
-                #{$prop}-bottom: functions.important(auto);
+                #{$prop}-block-end: functions.important(auto);
             }
             #{$prefix}#{$abbrev}l-auto {
-                #{$prop}-left: functions.important(auto);
+                #{$prop}-inline-start: functions.important(auto);
             }
             #{$prefix}#{$abbrev}y-auto {
-                #{$prop}-top: functions.important(auto);
-                #{$prop}-bottom: functions.important(auto);
+                #{$prop}-block-start: functions.important(auto);
+                #{$prop}-block-end: functions.important(auto);
             }
             #{$prefix}#{$abbrev}x-auto {
-                #{$prop}-left: functions.important(auto);
-                #{$prop}-right: functions.important(auto);
+                #{$prop}-inline-start: functions.important(auto);
+                #{$prop}-inline-end: functions.important(auto);
             }
         }
     }
