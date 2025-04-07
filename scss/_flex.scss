@@ -74,6 +74,22 @@
             }
         }
 
+        $name: 0;
+        $spacing: 1rem;
+        @each $space in variables.$u-spaces-numeric {
+            $value: 0;
+            @if $space == 0 {
+                $value: 0;
+            }
+            @else {
+                $value: $spacing * $space;
+            }
+            #{$prefix}gap-#{$name} {
+                gap: functions.important($value);
+            }
+            $name: $name + 1;
+        }
+
         @for $i from 0 to 10 {
             #{$prefix}flex-#{$i} {
                 flex: functions.important($i);
