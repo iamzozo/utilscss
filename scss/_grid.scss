@@ -4,7 +4,7 @@
 
 @mixin styles() {
     .#{variables.$u-prefix}container {
-        max-width: var(--u-container-width, variables.$u-containerWidth);
+        max-width: var(--u-container-width);
         margin-left: auto;
         margin-right: auto;
         padding-left: var(--u-container-padding);

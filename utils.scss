@@ -11,6 +11,7 @@
 @forward "scss/spacing" as spacing-*;
 @forward "scss/typo" as typo-*;
 
+@use "scss/variables";
 @use "scss/reset";
 @use "scss/grid";
 @use "scss/grid-2";
@@ -19,7 +20,8 @@
 @use "scss/spacing";
 @use "scss/typo";
 
-@mixin styles($newGrid: false) {
+@mixin styles($newGrid: false, $includeClassic: true) {
+  @include defaultVariables();
   @include reset.styles();
   @if $newGrid {
     @include grid-2.styles();
@@ -28,6 +30,24 @@
   }
   @include common.styles();
   @include flex.styles();
-  @include spacing.styles();
+  @include spacing.styles($includeClassic);
   @include typo.styles();
+}
+
+@mixin defaultVariables() {
+  #{variables.$u-root} {
+    --u-space-0: .25rem;
+    --u-space-1: .5rem;
+    --u-space-2: .75rem;
+    --u-space-3: 1rem;
+    --u-space-4: 1.5rem;
+    --u-space-5: 2rem;
+    --u-space-6: 2.5rem;
+    --u-space-7: 3rem;
+
+    --u-line-height: 1.5;
+    --u-gutter-width: var(--u-space-3);
+    --u-container-width: 1100px;
+    --u-container-padding: var(--u-gutter-width, var(--u-space-3));
+  }
 }

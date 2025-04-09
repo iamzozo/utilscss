@@ -3,7 +3,7 @@
 @mixin styles() {
     .row {
         display: grid;
-        gap: var(--grid-gap, 10px);
+        gap: var(--grid-gap, var(--u-space-3));
         grid-template-columns: repeat(var(--grid-columns, 12), 1fr);
         align-items: var(--grid-align-items, start);
     }

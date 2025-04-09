@@ -16,7 +16,7 @@
         body {
             font-family: variables.$u-font-family;
             font-size: 100%;
-            line-height: variables.$u-line-height;
+            line-height: var(--u-line-height);
         }
 
         input,
@@ -25,17 +25,11 @@
         textarea {
             font-family: inherit;
             font-size: inherit;
-            line-height: variables.$u-line-height;
+            line-height: var(--u-line-height);
 
             &:focus {
                 outline: none;
             }
         }
     }
-}
-
-@at-root #{variables.$u-root} {
-    --u-gutter-width: 15px;
-    --u-container-width: #{variables.$u-containerWidth};
-    --u-container-padding: var(--u-gutter-width, 15px);
 }

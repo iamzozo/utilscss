@@ -74,20 +74,13 @@
             }
         }
 
-        $name: 0;
-        $spacing: 1rem;
-        @each $space in variables.$u-spaces-numeric {
-            $value: 0;
-            @if $space == 0 {
-                $value: 0;
-            }
-            @else {
-                $value: $spacing * $space;
-            }
+        @each $name, $value in variables.$u-spaces-numeric {
             #{$prefix}gap-#{$name} {
+                @if $name == 0 {
+                    $value: 0;
+                }
                 gap: functions.important($value);
             }
-            $name: $name + 1;
         }
 
         @for $i from 0 to 10 {
