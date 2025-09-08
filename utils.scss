@@ -43,8 +43,8 @@
     }
 
     --u-line-height: 1.5;
-    --u-gutter-width: var(--u-space-3);
+    --u-gutter-width: var(--u-spacing-3);
     --u-container-width: 1100px;
-    --u-container-padding: var(--u-gutter-width, var(--u-space-3));
+    --u-container-padding: var(--u-gutter-width, var(--u-spacing-3));
   }
 }

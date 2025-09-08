@@ -1,6 +1,6 @@
 {
   "name": "@iamzozo/utilscss",
-  "version": "0.0.29",
+  "version": "0.0.30",
   "scripts": {
     "build": "sass _utils.build.scss ./build/utils.min.css --style=compressed",
     "dev": "sass utils.scss ./build/utils.css --style=expanded -w",
