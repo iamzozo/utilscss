@@ -1,3 +1,6 @@
 @use '../utils';
 
+html {
+	@include utils.defaultVariables();
+}
 @include utils.styles($newGrid: true);

@@ -20,8 +20,12 @@
 @use "scss/spacing";
 @use "scss/typo";
 
-@mixin styles($newGrid: false) {
-  @include defaultVariables();
+@mixin styles($newGrid: false, $includeVars: false) {
+  @if $includeVars {
+    :root {
+      @include defaultVariables();
+    }
+  }
   @include reset.styles();
   @if $newGrid {
     @include grid-2.styles();
@@ -35,16 +39,14 @@
 }
 
 @mixin defaultVariables() {
-  #{variables.$u-root} {
-    --u-spacing: .25rem;
+  --u-spacing: .25rem;
 
-    @for $i from 1 through 10 {
-      --u-spacing-#{$i}: calc(var(--u-spacing) * #{$i});
-    }
-
-    --u-line-height: 1.5;
-    --u-gutter-width: var(--u-spacing-3);
-    --u-container-width: 1100px;
-    --u-container-padding: var(--u-gutter-width, var(--u-spacing-3));
+  @for $i from 1 through 10 {
+    --u-spacing-#{$i}: calc(var(--u-spacing) * #{$i});
   }
+
+  --u-line-height: 1.5;
+  --u-gutter-width: var(--u-spacing-3);
+  --u-container-width: 1100px;
+  --u-container-padding: var(--u-gutter-width, var(--u-spacing-3));
 }
