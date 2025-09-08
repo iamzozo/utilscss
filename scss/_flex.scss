@@ -68,18 +68,9 @@
             align-self: functions.important(center);
         }
 
-        @each $name, $space in variables.$u-spaces {
-            #{$prefix}gap-#{$name} {
-                gap: functions.important($space);
-            }
-        }
-
-        @each $name, $value in variables.$u-spaces-numeric {
-            #{$prefix}gap-#{$name} {
-                @if $name == 0 {
-                    $value: 0;
-                }
-                gap: functions.important($value);
+        @for $i from 1 through 10 {
+            #{$prefix}gap-#{$i} {
+                gap: functions.important(var(--u-spacing-#{$i}));
             }
         }
 

@@ -20,7 +20,7 @@
 @use "scss/spacing";
 @use "scss/typo";
 
-@mixin styles($newGrid: false, $includeClassic: true) {
+@mixin styles($newGrid: false) {
   @include defaultVariables();
   @include reset.styles();
   @if $newGrid {
@@ -30,20 +30,17 @@
   }
   @include common.styles();
   @include flex.styles();
-  @include spacing.styles($includeClassic);
+  @include spacing.styles();
   @include typo.styles();
 }
 
 @mixin defaultVariables() {
   #{variables.$u-root} {
-    --u-space-0: .25rem;
-    --u-space-1: .5rem;
-    --u-space-2: .75rem;
-    --u-space-3: 1rem;
-    --u-space-4: 1.5rem;
-    --u-space-5: 2rem;
-    --u-space-6: 2.5rem;
-    --u-space-7: 3rem;
+    --u-spacing: .25rem;
+
+    @for $i from 1 through 10 {
+      --u-spacing-#{$i}: calc(var(--u-spacing) * #{$i});
+    }
 
     --u-line-height: 1.5;
     --u-gutter-width: var(--u-space-3);

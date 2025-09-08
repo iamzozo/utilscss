@@ -2,44 +2,14 @@
 @use "variables";
 @use "functions";
 
-@mixin styles($includeClassic: true) {
-    // Classic
-    @if $includeClassic == true {
-        @include mixins.sizing using($prefix) {
-            @each $name, $space in variables.$u-spaces {
-                @each $prop, $abbrev in (margin: m, padding: p) {
-                    #{$prefix}#{$abbrev}-#{$name} {
-                        #{$prop}: functions.important($space);
-                    }
-                    #{$prefix}#{$abbrev}t-#{$name} {
-                        #{$prop}-block-start: functions.important($space);
-                    }
-                    #{$prefix}#{$abbrev}r-#{$name} {
-                        #{$prop}-inline-end: functions.important($space);
-                    }
-                    #{$prefix}#{$abbrev}b-#{$name} {
-                        #{$prop}-block-end: functions.important($space);
-                    }
-                    #{$prefix}#{$abbrev}l-#{$name} {
-                        #{$prop}-inline-start: functions.important($space);
-                    }
-                    #{$prefix}#{$abbrev}y-#{$name} {
-                        #{$prop}-block-start: functions.important($space);
-                        #{$prop}-block-end: functions.important($space);
-                    }
-                    #{$prefix}#{$abbrev}x-#{$name} {
-                        #{$prop}-inline-start: functions.important($space);
-                        #{$prop}-inline-end: functions.important($space);
-                    }
-                }
-            }
-        }
-    }
-
+@mixin styles() {
     // Numeric
     @include mixins.sizing using($prefix) {
-        @each $name, $value in variables.$u-spaces-numeric {
+        @for $i from 0 through 10 {
             @each $prop, $abbrev in (margin: m, padding: p) {
+                $name: $i;
+                $value: var(--u-spacing-#{$i});
+
                 @if $name == 0 {
                     $value: 0;
                 }

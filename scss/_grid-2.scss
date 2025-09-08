@@ -1,15 +1,18 @@
 @use "mixins";
 
 @mixin styles() {
-    .row {
+    .grid {
         display: grid;
-        gap: var(--grid-gap, var(--u-space-3));
-        grid-template-columns: repeat(var(--grid-columns, 12), 1fr);
-        align-items: var(--grid-align-items, start);
     }
 
     @include mixins.sizing(true) using ($prefix) {
         @for $i from 1 through 12 {
+            #{$prefix}grid-cols-#{$i} {
+                grid-template-columns: repeat(#{$i}, minmax(0, 1fr));
+            }
+            #{$prefix}grid-rows-#{$i} {
+                grid-template-rows: repeat(#{$i}, minmax(0, 1fr));
+            }
             #{$prefix}col-#{$i} {
                 grid-column-end: span $i;
             }
